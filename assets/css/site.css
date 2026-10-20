@@ -73,7 +73,8 @@ body[data-page="home"] .kk-header {
 body[data-page="home"] .kk-header.is-scrolled {
   background: rgba(250, 249, 245, 0.98) !important;
   background-color: rgba(250, 249, 245, 0.98) !important;
-  border-bottom: 1px solid rgba(37, 42, 43, 0.08) !important;
+  border-bottom: 1px solid rgba(37, 42, 43, 0.1) !important;
+  box-shadow: 0 1px 0 rgba(37, 42, 43, 0.06) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
 }
@@ -141,7 +142,8 @@ body[data-page="home"] .kk-hero-bg {
   height: 100% !important;
   opacity: 1 !important;
   background-repeat: no-repeat !important;
-  background-position: center center !important;
+  /* Bias right so bright trunk sits less under copy */
+  background-position: 68% center !important;
   background-size: cover !important;
   transform: none !important;
   transition: opacity 1.2s ease !important;
@@ -152,20 +154,30 @@ body[data-page="home"] .kk-hero-bg {
 body[data-page="home"] .kk-hero__veil {
   inset: 0 !important;
   transform: none !important;
-  /* Soft bottom fade only — photo stays visible edge-to-edge */
-  background: linear-gradient(
-    180deg,
-    rgba(17, 22, 23, 0.12) 0%,
-    rgba(17, 22, 23, 0.08) 40%,
-    rgba(17, 22, 23, 0.45) 78%,
-    rgba(17, 22, 23, 0.68) 100%
-  ) !important;
+  /* L→R darken for copy zone + bottom fade for rail; photo still readable */
+  background:
+    linear-gradient(
+      90deg,
+      rgba(17, 22, 23, 0.72) 0%,
+      rgba(17, 22, 23, 0.48) 28%,
+      rgba(17, 22, 23, 0.22) 52%,
+      rgba(17, 22, 23, 0.06) 72%,
+      transparent 88%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(17, 22, 23, 0.28) 0%,
+      rgba(17, 22, 23, 0.12) 28%,
+      rgba(17, 22, 23, 0.18) 58%,
+      rgba(17, 22, 23, 0.55) 82%,
+      rgba(17, 22, 23, 0.78) 100%
+    ) !important;
 }
 body[data-page="home"] .kk-hero__rail {
   background: transparent !important;
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
-  border-top-color: rgba(247, 246, 242, 0.16);
+  border-top-color: rgba(247, 246, 242, 0.2);
 }
 .kk-header__bar {
   max-width: 80rem;
@@ -291,14 +303,14 @@ body[data-page="home"] .kk-hero__rail {
 .kk-nav__item { position: relative; }
 .kk-mega {
   position: absolute;
-  top: calc(100% + 0.65rem);
+  top: calc(100% + 0.75rem);
   left: 50%;
   transform: translateX(-50%) translateY(10px) scale(0.98);
   width: min(640px, calc(100vw - 3rem));
   background: var(--kk-surface);
-  border: 1px solid rgba(37, 42, 43, 0.1);
-  box-shadow: 0 16px 36px -8px rgba(37, 42, 43, 0.07), 0 0 0 1px rgba(37, 42, 43, 0.04);
-  padding: 0.75rem;
+  border: 1px solid rgba(17, 22, 23, 0.12);
+  box-shadow: 0 20px 40px -12px rgba(17, 22, 23, 0.12), 0 0 0 1px rgba(17, 22, 23, 0.04);
+  padding: 0.85rem;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -329,13 +341,13 @@ body[data-page="home"] .kk-hero__rail {
 .kk-mega__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.35rem;
+  gap: 0.4rem;
 }
 .kk-mega__card {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
-  padding: 1rem 1.1rem;
+  gap: 0.4rem;
+  padding: 1.05rem 1.15rem;
   text-decoration: none;
   color: inherit;
   border: 1px solid transparent;
@@ -343,7 +355,7 @@ body[data-page="home"] .kk-hero__rail {
 }
 .kk-mega__card:hover {
   background: var(--kk-surface-low);
-  border-color: rgba(37, 42, 43, 0.08);
+  border-color: rgba(17, 22, 23, 0.1);
 }
 .kk-mega__code {
   font-family: "JetBrains Mono", ui-monospace, monospace;
@@ -361,16 +373,16 @@ body[data-page="home"] .kk-hero__rail {
 .kk-mega__desc {
   font-family: Manrope, system-ui, sans-serif;
   font-size: 12px;
-  line-height: 1.45;
+  line-height: 1.5;
   color: var(--kk-muted);
 }
 .kk-mega__footer {
-  margin-top: 0.35rem;
-  padding: 0.75rem 1.1rem;
+  margin-top: 0.4rem;
+  padding: 0.85rem 1.15rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-top: 1px solid rgba(37, 42, 43, 0.08);
+  border-top: 1px solid rgba(17, 22, 23, 0.1);
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 11px;
   letter-spacing: 0.06em;
@@ -479,7 +491,7 @@ body[data-page="home"] .kk-hero__rail {
 .kk-drawer__backdrop {
   position: absolute;
   inset: 0;
-  background: rgba(17, 22, 23, 0.45);
+  background: rgba(17, 22, 23, 0.52);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -491,7 +503,7 @@ body[data-page="home"] .kk-hero__rail {
   width: min(100%, 400px);
   height: 100%;
   background: var(--kk-surface);
-  border-left: 1px solid rgba(37, 42, 43, 0.08);
+  border-left: 1px solid rgba(17, 22, 23, 0.12);
   transform: translateX(100%);
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   display: flex;
@@ -513,32 +525,36 @@ body[data-page="home"] .kk-hero__rail {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.25rem 1.5rem;
-  border-bottom: 1px solid rgba(37, 42, 43, 0.08);
+  padding: 1.35rem 1.5rem;
+  border-bottom: 1px solid rgba(17, 22, 23, 0.1);
 }
 .kk-drawer__close {
   width: 42px;
   height: 42px;
-  border: 1px solid rgba(37, 42, 43, 0.12);
+  border: 1px solid rgba(17, 22, 23, 0.14);
   background: transparent;
   cursor: pointer;
   font-size: 22px;
   line-height: 1;
   color: var(--kk-ink);
 }
+.kk-drawer__close:focus-visible {
+  outline: 1px solid var(--kk-ink);
+  outline-offset: 2px;
+}
 .kk-drawer__body {
-  padding: 1rem 1.5rem 2rem;
+  padding: 1.15rem 1.5rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.15rem;
   flex: 1;
 }
 .kk-drawer__link {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.95rem 0;
-  border-bottom: 1px solid rgba(37, 42, 43, 0.06);
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(17, 22, 23, 0.08);
   font-family: Manrope, system-ui, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -547,8 +563,8 @@ body[data-page="home"] .kk-hero__rail {
 }
 .kk-drawer__link.is-active { color: var(--kk-olive); }
 .kk-drawer__group-label {
-  margin-top: 1.25rem;
-  margin-bottom: 0.35rem;
+  margin-top: 1.35rem;
+  margin-bottom: 0.4rem;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 10px;
   letter-spacing: 0.14em;
@@ -556,13 +572,13 @@ body[data-page="home"] .kk-hero__rail {
   color: var(--kk-olive);
 }
 .kk-drawer__sub {
-  padding-left: 0.75rem;
-  border-left: 1px solid rgba(37, 42, 43, 0.1);
+  padding-left: 0.85rem;
+  border-left: 1px solid rgba(17, 22, 23, 0.12);
   margin: 0.25rem 0 0.5rem;
 }
 .kk-drawer__sub a {
   display: block;
-  padding: 0.55rem 0;
+  padding: 0.6rem 0;
   font-family: Manrope, system-ui, sans-serif;
   font-size: 14px;
   color: var(--kk-muted);
@@ -571,11 +587,11 @@ body[data-page="home"] .kk-hero__rail {
 .kk-drawer__sub a:hover,
 .kk-drawer__sub a.is-active { color: var(--kk-ink); }
 .kk-drawer__foot {
-  padding: 1.25rem 1.5rem 1.75rem;
-  border-top: 1px solid rgba(37, 42, 43, 0.08);
+  padding: 1.35rem 1.5rem 1.85rem;
+  border-top: 1px solid rgba(17, 22, 23, 0.1);
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.85rem;
 }
 .kk-drawer__meta {
   font-family: "JetBrains Mono", ui-monospace, monospace;
@@ -583,7 +599,7 @@ body[data-page="home"] .kk-hero__rail {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--kk-muted);
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* Offset for sticky chrome when needed */
@@ -603,6 +619,21 @@ body.kk-lock { overflow: hidden; }
   color: var(--kk-ink);
 }
 
+/* Form controls — graphite 1px focus ring */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]):not([type="hidden"]):not([type="submit"]):not([type="button"]):not([type="reset"]),
+textarea,
+select {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]):not([type="hidden"]):not([type="submit"]):not([type="button"]):not([type="reset"]):focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 1px solid var(--kk-ink);
+  outline-offset: 0;
+  border-color: var(--kk-ink);
+  box-shadow: none;
+}
+
 /* Form success toast */
 .kk-toast {
   position: fixed;
@@ -610,13 +641,14 @@ body.kk-lock { overflow: hidden; }
   right: 1.5rem;
   z-index: 100;
   max-width: 360px;
-  padding: 1rem 1.25rem;
-  background: var(--kk-graphite);
+  padding: 1.1rem 1.35rem;
+  background: var(--kk-ink);
   color: var(--kk-chalk);
   font-family: Manrope, system-ui, sans-serif;
   font-size: 14px;
-  line-height: 1.45;
-  box-shadow: 0 16px 36px -8px rgba(37, 42, 43, 0.2);
+  line-height: 1.5;
+  border: 1px solid rgba(247, 246, 242, 0.08);
+  box-shadow: 0 18px 40px -10px rgba(17, 22, 23, 0.28);
   transform: translateY(120%);
   opacity: 0;
   transition: transform 0.35s ease, opacity 0.35s ease;
@@ -631,7 +663,7 @@ body.kk-lock { overflow: hidden; }
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #b9ccaf;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
 }
 
 /* —— Home hero: premium composition —— */
@@ -657,11 +689,14 @@ body.kk-lock { overflow: hidden; }
 .kk-hero__brand {
   margin: 0;
   font-family: Manrope, system-ui, sans-serif;
-  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
   font-weight: 400;
   letter-spacing: 0.04em;
   line-height: 1.1;
   color: #f7f6f2;
+  text-shadow:
+    0 1px 2px rgba(17, 22, 23, 0.55),
+    0 10px 28px rgba(17, 22, 23, 0.35);
 }
 .kk-hero__brand::after {
   content: "";
@@ -681,6 +716,9 @@ body:not(.kk-hero-ready) .kk-hero__brand::after {
 }
 .kk-hero h1 {
   margin: 0;
+  text-shadow:
+    0 1px 2px rgba(17, 22, 23, 0.5),
+    0 12px 32px rgba(17, 22, 23, 0.38);
 }
 .kk-hero-ready .kk-hero__rail.kk-hero-line {
   transition-delay: 0.78s;
@@ -693,7 +731,10 @@ body:not(.kk-hero-ready) .kk-hero__brand::after {
   font-weight: 300;
   line-height: 1.55;
   letter-spacing: 0.01em;
-  color: rgba(247, 246, 242, 0.72);
+  color: rgba(247, 246, 242, 0.82);
+  text-shadow:
+    0 1px 2px rgba(17, 22, 23, 0.45),
+    0 8px 20px rgba(17, 22, 23, 0.3);
 }
 .kk-hero__actions {
   display: flex;
@@ -727,9 +768,10 @@ body:not(.kk-hero-ready) .kk-hero__brand::after {
 }
 .kk-hero__btn--ghost {
   padding: 0 0.15rem;
-  color: rgba(247, 246, 242, 0.9);
-  border-bottom: 1px solid rgba(247, 246, 242, 0.32);
+  color: rgba(247, 246, 242, 0.92);
+  border-bottom: 1px solid rgba(247, 246, 242, 0.36);
   min-height: 2.5rem;
+  text-shadow: 0 1px 2px rgba(17, 22, 23, 0.4);
 }
 .kk-hero__btn--ghost:hover {
   color: #f7f6f2;
@@ -775,13 +817,14 @@ body:not(.kk-hero-ready) .kk-hero__brand::after {
 .kk-hero__fact {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
+  gap: 0.25rem;
   font-family: "JetBrains Mono", ui-monospace, monospace;
   font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: rgba(247, 246, 242, 0.42);
+  color: rgba(247, 246, 242, 0.52);
   padding-left: 0;
+  text-shadow: 0 1px 2px rgba(17, 22, 23, 0.35);
 }
 @media (min-width: 1024px) {
   .kk-hero__fact {
@@ -801,6 +844,7 @@ body:not(.kk-hero-ready) .kk-hero__brand::after {
   letter-spacing: -0.01em;
   text-transform: none;
   color: #f7f6f2;
+  text-shadow: 0 1px 2px rgba(17, 22, 23, 0.45);
 }
 
 /* —— Premium motion system —— */
