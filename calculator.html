@@ -17,56 +17,79 @@
 <div id="site-header"></div>
 <main class="w-full bg-surface min-h-[calc(100vh-108px)]">
 <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-space-2xl pb-space-lg">
-  <div class="border-b border-primary-container/10 pb-space-xl">
-    <span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Цех ПВХ • Шушары</span>
-    <h1 class="font-display-hero text-display-hero text-primary font-light tracking-tight mt-2">Калькулятор окон</h1>
-    <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4">Предварительная оценка по габаритам и конфигурации. Итоговая смета подтверждается инженером после замера или чертежа.</p>
+  <div class="border-b border-primary-container/10 pb-space-xl grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
+    <div class="lg:col-span-8">
+      <span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Цех ПВХ • Шушары</span>
+      <h1 class="font-display-hero text-display-hero text-primary font-light tracking-tight mt-2">Калькулятор окон</h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mt-4">Предварительная оценка по габаритам и конфигурации. Итоговая смета подтверждается инженером после замера или чертежа.</p>
+    </div>
+    <div class="lg:col-span-4 flex flex-col gap-2 font-label-technical text-label-technical">
+      <div class="flex justify-between border-b border-primary-container/10 py-2"><span class="text-outline">Шаг 1</span><span class="text-primary">Параметры</span></div>
+      <div class="flex justify-between border-b border-primary-container/10 py-2"><span class="text-outline">Шаг 2</span><span class="text-primary">Ориентир цены</span></div>
+      <div class="flex justify-between py-2"><span class="text-outline">Шаг 3</span><span class="text-secondary">Смета инженера</span></div>
+    </div>
   </div>
 </section>
 
 <section class="max-w-7xl mx-auto px-6 lg:px-12 pb-space-3xl">
-  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
-    <form id="win-calc" class="lg:col-span-7 flex flex-col gap-6 p-6 lg:p-8 bg-surface-container-low border border-primary-container/8">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+    <form id="win-calc" class="lg:col-span-7 flex flex-col gap-8 p-6 lg:p-10 bg-surface-container-low border border-primary-container/10">
+      <div class="flex flex-col gap-1 border-b border-primary-container/10 pb-4">
+        <span class="font-label-technical text-label-technical text-secondary uppercase tracking-wider">Шаг 01</span>
+        <h2 class="font-headline-md text-headline-md text-primary font-normal">Габариты проёма</h2>
+      </div>
       <div class="grid grid-cols-2 gap-5">
         <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-outline uppercase">Ширина, мм</span>
-          <input id="w-width" type="number" min="400" max="3000" value="1400" class="h-12 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-label-technical"/>
+          <input id="w-width" type="number" min="400" max="3000" value="1400" class="h-12 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-label-technical text-primary"/>
         </label>
         <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-outline uppercase">Высота, мм</span>
-          <input id="w-height" type="number" min="400" max="2800" value="1400" class="h-12 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-label-technical"/>
+          <input id="w-height" type="number" min="400" max="2800" value="1400" class="h-12 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-label-technical text-primary"/>
         </label>
       </div>
 
+      <div class="flex flex-col gap-1 border-b border-primary-container/10 pb-4 pt-2">
+        <span class="font-label-technical text-label-technical text-secondary uppercase tracking-wider">Шаг 02</span>
+        <h2 class="font-headline-md text-headline-md text-primary font-normal">Тип конструкции</h2>
+      </div>
       <fieldset>
-        <legend class="font-label-technical text-label-technical text-outline uppercase mb-3">Тип конструкции</legend>
+        <legend class="sr-only">Тип конструкции</legend>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="w-type">
-          <label class="flex items-center gap-3 p-3 bg-surface border border-primary cursor-pointer"><input type="radio" name="type" value="1.0" checked class="accent-primary"/><span class="font-body-sm">Глухое</span></label>
-          <label class="flex items-center gap-3 p-3 bg-surface border border-outline-variant cursor-pointer"><input type="radio" name="type" value="1.25" class="accent-primary"/><span class="font-body-sm">Поворотное</span></label>
-          <label class="flex items-center gap-3 p-3 bg-surface border border-outline-variant cursor-pointer"><input type="radio" name="type" value="1.4" class="accent-primary"/><span class="font-body-sm">Поворотно-откидное</span></label>
-          <label class="flex items-center gap-3 p-3 bg-surface border border-outline-variant cursor-pointer"><input type="radio" name="type" value="1.55" class="accent-primary"/><span class="font-body-sm">Двустворчатое</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border-2 border-primary cursor-pointer transition-colors"><input type="radio" name="type" value="1.0" checked class="accent-primary"/><span class="font-body-sm text-primary">Глухое</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border border-outline-variant cursor-pointer transition-colors"><input type="radio" name="type" value="1.25" class="accent-primary"/><span class="font-body-sm text-primary">Поворотное</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border border-outline-variant cursor-pointer transition-colors"><input type="radio" name="type" value="1.4" class="accent-primary"/><span class="font-body-sm text-primary">Поворотно-откидное</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border border-outline-variant cursor-pointer transition-colors"><input type="radio" name="type" value="1.55" class="accent-primary"/><span class="font-body-sm text-primary">Двустворчатое</span></label>
         </div>
       </fieldset>
 
+      <div class="flex flex-col gap-1 border-b border-primary-container/10 pb-4 pt-2">
+        <span class="font-label-technical text-label-technical text-secondary uppercase tracking-wider">Шаг 03</span>
+        <h2 class="font-headline-md text-headline-md text-primary font-normal">Стеклопакет и монтаж</h2>
+      </div>
       <fieldset>
-        <legend class="font-label-technical text-label-technical text-outline uppercase mb-3">Стеклопакет</legend>
+        <legend class="sr-only">Стеклопакет</legend>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-2" id="w-glass">
-          <label class="flex items-center gap-3 p-3 bg-surface border border-outline-variant cursor-pointer"><input type="radio" name="glass" value="1.0" class="accent-primary"/><span class="font-body-sm">1-камерный</span></label>
-          <label class="flex items-center gap-3 p-3 bg-surface border border-primary cursor-pointer"><input type="radio" name="glass" value="1.18" checked class="accent-primary"/><span class="font-body-sm">2-камерный</span></label>
-          <label class="flex items-center gap-3 p-3 bg-surface border border-outline-variant cursor-pointer"><input type="radio" name="glass" value="1.35" class="accent-primary"/><span class="font-body-sm">Мультифункциональный</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border border-outline-variant cursor-pointer transition-colors"><input type="radio" name="glass" value="1.0" class="accent-primary"/><span class="font-body-sm text-primary">1-камерный</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border-2 border-primary cursor-pointer transition-colors"><input type="radio" name="glass" value="1.18" checked class="accent-primary"/><span class="font-body-sm text-primary">2-камерный</span></label>
+          <label class="flex items-center gap-3 p-3.5 bg-surface border border-outline-variant cursor-pointer transition-colors"><input type="radio" name="glass" value="1.35" class="accent-primary"/><span class="font-body-sm text-primary">Мультифункциональный</span></label>
         </div>
       </fieldset>
 
-      <label class="flex items-center gap-3 font-body-sm text-on-surface">
-        <input id="w-mount" type="checkbox" checked class="w-4 h-4 accent-primary border border-outline"/>
-        Включить монтаж (+18%)
+      <label class="flex items-start gap-3 p-4 bg-surface border border-outline-variant/60 cursor-pointer hover:border-primary transition-colors">
+        <input id="w-mount" type="checkbox" checked class="mt-0.5 w-4 h-4 accent-primary"/>
+        <span class="flex flex-col gap-0.5">
+          <span class="font-body-sm text-primary font-medium">Включить монтаж по ГОСТ (+18%)</span>
+          <span class="font-label-technical text-[11px] text-on-surface-variant">Трёхслойный шов, паро- и гидроизоляция</span>
+        </span>
       </label>
 
-      <div class="flex flex-wrap gap-3 pt-2">
+      <div class="flex flex-wrap gap-3 pt-2 border-t border-primary-container/10">
         <button type="button" id="w-recalc" class="h-12 px-8 bg-primary-container text-surface-bright font-headline-sm text-sm uppercase tracking-wider hover:bg-secondary transition-colors">Пересчитать</button>
         <a href="okna.html" class="h-12 px-6 inline-flex items-center border border-primary text-primary font-headline-sm text-sm uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors">Подробнее об окнах</a>
+        <a href="okna.html#interactive-calc" class="h-12 px-6 inline-flex items-center text-secondary font-label-technical text-label-technical uppercase tracking-wider hover:text-primary transition-colors">Полный конфигуратор →</a>
       </div>
     </form>
 
-    <aside class="lg:col-span-5 flex flex-col gap-6">
+    <aside class="lg:col-span-5 flex flex-col gap-6 sticky top-28">
       <div class="p-8 bg-primary-container text-surface-bright flex flex-col gap-4">
         <span class="font-label-technical text-secondary-fixed uppercase tracking-widest text-label-technical">Ориентир</span>
         <div>
@@ -74,15 +97,24 @@
           <span id="w-price" class="font-display-hero text-[40px] leading-tight font-light">—</span>
           <span class="font-label-technical text-surface-dim ml-2">₽</span>
         </div>
-        <p id="w-meta" class="font-body-sm text-surface-variant">Укажите параметры и нажмите «Пересчитать».</p>
+        <p id="w-meta" class="font-body-sm text-surface-variant">Укажите параметры — расчёт обновится автоматически.</p>
         <div class="pt-4 border-t border-surface-variant/15 font-label-technical text-[11px] text-surface-dim leading-relaxed">Не является офертой. Финальная цена после замера, выбора профиля и фурнитуры.</div>
       </div>
 
-      <form id="w-lead" class="p-6 lg:p-8 bg-surface-container-low border border-primary-container/8 flex flex-col gap-4">
-        <h2 class="font-headline-md text-headline-md text-primary">Отправить расчёт инженеру</h2>
-        <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-outline uppercase">Имя</span><input required name="name" class="h-11 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-body-md"/></label>
-        <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-outline uppercase">Телефон</span><input required name="phone" type="tel" class="h-11 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-body-md"/></label>
+      <form id="w-lead" class="p-6 lg:p-8 bg-surface-container-low border border-primary-container/10 flex flex-col gap-5">
+        <div>
+          <span class="font-label-technical text-label-technical text-secondary uppercase tracking-wider">Шаг 04</span>
+          <h2 class="font-headline-md text-headline-md text-primary mt-1">Отправить расчёт инженеру</h2>
+          <p class="font-body-sm text-on-surface-variant mt-2">Передадим параметры проёма в цех — инженер вернётся с точной сметой.</p>
+        </div>
+        <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-outline uppercase">Имя *</span><input required name="name" class="h-11 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-body-md text-primary" placeholder="Как к вам обращаться"/></label>
+        <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-outline uppercase">Телефон *</span><input required name="phone" type="tel" class="h-11 px-3 bg-surface border border-outline-variant focus:border-primary outline-none font-body-md text-primary" placeholder="+7 (___) ___-__-__"/></label>
+        <label class="flex items-start gap-3 cursor-pointer">
+          <input required id="w-lead-agree" type="checkbox" checked class="mt-0.5 w-4 h-4 accent-primary"/>
+          <span class="font-label-technical text-[11px] text-on-surface-variant leading-relaxed">Согласен на обработку персональных данных в соответствии с <a class="text-primary underline hover:text-secondary" href="privacy.html">политикой конфиденциальности</a>.</span>
+        </label>
         <button type="submit" class="h-12 bg-secondary text-on-secondary font-headline-sm text-sm uppercase tracking-wider hover:bg-secondary/90 transition-colors">Получить точную смету</button>
+        <a href="contacts.html" class="font-label-technical text-label-technical text-outline uppercase tracking-wider hover:text-primary transition-colors text-center">Или оставить общую заявку →</a>
       </form>
     </aside>
   </div>
@@ -91,7 +123,7 @@
 <div id="site-footer"></div>
 <script>
 (function () {
-  var BASE = 9800; // rub per m2 baseline
+  var BASE = 9800;
   function val(name) {
     var el = document.querySelector('input[name="' + name + '"]:checked');
     return el ? parseFloat(el.value) : 1;
@@ -113,7 +145,9 @@
     group.querySelectorAll('label').forEach(function (lab) {
       var on = lab.querySelector('input').checked;
       lab.classList.toggle('border-primary', on);
+      lab.classList.toggle('border-2', on);
       lab.classList.toggle('border-outline-variant', !on);
+      if (!on) lab.classList.remove('border-2');
     });
   }
   ['w-type', 'w-glass'].forEach(function (id) {
@@ -127,8 +161,13 @@
   document.getElementById('w-recalc').addEventListener('click', recalc);
   document.getElementById('w-lead').addEventListener('submit', function (e) {
     e.preventDefault();
-    window.kkToast && kkToast('Расчёт отправлен', 'Инженер уточнит параметры и вернётся с точной сметой.');
+    window.kkToast && kkToast(
+      'Расчёт отправлен инженеру',
+      'Мы получили параметры окна. Инженер уточнит детали и вернётся с точной сметой в рабочее время.'
+    );
     e.target.reset();
+    var agree = document.getElementById('w-lead-agree');
+    if (agree) agree.checked = true;
   });
   recalc();
 })();

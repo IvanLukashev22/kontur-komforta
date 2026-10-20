@@ -13,6 +13,14 @@
     privacy: "privacy.html",
   };
 
+  var CONTACT = {
+    phoneDisplay: "+7 (812) 000-00-00",
+    phoneTel: "+78120000000",
+    email: "info@konturkomforta.ru",
+    addressShort: "Пос. Шушары, ул. Ленина, 1А",
+    addressFull: "Посёлок Шушары, улица Ленина, дом 1А",
+  };
+
   var PAGE = document.body.getAttribute("data-page") || "home";
 
   var LOGO_SVG =
@@ -24,6 +32,12 @@
 
   function isActive(key) {
     return PAGE === key ? " is-active" : "";
+  }
+
+  function servicesActive() {
+    return ["houses", "saunas", "windows", "aluminum"].indexOf(PAGE) >= 0
+      ? " is-active"
+      : "";
   }
 
   function headerHTML() {
@@ -47,19 +61,41 @@
       '">Главная</a>' +
       '<div class="kk-nav__item" data-mega>' +
       '<button type="button" class="kk-nav__link' +
-      (["houses", "saunas", "windows", "aluminum"].indexOf(PAGE) >= 0
-        ? " is-active"
-        : "") +
+      servicesActive() +
       '" aria-expanded="false" aria-haspopup="true" data-mega-btn>' +
       "Услуги" +
       '<svg class="kk-nav__chevron" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.4"/></svg>' +
       "</button>" +
       '<div class="kk-mega" role="menu">' +
       '<div class="kk-mega__grid">' +
-      megaCard("01", "Строительство домов", "Каркас, брус, газобетон — проект и смета под участок", ROUTES.houses, "houses") +
-      megaCard("02", "Бани", "Банные комплексы из бруса, каркаса и газобетона", ROUTES.saunas, "saunas") +
-      megaCard("03", "Окна ПВХ", "Собственное производство, монтаж и ремонт", ROUTES.windows, "windows") +
-      megaCard("04", "Алюминиевые системы", "Тёплый алюминий, витражи и фасадное остекление", ROUTES.aluminum, "aluminum") +
+      megaCard(
+        "01",
+        "Строительство домов",
+        "Каркас, брус, газобетон — проект и смета под участок",
+        ROUTES.houses,
+        "houses"
+      ) +
+      megaCard(
+        "02",
+        "Бани",
+        "Банные комплексы из бруса, каркаса и газобетона",
+        ROUTES.saunas,
+        "saunas"
+      ) +
+      megaCard(
+        "03",
+        "Окна ПВХ",
+        "Собственное производство, монтаж и ремонт",
+        ROUTES.windows,
+        "windows"
+      ) +
+      megaCard(
+        "04",
+        "Алюминиевые системы",
+        "Тёплый алюминий, витражи и фасадное остекление",
+        ROUTES.aluminum,
+        "aluminum"
+      ) +
       "</div>" +
       '<a class="kk-mega__footer" href="' +
       ROUTES.calculator +
@@ -179,7 +215,15 @@
       '<a class="kk-cta" href="' +
       ROUTES.calculator +
       '" style="width:100%">Рассчитать стоимость</a>' +
-      '<div class="kk-drawer__meta">Пос. Шушары, ул. Ленина, 1А<br>+7 (812) 000-00-00</div>' +
+      '<div class="kk-drawer__meta">' +
+      CONTACT.addressShort +
+      "<br>" +
+      '<a href="tel:' +
+      CONTACT.phoneTel +
+      '">' +
+      CONTACT.phoneDisplay +
+      "</a>" +
+      "</div>" +
       "</div>" +
       "</div>" +
       "</div>"
@@ -201,7 +245,9 @@
       '<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Строим пространство для комфортной жизни. Дома, бани и окна — от производства до монтажа.</p>' +
       '<div class="flex flex-col gap-1 pt-2 font-label-technical text-label-technical text-on-surface-variant">' +
       '<span class="text-secondary font-medium">Производство &amp; Офис</span>' +
-      "<span>Посёлок Шушары, улица Ленина, дом 1А</span>" +
+      "<span>" +
+      CONTACT.addressFull +
+      "</span>" +
       '<span class="text-outline">География работ: по всей территории РФ</span>' +
       "</div>" +
       "</div>" +
@@ -245,8 +291,16 @@
       '<div class="lg:col-span-3 flex flex-col gap-space-sm">' +
       '<h4 class="font-label-caps text-label-caps uppercase tracking-widest text-primary mb-2">Связь</h4>' +
       '<div class="flex flex-col gap-2.5 font-body-sm text-body-sm">' +
-      '<div class="flex flex-col"><span class="font-label-technical text-label-technical text-outline uppercase">Телефон</span><a class="text-on-surface hover:text-secondary" href="tel:+78120000000">+7 (812) 000-00-00</a></div>' +
-      '<div class="flex flex-col"><span class="font-label-technical text-label-technical text-outline uppercase">Электронная почта</span><a class="text-on-surface hover:text-secondary" href="mailto:info@konturkomforta.ru">info@konturkomforta.ru</a></div>' +
+      '<div class="flex flex-col"><span class="font-label-technical text-label-technical text-outline uppercase">Телефон</span><a class="text-on-surface hover:text-secondary" href="tel:' +
+      CONTACT.phoneTel +
+      '">' +
+      CONTACT.phoneDisplay +
+      "</a></div>" +
+      '<div class="flex flex-col"><span class="font-label-technical text-label-technical text-outline uppercase">Электронная почта</span><a class="text-on-surface hover:text-secondary" href="mailto:' +
+      CONTACT.email +
+      '">' +
+      CONTACT.email +
+      "</a></div>" +
       '<div class="p-3 bg-surface border border-outline-variant/60 font-label-technical text-[11px] text-on-surface-variant leading-relaxed mt-2">Реквизиты и документы предоставляются по запросу при оформлении договора.</div>' +
       "</div>" +
       "</div>" +
@@ -302,7 +356,6 @@
   }
 
   function enhanceInteractive() {
-    // Shine on primary CTAs
     document
       .querySelectorAll(
         'a[href*="calculator"], a.kk-cta, a[href="#sketch-calc"], a[href="#consultation"], button[type="submit"]'
@@ -311,12 +364,10 @@
         el.classList.add("kk-shine");
       });
 
-    // Lift on direction / tech cards
     document.querySelectorAll("main .group").forEach(function (el) {
       el.classList.add("kk-lift");
     });
 
-    // Media wrappers for image zoom
     document.querySelectorAll("main img").forEach(function (img) {
       var parent = img.parentElement;
       if (parent && !parent.classList.contains("kk-media")) {
@@ -326,16 +377,26 @@
   }
 
   function setupHero() {
-    var hero = document.querySelector("main section");
-    if (!hero) return;
+    // Only animate dedicated home hero — avoid applying hero-line fades on utility pages
+    var hero =
+      document.querySelector("main .kk-hero") ||
+      (PAGE === "home" ? document.querySelector("main > div > section, main section") : null);
+    if (!hero) {
+      document.body.classList.add("kk-hero-ready");
+      return;
+    }
 
-    var bg = hero.querySelector(".absolute.inset-0.bg-cover, [style*='background-image']");
+    var bg = hero.querySelector(
+      ".absolute.inset-0.bg-cover, .kk-hero-bg, [style*='background-image']"
+    );
     if (bg) {
       bg.classList.add("kk-hero-bg");
       /* No parallax on home hero — scale/translate caused top/side ghosting */
     }
 
-    var content = hero.querySelector(".kk-hero__copy, .relative.z-10 .max-w-4xl, .relative.z-10 .max-w-3xl, .relative.z-10 .lg\\:col-span-7, .relative.z-10 > div");
+    var content = hero.querySelector(
+      ".kk-hero__copy, .relative.z-10 .max-w-4xl, .relative.z-10 .max-w-3xl, .relative.z-10 .lg\\:col-span-7, .relative.z-10 > div"
+    );
     if (content) {
       Array.prototype.slice.call(content.children).forEach(function (child) {
         child.classList.add("kk-hero-line");
@@ -345,7 +406,9 @@
     var rail = hero.querySelector(".kk-hero__rail");
     if (rail) rail.classList.add("kk-hero-line");
 
-    var primaryCta = hero.querySelector('a[href="#sketch-calc"], a[href="#calculator-form"], .kk-hero__btn--primary, a.bg-secondary');
+    var primaryCta = hero.querySelector(
+      'a[href="#sketch-calc"], a[href="#calculator-form"], .kk-hero__btn--primary, a.bg-secondary'
+    );
     if (primaryCta) primaryCta.classList.add("kk-cta-pulse");
 
     requestAnimationFrame(function () {
@@ -357,15 +420,18 @@
 
   function setupReveals() {
     if (prefersReducedMotion()) {
-      document.querySelectorAll("[data-reveal], .kk-reveal, section").forEach(function (el) {
-        el.classList.add("is-in");
-      });
+      document
+        .querySelectorAll("[data-reveal], .kk-reveal, section")
+        .forEach(function (el) {
+          el.classList.add("is-in");
+        });
       return;
     }
 
-    // Auto-tag major blocks
     document.querySelectorAll("main section").forEach(function (section, i) {
-      if (i === 0) return; // hero handled separately
+      if (i === 0) return; // hero / first band handled separately
+      if (section.classList.contains("kk-hero")) return;
+
       var heading = section.querySelector("h2, h1");
       if (heading && !heading.classList.contains("kk-reveal")) {
         heading.classList.add("kk-reveal");
@@ -374,7 +440,11 @@
         section.querySelector(
           ".grid.grid-cols-1.md\\:grid-cols-2, .grid.grid-cols-1.lg\\:grid-cols-3, .grid.grid-cols-1.md\\:grid-cols-2.gap-gutter, .grid"
         ) || null;
-      if (grid && grid.children.length >= 2 && !grid.getAttribute("data-reveal")) {
+      if (
+        grid &&
+        grid.children.length >= 2 &&
+        !grid.getAttribute("data-reveal")
+      ) {
         grid.setAttribute("data-reveal", "stagger");
       }
       var intro = section.querySelector("p.font-body-md, p.font-body-lg");
@@ -428,10 +498,13 @@
         }
         var speed = parseFloat(layer.getAttribute("data-parallax")) || 0.15;
         var rect = layer.getBoundingClientRect();
-        var offset = (rect.top + rect.height / 2 - window.innerHeight / 2) * speed * -0.15;
+        var offset =
+          (rect.top + rect.height / 2 - window.innerHeight / 2) * speed * -0.15;
         var scrollOffset = y * speed * 0.35;
         layer.style.transform =
-          "scale(1.06) translate3d(0, " + (scrollOffset + offset) * 0.15 + "px, 0)";
+          "scale(1.06) translate3d(0, " +
+          (scrollOffset + offset) * 0.15 +
+          "px, 0)";
       });
     }
 
@@ -469,6 +542,15 @@
       burger.setAttribute("aria-expanded", open ? "true" : "false");
       drawer.setAttribute("aria-hidden", open ? "false" : "true");
       document.body.classList.toggle("kk-lock", open);
+      if (open) {
+        closeMega();
+      }
+    }
+
+    function closeMega() {
+      if (!megaItem || !megaBtn) return;
+      megaItem.classList.remove("is-open");
+      megaBtn.setAttribute("aria-expanded", "false");
     }
 
     if (burger) {
@@ -482,28 +564,35 @@
           openDrawer(false);
         });
       });
+      // Close drawer after navigating (same-page hash or leaving)
+      drawer.querySelectorAll("a[href]").forEach(function (link) {
+        link.addEventListener("click", function () {
+          openDrawer(false);
+        });
+      });
     }
 
     if (megaItem && megaBtn) {
       megaBtn.addEventListener("click", function (e) {
         e.stopPropagation();
         var open = !megaItem.classList.contains("is-open");
+        if (open) openDrawer(false);
         megaItem.classList.toggle("is-open", open);
         megaBtn.setAttribute("aria-expanded", open ? "true" : "false");
       });
       document.addEventListener("click", function (e) {
         if (!megaItem.contains(e.target)) {
-          megaItem.classList.remove("is-open");
-          megaBtn.setAttribute("aria-expanded", "false");
-        }
-      });
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") {
-          megaItem.classList.remove("is-open");
-          openDrawer(false);
+          closeMega();
         }
       });
     }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeMega();
+        openDrawer(false);
+      }
+    });
   }
 
   function rewriteLegacyLinks() {
@@ -524,21 +613,45 @@
       if (map[key]) a.setAttribute("href", map[key]);
     });
 
-    // Common hash CTAs on home that pointed to #consultation etc. — leave as-is
     document.querySelectorAll('a[href="#"]').forEach(function (a) {
       var path = a.getAttribute("data-path");
       if (path && map[path]) a.setAttribute("href", map[path]);
     });
+
+    // Rewrite bare legacy slug hrefs if any remain
+    document.querySelectorAll("a[href]").forEach(function (a) {
+      var href = (a.getAttribute("href") || "").replace(/^\//, "");
+      if (map[href]) a.setAttribute("href", map[href]);
+    });
+  }
+
+  function escapeHtml(str) {
+    return String(str)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
   }
 
   window.kkToast = function (title, message) {
+    var t = title && String(title).trim() ? String(title).trim() : "Заявка принята";
+    var m =
+      message && String(message).trim()
+        ? String(message).trim()
+        : "Мы получили ваши данные и свяжемся с вами в ближайшее рабочее время.";
+
+    var existing = document.querySelector(".kk-toast");
+    if (existing) existing.remove();
+
     var el = document.createElement("div");
     el.className = "kk-toast";
+    el.setAttribute("role", "status");
+    el.setAttribute("aria-live", "polite");
     el.innerHTML =
       '<div class="kk-toast__title">' +
-      title +
+      escapeHtml(t) +
       "</div><div>" +
-      message +
+      escapeHtml(m) +
       "</div>";
     document.body.appendChild(el);
     requestAnimationFrame(function () {
@@ -547,7 +660,7 @@
     setTimeout(function () {
       el.classList.remove("is-show");
       setTimeout(function () {
-        el.remove();
+        if (el.parentNode) el.remove();
       }, 400);
     }, 4200);
   };
