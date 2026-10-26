@@ -686,33 +686,76 @@ select:focus-visible {
 @media (min-width: 1024px) {
   .kk-hero__copy { gap: 1.75rem; }
 }
-.kk-hero__brand {
-  margin: 0;
-  font-family: Manrope, system-ui, sans-serif;
-  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
-  font-weight: 400;
-  letter-spacing: 0.04em;
-  line-height: 1.1;
-  color: #f7f6f2;
-  text-shadow:
-    0 1px 2px rgba(17, 22, 23, 0.55),
-    0 10px 28px rgba(17, 22, 23, 0.35);
+.kk-hero__lockup {
+  display: flex;
+  align-items: stretch;
+  gap: 1.35rem;
+  max-width: 100%;
 }
-.kk-hero__brand::after {
+.kk-hero__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.35rem;
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .kk-hero__lockup { gap: 1.75rem; }
+  .kk-hero__stack { gap: 1.6rem; }
+}
+.kk-hero__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.9rem;
+  margin: 0.35rem 0 0;
+  flex: 0 0 auto;
+}
+.kk-hero__brand::before {
   content: "";
   display: block;
-  width: 2.75rem;
-  height: 1px;
-  margin-top: 1rem;
+  width: 1px;
+  height: 2.5rem;
+  flex: 0 0 auto;
   background: #b9ccaf;
-  transform-origin: left center;
-  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.45s;
+  transform-origin: center top;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.2s;
 }
-.kk-hero-ready .kk-hero__brand::after {
-  transform: scaleX(1);
+.kk-hero-ready .kk-hero__brand::before { transform: scaleY(1); }
+body:not(.kk-hero-ready) .kk-hero__brand::before { transform: scaleY(0); }
+.kk-hero__brand span {
+  writing-mode: vertical-lr;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.36em;
+  line-height: 1;
+  text-transform: uppercase;
+  color: rgba(247, 246, 242, 0.82);
+  text-shadow: 0 1px 2px rgba(17, 22, 23, 0.45);
+  white-space: nowrap;
 }
-body:not(.kk-hero-ready) .kk-hero__brand::after {
-  transform: scaleX(0);
+@media (max-width: 639px) {
+  .kk-hero__lockup { flex-direction: column; gap: 1.15rem; }
+  .kk-hero__brand {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 0.85rem;
+  }
+  .kk-hero__brand::before {
+    width: 2.25rem;
+    height: 1px;
+    transform-origin: left center;
+  }
+  .kk-hero-ready .kk-hero__brand::before { transform: scaleX(1); }
+  body:not(.kk-hero-ready) .kk-hero__brand::before { transform: scaleX(0); }
+  .kk-hero__brand span {
+    writing-mode: horizontal-tb;
+    letter-spacing: 0.22em;
+    font-size: 10px;
+  }
 }
 .kk-hero h1 {
   margin: 0;
@@ -890,6 +933,8 @@ html.kk-motion {
 [data-reveal="stagger"].is-in > *:nth-child(4) { transition-delay: 0.26s; }
 [data-reveal="stagger"].is-in > *:nth-child(5) { transition-delay: 0.33s; }
 [data-reveal="stagger"].is-in > *:nth-child(6) { transition-delay: 0.4s; }
+[data-reveal="stagger"].is-in > *:nth-child(7) { transition-delay: 0.47s; }
+[data-reveal="stagger"].is-in > *:nth-child(8) { transition-delay: 0.54s; }
 [data-reveal="stagger"].is-in > * {
   opacity: 1;
   transform: translateY(0);
@@ -1011,6 +1056,152 @@ body.kk-page-enter {
   animation: kkCtaGlow 2.8s ease-in-out 1.2s 2;
 }
 
+/* Opening shutter */
+.kk-curtain {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: #111617;
+  transform-origin: top center;
+  animation: kkCurtain 1.05s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  pointer-events: none;
+}
+.kk-curtain__edge {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #b9ccaf;
+}
+@keyframes kkCurtain {
+  from { transform: scaleY(1); }
+  to { transform: scaleY(0); }
+}
+
+/* Scroll progress */
+.kk-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  height: 2px;
+  background: #52634b;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  pointer-events: none;
+}
+
+/* Header arrival */
+@keyframes kkDrop {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: none; }
+}
+html.kk-motion .kk-header__bar > * {
+  animation: kkDrop 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.22s both;
+}
+html.kk-motion .kk-header__bar > :nth-child(2) { animation-delay: 0.3s; }
+html.kk-motion .kk-header__bar > :nth-child(3) { animation-delay: 0.38s; }
+
+/* Hero title, word by word */
+.kk-word {
+  display: inline-block;
+  overflow: visible;
+  vertical-align: bottom;
+  white-space: nowrap;
+  clip-path: inset(0 -1.6em 0 -0.2em);
+  padding: 0 0.08em 0.14em 0;
+  margin: 0 -0.02em -0.14em 0;
+}
+/* Page styles set text-wrap and max-width on every span. Keep each word intact. */
+body[data-page] main .kk-word,
+body[data-page] main .kk-word__in {
+  max-width: none;
+  white-space: nowrap;
+  text-wrap: nowrap;
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.kk-word__in {
+  display: inline-block;
+  transform: translateY(112%);
+  transition: transform 1.05s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.kk-hero h1 .kk-word__in {
+  text-shadow:
+    0 1px 2px rgba(17, 22, 23, 0.5),
+    0 8px 24px rgba(17, 22, 23, 0.28);
+}
+body.kk-hero-ready .kk-word__in { transform: translateY(0); }
+
+/* Eyebrow rules draw themselves */
+html.kk-motion [class*="eyebrow"]::before {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+html.kk-motion body.kk-hero-ready [class*="-hero"] [class*="eyebrow"]::before,
+html.kk-motion [class*="eyebrow"].is-in::before {
+  transform: scaleX(1);
+}
+
+/* Photo wipe */
+html.kk-motion .kk-frame { overflow: hidden; }
+html.kk-motion img.kk-unveil {
+  transition:
+    clip-path 1.15s cubic-bezier(0.76, 0, 0.24, 1),
+    transform 1.45s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.55s ease;
+}
+html.kk-motion img.kk-unveil:not(.is-in) {
+  clip-path: inset(0 0 100% 0);
+  transform: scale(1.14);
+}
+html.kk-motion img.kk-unveil--side:not(.is-in) {
+  clip-path: inset(0 100% 0 0);
+}
+html.kk-motion img.kk-unveil.is-in {
+  clip-path: inset(0 0 0 0);
+}
+
+/* Slow settle on inner-page hero photos. Home photo stays pinned. */
+@keyframes kkDrift {
+  from { transform: scale(1.08); }
+  to { transform: scale(1.14); }
+}
+html.kk-motion body.kk-hero-ready img.kk-hero-bg {
+  animation: kkDrift 18s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Arrow nudge */
+a .material-symbols-outlined {
+  display: inline-block;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+a:hover .material-symbols-outlined { transform: translateX(5px); }
+
+/* FAQ open */
+#faq-container .faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  padding-bottom: 0;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.35s ease,
+    padding-bottom 0.45s ease;
+}
+#faq-container .kk-faq__in {
+  overflow: hidden;
+  min-height: 0;
+}
+#faq-container .faq-content.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  padding-bottom: 1.5rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html.kk-motion { scroll-behavior: auto; }
   .kk-reveal,
@@ -1019,14 +1210,23 @@ body.kk-page-enter {
   [data-reveal="stagger"] > *,
   .kk-hero-line,
   .kk-hero-bg,
-  .kk-hero__brand::after,
+  .kk-hero__brand::before,
   .kk-lift,
   .kk-shine::after,
-  main img {
+  .kk-word__in,
+  .kk-curtain,
+  .kk-header__bar > *,
+  .kk-cta-pulse,
+  img.kk-unveil,
+  main img,
+  [class*="eyebrow"]::before {
     transition: none !important;
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
+    clip-path: none !important;
   }
+  .kk-curtain { display: none !important; }
   body.kk-page-enter { animation: none; }
+  #faq-container .faq-content { transition: none; }
 }

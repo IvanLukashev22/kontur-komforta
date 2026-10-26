@@ -7,546 +7,345 @@
 <meta name="description" content="Контур Комфорта — строительство домов и бань, окна ПВХ и алюминиевые конструкции. Санкт-Петербург, Шушары. Работаем по всей РФ."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/css/site.css"/>
+<link rel="stylesheet" href="assets/css/pages/doma.css"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-surface-bright" data-page="houses">
 <div id="site-header"></div>
 <main class="w-full pt-0 bg-surface min-h-[calc(100vh-108px)]"><div class="flex flex-col w-full">
-<!-- Top Visual Hero / Architectural Blueprint Section -->
-<section class="relative w-full bg-primary-container text-surface-bright overflow-hidden">
-<!-- Subtle technical grid background -->
-<div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#dfe3e4_1px,transparent_1px)] [background-size:24px_24px]"></div>
-<div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-<div class="lg:col-span-7 flex flex-col gap-space-md">
-<div class="inline-flex items-center gap-3">
-<span class="w-8 h-[1px] bg-secondary-fixed"></span>
-<span class="font-label-technical text-label-technical text-secondary-fixed tracking-widest uppercase">Инженерное проектирование • Все регионы РФ</span>
+
+<!-- 1. Hero -->
+<section class="kk-hero kk-doma-hero" aria-label="Строительство домов">
+<div class="kk-doma-hero__media">
+<img class="kk-hero-bg" src="assets/img/doma-hero.jpg" alt="Современный загородный дом с панорамным остеклением и фасадом из термодерева в сосновом лесу в сумерках" fetchpriority="high"/>
 </div>
-<h1 class="font-display-hero text-display-hero text-surface-bright font-light tracking-tight max-w-2xl">
-              Дом, созданный под ваши задачи
-            </h1>
-<p class="font-body-lg text-body-lg text-surface-variant font-light max-w-xl leading-relaxed">
-            Подберём технологию строительства, комплектацию и инженерное решение с учётом геологии вашего участка, климатической зоны региона и запланированного бюджета.
-          </p>
-<div class="flex flex-wrap items-center gap-4 pt-4">
-<a class="inline-flex items-center justify-center px-8 h-12 bg-surface-bright text-primary font-headline-sm text-sm uppercase tracking-wider hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors duration-200" href="#calculator-form">
-              Рассчитать стоимость дома
-            </a>
-<a class="inline-flex items-center justify-center px-8 h-12 border border-surface-variant/30 text-surface-bright font-headline-sm text-sm uppercase tracking-wider hover:border-secondary-fixed hover:text-secondary-fixed transition-colors duration-200" href="#specifications">
-              Сравнить комплектации
-            </a>
+<div class="kk-doma-hero__veil" aria-hidden="true"></div>
+<div class="kk-doma-hero__body">
+<div class="kk-doma-wrap">
+<div class="kk-hero__copy kk-doma-hero__copy">
+<p class="kk-doma-eyebrow kk-doma-eyebrow--light">Строительство домов · Все регионы РФ</p>
+<h1 class="kk-doma-hero__title">Дом, созданный под ваши задачи</h1>
+<p class="kk-doma-hero__lead">Подберём технологию строительства, комплектацию и инженерные решения с учётом геологии участка, климатической зоны и запланированного бюджета.</p>
+<div class="kk-doma-hero__actions">
+<a class="kk-doma-btn kk-doma-btn--olive" href="#calculator-form">Рассчитать стоимость дома</a>
+<a class="kk-doma-btn kk-doma-btn--link" href="#specifications">Сравнить комплектации<svg class="kk-doma-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
 </div>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 mt-4 border-t border-surface-variant/10">
+</div>
+</div>
+</div>
+<div class="kk-hero__rail kk-doma-rail" aria-label="Ключевые факты">
+<div class="kk-doma-wrap kk-doma-rail__inner">
+<div class="kk-doma-fact"><span class="kk-doma-fact__label">Точность сметы</span><span class="kk-doma-fact__value">100%</span><span class="kk-doma-fact__note">Фиксация в договоре</span></div>
+<div class="kk-doma-fact"><span class="kk-doma-fact__label">Технологии</span><span class="kk-doma-fact__value">3 решения</span><span class="kk-doma-fact__note">Каркас, брус, газобетон</span></div>
+<div class="kk-doma-fact"><span class="kk-doma-fact__label">Оконные системы</span><span class="kk-doma-fact__value">Собственные</span><span class="kk-doma-fact__note">ПВХ и тёплый алюминий</span></div>
+<div class="kk-doma-fact"><span class="kk-doma-fact__label">География работ</span><span class="kk-doma-fact__value">Вся РФ</span><span class="kk-doma-fact__note">База: СПб, Шушары</span></div>
+</div>
+</div>
+</section>
+
+<!-- 2. Technologies -->
+<section class="kk-doma-section kk-doma-section--chalk" id="technologies">
+<div class="kk-doma-wrap">
+<div class="kk-doma-head">
+<div class="kk-doma-head__title">
+<p class="kk-doma-eyebrow">Конструктивные решения</p>
+<h2 class="kk-doma-h2">Три базовые технологии возведения</h2>
+</div>
+<p class="kk-doma-lead">Мы не навязываем конкретный материал: выбор строится на климатических нагрузках, назначении дома и ваших эстетических предпочтениях.</p>
+</div>
+<div class="kk-doma-tech-grid" data-reveal="stagger">
+
+<article class="kk-doma-tech kk-lift">
+<div class="kk-doma-tech__media">
+<img src="assets/img/doma-frame.jpg" alt="Каркасный дом на этапе строительства: деревянный каркас, утеплитель и мембраны на фоне туманного леса" loading="lazy"/>
+<span class="kk-doma-tag">01 — Каркас</span>
+</div>
+<div class="kk-doma-tech__body">
+<h3 class="kk-doma-tech__title">Каркасные дома</h3>
+<p class="kk-doma-tech__text">Строительство по индивидуальным и адаптированным проектам. Перекрёстное утепление стен от 200 до 300 мм, паропроницаемые мембраны и круглогодичный монтаж без мокрых процессов.</p>
 <div>
-<span class="block font-label-technical text-surface-variant/80 text-[11px] uppercase tracking-wider">Точность сметы</span>
-<span class="font-headline-md text-surface-bright">100%</span>
-<span class="block font-body-sm text-[11px] text-surface-variant/70">Фиксация в договоре</span>
+<span class="kk-doma-micro">Ключевые преимущества</span>
+<ul class="kk-doma-list">
+<li>Быстрое возведение без потери геометрии</li>
+<li>Высокая энергоэффективность, вплоть до стандарта Passivhaus</li>
+<li>Нет усадки — отделка сразу после монтажа</li>
+</ul>
 </div>
+<div class="kk-doma-tech__foot">
+<p class="kk-doma-spec"><strong>Для расчёта нужно</strong>Площадь дома, эскиз или планировка, этажность, расположение участка.</p>
+<a class="kk-doma-btn kk-doma-btn--dark kk-doma-tech__cta" href="#calculator-form"><span>Рассчитать мой проект</span><svg class="kk-doma-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</article>
+
+<article class="kk-doma-tech kk-lift">
+<div class="kk-doma-tech__media">
+<img src="assets/img/doma-glulam.jpg" alt="Дом из клееного бруса с панорамным остеклением от пола до потолка" loading="lazy"/>
+<span class="kk-doma-tag">02 — Брус</span>
+</div>
+<div class="kk-doma-tech__body">
+<h3 class="kk-doma-tech__title">Дома из бруса</h3>
+<p class="kk-doma-tech__text">Натуральная фактура отборной северной древесины — ели и сосны. Профилированный и клееный брус камерной сушки с точной заводской нарезкой чаш и здоровым микроклиматом внутри.</p>
 <div>
-<span class="block font-label-technical text-surface-variant/80 text-[11px] uppercase tracking-wider">Оконные системы</span>
-<span class="font-headline-md text-surface-bright">Собственные</span>
-<span class="block font-body-sm text-[11px] text-surface-variant/70">ПВХ и теплый алюминий</span>
+<span class="kk-doma-micro">Ключевые преимущества</span>
+<ul class="kk-doma-list">
+<li>Экологичность природного массива</li>
+<li>Естественная термо- и влагорегуляция</li>
+<li>Благородная фактура стен без сложной отделки</li>
+</ul>
 </div>
+<div class="kk-doma-tech__foot">
+<p class="kk-doma-spec"><strong>Для расчёта нужно</strong>Эскиз планировки, желаемое сечение бруса, тип фундамента (сваи или плита).</p>
+<a class="kk-doma-btn kk-doma-btn--dark kk-doma-tech__cta" href="#calculator-form"><span>Рассчитать мой проект</span><svg class="kk-doma-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</article>
+
+<article class="kk-doma-tech kk-lift">
+<div class="kk-doma-tech__media">
+<img src="assets/img/doma-gasblock.jpg" alt="Современный дом из газобетона с плоской кровлей" loading="lazy"/>
+<span class="kk-doma-tag">03 — Газобетон</span>
+</div>
+<div class="kk-doma-tech__body">
+<h3 class="kk-doma-tech__title">Дома из газобетона</h3>
+<p class="kk-doma-tech__text">Капитальные монолитно-блочные дома с лаконичной современной архитектурой. Высокая несущая способность, класс пожаробезопасности НГ и срок службы свыше 100 лет без деформаций.</p>
 <div>
-<span class="block font-label-technical text-surface-variant/80 text-[11px] uppercase tracking-wider">География работ</span>
-<span class="font-headline-md text-surface-bright">РФ</span>
-<span class="block font-body-sm text-[11px] text-surface-variant/70">База: СПб • Шушары</span>
+<span class="kk-doma-micro">Ключевые преимущества</span>
+<ul class="kk-doma-list">
+<li>Капитальная прочность и монолитность</li>
+<li>Превосходная звукоизоляция помещений</li>
+<li>Свободные планировки и широкие панорамные проёмы</li>
+</ul>
+</div>
+<div class="kk-doma-tech__foot">
+<p class="kk-doma-spec"><strong>Для расчёта нужно</strong>Проект или архитектурный эскиз, данные геоподосновы, этажность.</p>
+<a class="kk-doma-btn kk-doma-btn--dark kk-doma-tech__cta" href="#calculator-form"><span>Рассчитать мой проект</span><svg class="kk-doma-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
 </div>
 </div>
+</article>
+
 </div>
-<div class="lg:col-span-5 relative mt-8 lg:mt-0">
-<div class="relative w-full aspect-[4/5] bg-surface-container overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Modern architectural private country house with panoramic structural glazing and natural thermo-wood facade elements set amidst a quiet Nordic pine forest during overcast evening lighting, clean architectural lines and subdued earthy tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWtuQe8IpafOofGM2YB3qDPltiQAeQGHN__dkuQvTAyOMtdbqxOjM-IjNx362iFR4lO4yBOCYf5G0CUn8AwfzNfDCf82Nom6JR1F5YNjcOr1l-Q5mkA_nqpNORKwMqQkUH12CRw84jxCv3d0JTg0WsmOdq7zWuDhJzuqt6SOu_bt7HiI4nU693bqD-1caakGcsVH3sRaUymydYNvPrYgcS9x3_5cj6WjeblLjhfAryy3ECNaR4Rfna2A"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/40 to-transparent"></div>
-<div class="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-<span class="font-label-technical text-[10px] text-secondary-fixed uppercase tracking-wider block mb-1">Архитектурный стандарт</span>
-<p class="font-body-sm text-surface-bright max-w-md">Разрабатываем проект с нулевого цикла: архитектура, конструктивные узлы, отопление и собственное панорамное остекление.</p>
+<div class="kk-doma-note">
+<span class="kk-doma-note__icon"><span class="material-symbols-outlined" aria-hidden="true">verified_user</span></span>
+<div>
+<p class="kk-doma-note__title">Индивидуальный инжиниринг без шаблонных ценников</p>
+<p class="kk-doma-note__text">Мы намеренно не публикуем ориентировочные цены за м²: стоимость каждого объекта зависит от перепада высот участка, грунтов, сечений перекрытий и типа теплового контура.</p>
+</div>
+<span class="kk-doma-badge">Прозрачная смета по ГОСТ</span>
 </div>
 </div>
+</section>
+
+<!-- 3. Architectural standard (dark band) -->
+<section class="kk-doma-section kk-doma-standard" aria-label="Архитектурный стандарт">
+<div class="kk-doma-wrap">
+<div class="kk-doma-standard__top">
+<p class="kk-doma-eyebrow kk-doma-eyebrow--light">Архитектурный стандарт</p>
+<p class="kk-doma-standard__statement">Разрабатываем проект с нулевого цикла: архитектура, конструктивные узлы, отопление и <span>собственное панорамное остекление</span>.</p>
+</div>
+<div class="kk-doma-stats" data-reveal="stagger">
+<div class="kk-doma-stat"><span class="kk-doma-stat__unit">мм утепления</span><span class="kk-doma-stat__num">200–300</span><p class="kk-doma-stat__text">Перекрёстное утепление стен каркасного дома</p></div>
+<div class="kk-doma-stat"><span class="kk-doma-stat__unit">лет службы</span><span class="kk-doma-stat__num">100+</span><p class="kk-doma-stat__text">Подтверждённый ресурс газобетонного дома без деформаций</p></div>
+<div class="kk-doma-stat"><span class="kk-doma-stat__unit">часа</span><span class="kk-doma-stat__num">24</span><p class="kk-doma-stat__text">Бесплатный предварительный расчёт по эскизу</p></div>
+<div class="kk-doma-stat"><span class="kk-doma-stat__unit">лет гарантии</span><span class="kk-doma-stat__num">до 10</span><p class="kk-doma-stat__text">Юридическая гарантия на конструктив по договору</p></div>
+</div>
+</div>
+</section>
+
+<!-- 4. Packages -->
+<section class="kk-doma-section kk-doma-section--band" id="specifications">
+<div class="kk-doma-wrap">
+<div class="kk-doma-head">
+<div class="kk-doma-head__title">
+<p class="kk-doma-eyebrow">Архитектурный состав</p>
+<h2 class="kk-doma-h2">Три уровня комплектации объекта</h2>
+</div>
+<p class="kk-doma-lead">Чёткое разграничение этапов строительства обеспечивает прозрачность финансирования и контроль качества на каждом шаге.</p>
+</div>
+<div class="kk-doma-pack-grid" data-reveal="stagger">
+
+<article class="kk-doma-pack kk-lift">
+<div class="kk-doma-pack__meta"><span class="kk-doma-pack__index">Уровень 01</span><span class="kk-doma-pack__kind">Силовой контур</span></div>
+<h3 class="kk-doma-pack__title">«Базовая»</h3>
+<p class="kk-doma-pack__desc">Минимально необходимый состав строительных работ и материалов, точно определяемый проектом.</p>
+<ul class="kk-doma-checks">
+<li>Несущий силовой каркас или капитальная коробка</li>
+<li>Стропильная система с антисептированием</li>
+<li>Кровельный настил с гидроветрозащитой</li>
+<li>Базовый закрытый тепловой контур</li>
+</ul>
+<div class="kk-doma-pack__foot"><a class="kk-doma-btn kk-doma-btn--outline" href="#calculator-form">Выбрать «Базовую»</a></div>
+</article>
+
+<article class="kk-doma-pack kk-doma-pack--featured kk-lift">
+<div class="kk-doma-pack__meta"><span class="kk-doma-pack__index">Уровень 02</span><span class="kk-doma-pack__kind">Тёплый периметр</span></div>
+<span class="kk-doma-pack__flag">Выбор 75% клиентов</span>
+<h3 class="kk-doma-pack__title">«Оптимальная»</h3>
+<p class="kk-doma-pack__desc">Согласованный состав работ и материалов с повышенной теплоизоляцией для круглогодичного проживания.</p>
+<ul class="kk-doma-checks">
+<li>Все элементы комплектации «Базовая»</li>
+<li>Теплоизоляция перекрытий и стен по климату региона</li>
+<li>Энергосберегающие ПВХ-окна собственного цеха</li>
+<li>Внешняя архитектурная отделка фасада и софитов</li>
+<li>Утеплённые входные двери с терморазрывом</li>
+</ul>
+<div class="kk-doma-pack__foot"><a class="kk-doma-btn kk-doma-btn--olive" href="#calculator-form">Выбрать «Оптимальную»</a></div>
+</article>
+
+<article class="kk-doma-pack kk-lift">
+<div class="kk-doma-pack__meta"><span class="kk-doma-pack__index">Уровень 03</span><span class="kk-doma-pack__kind">Готов к заселению</span></div>
+<h3 class="kk-doma-pack__title">«Под ключ»</h3>
+<p class="kk-doma-pack__desc">Комплекс строительно-отделочных и инженерных работ в полном объёме — до заноса мебели.</p>
+<ul class="kk-doma-checks">
+<li>Все элементы комплектации «Оптимальная»</li>
+<li>Скрытая разводка инженерных коммуникаций: электрика, вода</li>
+<li>Система отопления: водяной тёплый пол или радиаторы</li>
+<li>Чистовая внутренняя отделка всех помещений по проекту</li>
+<li>Установка сантехнического и котельного оборудования</li>
+</ul>
+<div class="kk-doma-pack__foot"><a class="kk-doma-btn kk-doma-btn--outline" href="#calculator-form">Выбрать «Под ключ»</a></div>
+</article>
+
+</div>
+<div class="kk-doma-disclaimer">
+<p><strong>Примечание</strong>Окончательный состав комплектации определяется индивидуально и фиксируется в детальной смете и договоре.</p>
+<a class="kk-doma-btn kk-doma-btn--link kk-doma-btn--link-dark" href="#calculator-form">Получить индивидуальную смету<svg class="kk-doma-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</section>
+
+<!-- 5. Visit & estimate terms -->
+<section class="kk-doma-section kk-doma-section--chalk" id="terms">
+<div class="kk-doma-wrap kk-doma-terms">
+<div class="kk-doma-terms__intro">
+<p class="kk-doma-eyebrow">Прозрачные условия</p>
+<h2 class="kk-doma-h2">Выезд инженера и подготовка сметы</h2>
+<p class="kk-doma-lead">Мы не делаем приблизительных расчётов «на салфетке». Чтобы дом простоял поколения, инженер выезжает на участок и оценивает фактические условия строительства.</p>
+<p class="kk-doma-address"><span>Базовый логистический узел</span>Санкт-Петербург, посёлок Шушары, ул.&nbsp;Ленина, д.&nbsp;1А</p>
+</div>
+<div class="kk-doma-steps" data-reveal="stagger">
+<div class="kk-doma-step">
+<div class="kk-doma-step__head"><span class="kk-doma-step__num">01</span><span class="material-symbols-outlined kk-doma-step__icon" aria-hidden="true">explore</span></div>
+<h3 class="kk-doma-step__title">Выезд на участок</h3>
+<p class="kk-doma-step__text">Специалист выезжает по Санкт-Петербургу и Ленинградской области, по регионам РФ — по согласованному графику. Нивелируем высоты, фиксируем подъездные пути для грузовой техники и оцениваем грунт.</p>
+<span class="kk-doma-step__foot">Выезд засчитывается в стоимость при подписании договора</span>
+</div>
+<div class="kk-doma-step">
+<div class="kk-doma-step__head"><span class="kk-doma-step__num">02</span><span class="material-symbols-outlined kk-doma-step__icon" aria-hidden="true">calculate</span></div>
+<h3 class="kk-doma-step__title">Разработка открытой сметы</h3>
+<p class="kk-doma-step__text">Развёрнутый документ с разделением на материалы, логистику, механизацию и работу монтажников. Расценки фиксируются и не подлежат одностороннему повышению в процессе работ.</p>
+<span class="kk-doma-step__foot">Срок подготовки: от 2 до 5 рабочих дней</span>
+</div>
+<div class="kk-doma-step">
+<div class="kk-doma-step__head"><span class="kk-doma-step__num">03</span><span class="material-symbols-outlined kk-doma-step__icon" aria-hidden="true">factory</span></div>
+<h3 class="kk-doma-step__title">Интеграция конструкций</h3>
+<p class="kk-doma-step__text">Мы сами производим энергосберегающие оконные блоки и алюминиевые порталы в Шушарах — без наценок субподрядчиков и без зазоров при установке в проёмы.</p>
+<span class="kk-doma-step__foot">Гарантия на монтажные узлы и конструкции</span>
+</div>
+<div class="kk-doma-step">
+<div class="kk-doma-step__head"><span class="kk-doma-step__num">04</span><span class="material-symbols-outlined kk-doma-step__icon" aria-hidden="true">history_edu</span></div>
+<h3 class="kk-doma-step__title">Договорная чистота</h3>
+<p class="kk-doma-step__text">Официальный договор строительного подряда с графиком этапов и поэтапной оплатой. Технадзор контролирует скрытые работы и присылает фото- и видеоотчёты в Telegram или WhatsApp.</p>
+<span class="kk-doma-step__foot">Юридическая гарантия на конструктив до 10 лет</span>
 </div>
 </div>
 </div>
 </section>
-<!-- Section 2: Three Detailed Technology Blocks -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl w-full">
-<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-6">
-<div class="max-w-xl">
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest block mb-2">Конструктивные решения</span>
-<h2 class="font-headline-xl text-headline-xl text-primary font-normal">
-          Три базовые технологии возведения
-        </h2>
-</div>
-<p class="font-body-md text-on-surface-variant max-w-md">
-        Мы не навязываем конкретный материал: выбор базируется на климатических нагрузках, назначении дома и ваших эстетических предпочтениях.
-      </p>
-</div>
-<!-- Tech Cards Grid -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-<!-- Tech 1: Каркасные дома -->
-<div class="flex flex-col bg-surface-container-low border border-primary-container/8 transition-all duration-300 hover:translate-y-[-2px] hover:border-primary-container/25">
-<div class="relative w-full aspect-[16/10] overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Scandinavian timber frame house under construction with precision multi-layer insulation and vapor permeable membranes, modern minimalist timber structure in misty forest landscape, architectural technical precision" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlpPxcPzpebLL1gUcz6i32X9w2eb96QQ8K2f2ZZr3G4whDRTu7N5YfAgarX7Q8ac_QbOnY-DxHxK-RK7RGsgh3Zq27lVC6Q7LXWC-7-LJWKDsZL6KmWFG08EeDoH4kfNnGuXwmSyGvTDZeoNVI35NZ7dBFz20VY_yhuna0NIzgsLMOXhwIx-1liJn6MG3ubYIbaP_oJdtTI_W8Vs33B1X8SdVZxZQU9lS44iE-8BW4XBzAWEpZMgZs5g"/>
-<span class="absolute top-4 left-4 px-2.5 py-1 bg-primary text-surface-bright font-label-technical text-[11px] uppercase tracking-wider">
-            Технология 01
-          </span>
-</div>
-<div class="p-8 flex flex-col flex-grow justify-between gap-6">
-<div class="flex flex-col gap-4">
-<h3 class="font-headline-lg text-headline-lg text-primary">Каркасные дома</h3>
-<p class="font-body-md text-on-surface-variant leading-relaxed">
-              Строительство по индивидуальным и адаптированным проектам. Энергоэффективное перекрёстное утепление стен от 200 до 300 мм, премиальные паропроницаемые мембраны и возможность круглогодичного монтажа без мокрых процессов.
-            </p>
-<div class="pt-3">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-2">Ключевые преимущества</span>
-<ul class="flex flex-col gap-1.5 font-body-sm text-on-surface">
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Быстровозводимость без потери геометрии
-                </li>
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Максимальная энергоэффективность (Passivhaus standard)
-                </li>
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Полное отсутствие усадки — отделка сразу
-                </li>
+
+<!-- 6. Sketch submission form -->
+<section class="kk-doma-section kk-doma-section--band kk-doma-section--rule" id="calculator-form">
+<div class="kk-doma-wrap kk-doma-form-wrap">
+<div class="kk-doma-form-intro">
+<p class="kk-doma-eyebrow">Бесплатный расчёт за 24 часа</p>
+<h2 class="kk-doma-h2">Отправьте чертёж или эскиз от руки</h2>
+<p class="kk-doma-lead">Готовый проект из бюро не обязателен. Нарисуйте желаемую планировку на листе бумаги или пришлите ссылку на понравившийся дом.</p>
+<ul class="kk-doma-sublist">
+<li><span class="kk-doma-sublist__num">01</span><span><span class="kk-doma-sublist__title">Инженерный аудит эскиза</span><span class="kk-doma-sublist__text">Проверим реализуемость перекрытий и несущих узлов.</span></span></li>
+<li><span class="kk-doma-sublist__num">02</span><span><span class="kk-doma-sublist__title">Детальная спецификация</span><span class="kk-doma-sublist__text">Распишем объёмы бруса, бетона, утеплителя и остекления.</span></span></li>
+<li><span class="kk-doma-sublist__num">03</span><span><span class="kk-doma-sublist__title">Выбор технологии</span><span class="kk-doma-sublist__text">Сравним бюджет для каркаса, бруса и газобетона.</span></span></li>
 </ul>
-</div>
-</div>
-<div class="pt-4 border-t border-surface-container-high flex flex-col gap-4">
-<div class="bg-surface p-3 font-label-technical text-[11px] text-on-surface-variant">
-<span class="font-semibold text-primary block mb-1 uppercase tracking-wider">Требуется для расчёта:</span>
-              Площадь дома, эскиз или планировка, этажность, география участка.
-            </div>
-<a class="inline-flex items-center justify-between w-full h-11 px-4 bg-primary text-surface-bright font-headline-sm text-xs uppercase tracking-wider hover:bg-secondary transition-colors" href="#calculator-form">
-<span>Рассчитать мой проект</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Tech 2: Дома из бруса -->
-<div class="flex flex-col bg-surface-container-low border border-primary-container/8 transition-all duration-300 hover:translate-y-[-2px] hover:border-primary-container/25">
-<div class="relative w-full aspect-[16/10] overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Modern house built with massive glued laminated timber beams with precise architectural dovetail joints, large floor-to-ceiling panoramic glass windows, elegant minimalist Nordic aesthetic in natural landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbXoSr4e_reA7KpvngwtqZS2o18B-gTnHjFWkTzt_ZeUsHEMWMNND32PCA5NlBOOwu5wmYTF7R6-ImJPfLCgVrVlUrLGkIN_HG5Z05BHfyatCbJwWZvdBmoTGrPGztRfaW-_vkwHz0vu0ZfnOqV_wTHQPAJvVxUqViF9kTWuhY3_l5r6O3t-7u1cFSuAw4cBn9urNy7sTCBd7S7BPPBjHEwQkwmCadbouUgcbSe35jc1yqcy2JOUHEXg"/>
-<span class="absolute top-4 left-4 px-2.5 py-1 bg-primary text-surface-bright font-label-technical text-[11px] uppercase tracking-wider">
-            Технология 02
-          </span>
-</div>
-<div class="p-8 flex flex-col flex-grow justify-between gap-6">
-<div class="flex flex-col gap-4">
-<h3 class="font-headline-lg text-headline-lg text-primary">Дома из бруса</h3>
-<p class="font-body-md text-on-surface-variant leading-relaxed">
-              Натуральная фактура отборной северной древесины (ель, сосна). Здоровая естественная микроклиматическая среда. Использование профилированного и клееного бруса камерной сушки с точной заводской нарезкой чаш.
-            </p>
-<div class="pt-3">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-2">Ключевые преимущества</span>
-<ul class="flex flex-col gap-1.5 font-body-sm text-on-surface">
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  100% экологичность природного массива
-                </li>
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Естественная термо- и влагорегуляция
-                </li>
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Благородный массив стен без сложной отделки
-                </li>
-</ul>
-</div>
-</div>
-<div class="pt-4 border-t border-surface-container-high flex flex-col gap-4">
-<div class="bg-surface p-3 font-label-technical text-[11px] text-on-surface-variant">
-<span class="font-semibold text-primary block mb-1 uppercase tracking-wider">Требуется для расчёта:</span>
-              Эскиз планировки, желаемое сечение бруса, тип фундамента (сваи / плита).
-            </div>
-<a class="inline-flex items-center justify-between w-full h-11 px-4 bg-primary text-surface-bright font-headline-sm text-xs uppercase tracking-wider hover:bg-secondary transition-colors" href="#calculator-form">
-<span>Рассчитать мой проект</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-<!-- Tech 3: Дома из газобетона -->
-<div class="flex flex-col bg-surface-container-low border border-primary-container/8 transition-all duration-300 hover:translate-y-[-2px] hover:border-primary-container/25">
-<div class="relative w-full aspect-[16/10] overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="Monolithic aerated autoclaved concrete block modern residential residence under construction with reinforced concrete belt and lintels, clean flat roof geometric architecture with overcast dramatic sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9DnRZFNjcEgg1ujpp3AA7eAi2cSWCKfGFi0e7yiRNX8WlFdAxkZnBEWX-TkjWVBthahwX_mAlHQAsZeFm4Jsu1ICgsZDuQSWq8HeOzjl4JKceZfs9W1iaFw1WUDR6gQ9jrQVVBhyOoRd3RAcWrkmilLo1NizBkxhNHQWoUVoi5wC8esFwCIcyd-TBz_I8TWKWtBKtv1GM3WIrAPaVwfebLiKYP4hQoOwnnYwcFXf_Cwl4txwCCn2UiQ"/>
-<span class="absolute top-4 left-4 px-2.5 py-1 bg-primary text-surface-bright font-label-technical text-[11px] uppercase tracking-wider">
-            Технология 03
-          </span>
-</div>
-<div class="p-8 flex flex-col flex-grow justify-between gap-6">
-<div class="flex flex-col gap-4">
-<h3 class="font-headline-lg text-headline-lg text-primary">Дома из газобетона</h3>
-<p class="font-body-md text-on-surface-variant leading-relaxed">
-              Капитальные монолитно-блочные дома с лаконичной современной европейской архитектурой. Высокая несущая способность, пожаробезопасность класса НГ и подтверждённый срок службы свыше 100 лет без деформаций.
-            </p>
-<div class="pt-3">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider block mb-2">Ключевые преимущества</span>
-<ul class="flex flex-col gap-1.5 font-body-sm text-on-surface">
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Максимальная капитальная прочность и монолитность
-                </li>
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Превосходная звукоизоляция помещений
-                </li>
-<li class="flex items-center gap-2">
-<span class="w-1.5 h-1.5 bg-secondary"></span>
-                  Свободные планировки и широкие панорамные проемы
-                </li>
-</ul>
-</div>
-</div>
-<div class="pt-4 border-t border-surface-container-high flex flex-col gap-4">
-<div class="bg-surface p-3 font-label-technical text-[11px] text-on-surface-variant">
-<span class="font-semibold text-primary block mb-1 uppercase tracking-wider">Требуется для расчёта:</span>
-              Проект или архитектурный эскиз, данные геоподосновы, высотность.
-            </div>
-<a class="inline-flex items-center justify-between w-full h-11 px-4 bg-primary text-surface-bright font-headline-sm text-xs uppercase tracking-wider hover:bg-secondary transition-colors" href="#calculator-form">
-<span>Рассчитать мой проект</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Honest Pricing Note -->
-<div class="mt-8 p-6 bg-surface-container flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-secondary text-2xl">verified_user</span>
-<div>
-<span class="font-headline-sm text-primary block">Индивидуальный инжиниринг без шаблонных ценников</span>
-<p class="font-body-sm text-on-surface-variant">Мы намеренно не публикуем ориентировочные цены за м², так как стоимость каждого объекта зависит от перепада высот участка, грунтов, сечений перекрытий и типа теплового контура.</p>
-</div>
-</div>
-<span class="font-label-technical text-secondary uppercase text-[11px] whitespace-nowrap">Прозрачная смета по ГОСТ</span>
-</div>
-</section>
-<!-- Section 3: Three Package Levels (Сравнение комплектаций) -->
-<section class="w-full bg-surface-container-low py-space-3xl" id="specifications">
-<div class="max-w-7xl mx-auto px-6 lg:px-12">
-<div class="max-w-2xl mb-space-2xl">
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest block mb-2">Архитектурный состав</span>
-<h2 class="font-headline-xl text-headline-xl text-primary font-normal">
-          Три уровня комплектации объекта
-        </h2>
-<p class="font-body-md text-on-surface-variant mt-3">
-          Четкое разграничение этапов строительства гарантирует прозрачность финансирования и контроль качества на каждом шаге.
-        </p>
-</div>
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-gutter">
-<!-- Package 1: Базовая -->
-<div class="bg-surface p-8 flex flex-col justify-between border border-primary-container/8 relative">
-<div>
-<div class="flex items-baseline justify-between mb-4">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Уровень 01</span>
-<span class="font-label-technical text-secondary text-[11px]">Силовой контур</span>
-</div>
-<h3 class="font-headline-lg text-primary mb-3">«Базовая»</h3>
-<p class="font-body-sm text-on-surface-variant mb-6 min-h-[44px]">
-              Минимально необходимый состав строительных работ и материалов, точно определяемый проектом.
-            </p>
-<div class="space-y-3 pt-4 border-t border-surface-container-high">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Несущий силовой каркас / капитальная коробка</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Стропильная система с антисептированием</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Кровельный настил с гидроветрозащитой</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Базовый тепловой закрытый контур</span>
-</div>
-</div>
-</div>
-<div class="pt-8 mt-8 border-t border-surface-container-high">
-<a class="inline-flex items-center justify-center w-full h-12 border border-primary text-primary font-headline-sm text-xs uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors" href="#calculator-form">
-              Выбрать «Базовую»
-            </a>
-</div>
-</div>
-<!-- Package 2: Оптимальная (Featured) -->
-<div class="bg-surface p-8 flex flex-col justify-between relative border border-secondary/40 mt-4 lg:mt-0">
-<div class="absolute -top-3 right-6 px-3 py-1 bg-secondary text-on-secondary font-label-technical text-[10px] tracking-wider uppercase">
-            Выбор 75% клиентов
-          </div>
-<div>
-<div class="flex items-baseline justify-between mb-4">
-<span class="font-label-caps text-label-caps text-secondary uppercase tracking-wider">Уровень 02</span>
-<span class="font-label-technical text-secondary text-[11px]">Тёплый периметр</span>
-</div>
-<h3 class="font-headline-lg text-primary mb-3">«Оптимальная»</h3>
-<p class="font-body-sm text-on-surface-variant mb-6 min-h-[44px]">
-              Согласованный состав работ и материалов с повышенной теплоизоляцией под круглогодичное проживание.
-            </p>
-<div class="space-y-3 pt-4 border-t border-surface-container-high">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Все элементы комплектации «Базовая»</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Теплоизоляция перекрытий и стен по климату региона</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Качественные энергосберегающие ПВХ-окна нашего цеха</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Внешняя архитектурная отделка фасада и софитов</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Входные утепленные терморазрывные двери</span>
-</div>
-</div>
-</div>
-<div class="pt-8 mt-8 border-t border-surface-container-high">
-<a class="inline-flex items-center justify-center w-full h-12 bg-primary text-surface-bright font-headline-sm text-xs uppercase tracking-wider hover:bg-secondary transition-colors" href="#calculator-form">
-              Выбрать «Оптимальную»
-            </a>
-</div>
-</div>
-<!-- Package 3: Под ключ -->
-<div class="bg-surface p-8 flex flex-col justify-between border border-primary-container/8 relative">
-<div>
-<div class="flex items-baseline justify-between mb-4">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Уровень 03</span>
-<span class="font-label-technical text-secondary text-[11px]">Готов к заселению</span>
-</div>
-<h3 class="font-headline-lg text-primary mb-3">«Под ключ»</h3>
-<p class="font-body-sm text-on-surface-variant mb-6 min-h-[44px]">
-              Комплекс строительно-отделочных и инженерных работ в полном объёме до заноса мебели.
-            </p>
-<div class="space-y-3 pt-4 border-t border-surface-container-high">
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Все элементы комплектации «Оптимальная»</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Разводка скрытых инженерных коммуникаций (электрика, вода)</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Система отопления (водяной тёплый пол / радиаторы)</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Чистовая внутренняя отделка всех помещений по проекту</span>
-</div>
-<div class="flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-lg mt-0.5">check</span>
-<span class="font-body-sm text-on-surface">Установка сантехнического и котельного оборудования</span>
-</div>
-</div>
-</div>
-<div class="pt-8 mt-8 border-t border-surface-container-high">
-<a class="inline-flex items-center justify-center w-full h-12 border border-primary text-primary font-headline-sm text-xs uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors" href="#calculator-form">
-              Выбрать «Под ключ»
-            </a>
-</div>
-</div>
-</div>
-<!-- Legal & Technical Disclaimer -->
-<div class="mt-8 p-6 bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-4">
-<p class="font-label-technical text-xs text-on-surface-variant">
-<strong class="text-primary uppercase mr-2">Примечание:</strong> Окончательный состав комплектации определяется индивидуально и фиксируется в детальной смете и договоре.
-        </p>
-<a class="inline-flex items-center gap-2 font-headline-sm text-xs text-primary hover:text-secondary uppercase tracking-wider whitespace-nowrap" href="#calculator-form">
-<span>Получить индивидуальную смету</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-<!-- Section 4: Blueprint/Sketch Submission Form (Отправка эскиза от руки) -->
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl w-full" id="calculator-form">
-<div class="bg-primary-container text-surface-bright p-8 lg:p-14 border border-primary/20">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-<!-- Left Explanatory Column -->
-<div class="lg:col-span-5 flex flex-col justify-between">
-<div class="flex flex-col gap-4">
-<span class="font-label-technical text-label-technical text-secondary-fixed uppercase tracking-widest">Бесплатный расчет за 24 часа</span>
-<h2 class="font-headline-xl text-headline-xl text-surface-bright font-light">
-              Отправьте чертёж или эскиз от руки
-            </h2>
-<p class="font-body-md text-surface-variant leading-relaxed">
-              Не обязательно иметь готовый проект из бюро. Нарисуйте желаемую планировку на листе бумаги или прикрепите ссылку на понравившийся дом в сети.
-            </p>
-<div class="space-y-4 pt-6">
-<div class="flex items-start gap-3">
-<span class="font-label-technical text-secondary-fixed text-sm">01</span>
-<div>
-<span class="font-headline-sm text-surface-bright text-sm block">Инженерный аудит эскиза</span>
-<span class="font-body-sm text-surface-variant text-xs">Проверим реализуемость перекрытий и несущих узлов.</span>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="font-label-technical text-secondary-fixed text-sm">02</span>
-<div>
-<span class="font-headline-sm text-surface-bright text-sm block">Детальная спецификация</span>
-<span class="font-body-sm text-surface-variant text-xs">Распишем объёмы бруса, бетона, утеплителя и остекления.</span>
-</div>
-</div>
-<div class="flex items-start gap-3">
-<span class="font-label-technical text-secondary-fixed text-sm">03</span>
-<div>
-<span class="font-headline-sm text-surface-bright text-sm block">Выбор технологии</span>
-<span class="font-body-sm text-surface-variant text-xs">Сравним бюджет для каркаса, бруса и газобетона.</span>
-</div>
-</div>
-</div>
-</div>
-<div class="pt-8 border-t border-surface-variant/20 mt-8">
-<span class="font-label-technical text-[11px] text-surface-variant/80 block mb-1">КОНСУЛЬТАЦИЯ ВЕДУЩЕГО ИНЖЕНЕРА</span>
-<span class="font-body-sm text-surface-bright">СПб, Шушары, ул. Ленина, 1А • Доставка и бригады по РФ</span>
-</div>
-</div>
-<!-- Right Form Column -->
-<div class="lg:col-span-7 bg-surface p-8 text-on-surface">
-<form class="flex flex-col gap-6" id="houseOrderForm" onsubmit="event.preventDefault(); alert('Спасибо! Ваш эскиз принят в работу. Инженер свяжется с вами в течение рабочего дня.');">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Name -->
-<div class="flex flex-col gap-2">
-<label class="font-label-technical text-xs text-on-surface-variant uppercase" for="client_name">Ваше имя *</label>
-<input class="w-full h-11 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors" id="client_name" placeholder="Константин" required="" type="text"/>
-</div>
-<!-- Phone -->
-<div class="flex flex-col gap-2">
-<label class="font-label-technical text-xs text-on-surface-variant uppercase" for="client_phone">Телефон для связи *</label>
-<input class="w-full h-11 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors" id="client_phone" placeholder="+7 (999) 000-00-00" required="" type="tel"/>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<!-- Region -->
-<div class="flex flex-col gap-2">
-<label class="font-label-technical text-xs text-on-surface-variant uppercase" for="client_region">Регион / Район стройки *</label>
-<input class="w-full h-11 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors" id="client_region" placeholder="Ленинградская обл. / МО / др." required="" type="text"/>
-</div>
-<!-- Tech Preference -->
-<div class="flex flex-col gap-2">
-<label class="font-label-technical text-xs text-on-surface-variant uppercase" for="tech_select">Желаемая технология</label>
-<select class="w-full h-11 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors cursor-pointer" id="tech_select">
+<div class="kk-doma-contact"><span>Консультация ведущего инженера</span><span>СПб, Шушары, ул.&nbsp;Ленина, 1А · Доставка и бригады по РФ</span></div>
+</div>
+<form class="kk-doma-form" id="houseOrderForm" onsubmit="event.preventDefault(); if (window.kkToast) { window.kkToast('Эскиз принят', 'Инженер свяжется с вами в течение рабочего дня.'); this.reset(); var f = document.getElementById('file_name_display'); if (f) { f.textContent = ''; f.classList.add('hidden'); } } else { alert('Спасибо! Ваш эскиз принят в работу. Инженер свяжется с вами в течение рабочего дня.'); }">
+<div class="kk-doma-form__head"><p class="kk-doma-form__title">Заявка на расчёт</p><span class="kk-doma-form__hint">* обязательные поля</span></div>
+<div class="kk-doma-row">
+<div class="kk-doma-field">
+<label class="kk-doma-label" for="client_name">Ваше имя *</label>
+<input class="kk-doma-input" id="client_name" name="name" placeholder="Константин" required type="text" autocomplete="name"/>
+</div>
+<div class="kk-doma-field">
+<label class="kk-doma-label" for="client_phone">Телефон для связи *</label>
+<input class="kk-doma-input" id="client_phone" name="phone" placeholder="+7 (999) 000-00-00" required type="tel" autocomplete="tel"/>
+</div>
+</div>
+<div class="kk-doma-row">
+<div class="kk-doma-field">
+<label class="kk-doma-label" for="client_region">Регион / район стройки *</label>
+<input class="kk-doma-input" id="client_region" name="region" placeholder="Ленинградская обл., МО и др." required type="text"/>
+</div>
+<div class="kk-doma-field">
+<label class="kk-doma-label" for="tech_select">Желаемая технология</label>
+<select class="kk-doma-input" id="tech_select" name="technology">
 <option value="frame">Каркасный энергоэффективный дом</option>
 <option value="timber">Дом из бруса (клееный / профилированный)</option>
 <option value="gasbeton">Газобетон / монолитно-блочный</option>
-<option value="undecided">Пока не определился (нужна консультация)</option>
+<option value="undecided">Пока не определился, нужна консультация</option>
 </select>
 </div>
 </div>
-<!-- File Upload Zone -->
-<div class="flex flex-col gap-2">
-<label class="font-label-technical text-xs text-on-surface-variant uppercase">Прикрепить чертёж, план или фото эскиза</label>
-<div class="relative w-full border-2 border-dashed border-outline-variant hover:border-primary bg-surface-container-lowest p-6 text-center transition-colors cursor-pointer group" onclick="document.getElementById('file_input').click()">
-<input accept="image/*,.pdf,.dwg" class="hidden" id="file_input" multiple="" type="file"/>
-<div class="flex flex-col items-center gap-2">
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-3xl">upload_file</span>
-<span class="font-headline-sm text-xs text-primary uppercase">Нажмите для выбора файла или перетащите сюда</span>
-<span class="font-label-technical text-[10px] text-outline">Форматы: PDF, JPG, PNG, CAD (до 50 Мб)</span>
-<span class="font-label-technical text-xs text-secondary mt-1 hidden" id="file_name_display"></span>
+<div class="kk-doma-field">
+<span class="kk-doma-label" id="file_label">Чертёж, план или фото эскиза</span>
+<div class="kk-doma-drop" role="button" tabindex="0" aria-labelledby="file_label" onclick="document.getElementById('file_input').click()" onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); document.getElementById('file_input').click(); }">
+<input accept="image/*,.pdf,.dwg" class="hidden" id="file_input" name="files" multiple type="file"/>
+<span class="material-symbols-outlined" aria-hidden="true">upload_file</span>
+<span class="kk-doma-drop__title">Выбрать файл</span>
+<span class="kk-doma-drop__meta">PDF, JPG, PNG, DWG · до 50 МБ</span>
+<span class="kk-doma-drop__file hidden" id="file_name_display"></span>
 </div>
 </div>
+<div class="kk-doma-field">
+<label class="kk-doma-label" for="client_comment">Пожелания к дому и размеры</label>
+<textarea class="kk-doma-input" id="client_comment" name="comment" placeholder="Например: 1 этаж, 9×11 м, 3 спальни, большая терраса, панорамные окна в гостиной" rows="4"></textarea>
 </div>
-<!-- Comment -->
-<div class="flex flex-col gap-2">
-<label class="font-label-technical text-xs text-on-surface-variant uppercase" for="client_comment">Пожелания к дому и размеры</label>
-<textarea class="w-full p-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors" id="client_comment" placeholder="Пример: 1 этаж, 9x11 м, 3 спальни, большая терраса, панорамные окна в гостиной..." rows="3"></textarea>
-</div>
-<!-- Submit & Consent -->
-<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
-<p class="font-label-technical text-[11px] text-on-surface-variant max-w-xs leading-relaxed">
-                Нажимая кнопку, вы соглашаетесь с <a class="underline hover:text-primary" href="privacy.html">политикой конфиденциальности</a>.
-              </p>
-<button class="h-12 px-8 bg-primary text-surface-bright font-headline-sm text-xs uppercase tracking-wider hover:bg-secondary transition-colors duration-200 shrink-0" type="submit">
-                Отправить эскиз на расчёт
-              </button>
+<div class="kk-doma-form__submit">
+<label class="kk-doma-consent" for="client_consent">
+<input class="kk-doma-check" id="client_consent" name="consent" required type="checkbox"/>
+<span>Согласен на обработку персональных данных в соответствии с <a href="privacy.html">политикой конфиденциальности</a></span>
+</label>
+<button class="kk-doma-btn kk-doma-btn--dark" type="submit">Отправить эскиз на расчёт</button>
 </div>
 </form>
 </div>
-</div>
-</div>
 </section>
-<!-- Section 5: Terms of On-Site Visit & Estimate Preparation (Условия выезда специалиста) -->
-<section class="w-full bg-surface-container-low border-t border-surface-container-high py-space-2xl">
-<div class="max-w-7xl mx-auto px-6 lg:px-12">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-<div class="lg:col-span-4 flex flex-col gap-3">
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Прозрачные условия</span>
-<h2 class="font-headline-lg text-headline-lg text-primary">
-            Выезд инженера и подготовка сметы
-          </h2>
-<p class="font-body-sm text-on-surface-variant leading-relaxed">
-            Мы не делаем приблизительных расчетов на салфетке. Чтобы дом простоял поколения, мы выезжаем на участок и оцениваем фактические условия строительства.
-          </p>
-<div class="p-4 bg-surface mt-2 border-l-2 border-secondary font-label-technical text-xs text-on-surface">
-<strong>Базовый логистический узел:</strong><br/>
-            Санкт-Петербург, посёлок Шушары, ул. Ленина, д. 1А.
-          </div>
+
+<!-- 7. Final CTA -->
+<section class="kk-doma-section kk-doma-final" aria-label="Связаться с инженером">
+<div class="kk-doma-final__media">
+<img src="assets/img/doma-glulam.jpg" alt="" loading="lazy"/>
 </div>
-<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="p-6 bg-surface border border-primary-container/8 flex flex-col gap-3">
-<div class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined">explore</span>
-<span class="font-headline-sm text-sm text-primary uppercase tracking-wider">1. Выезд на участок</span>
+<div class="kk-doma-final__veil" aria-hidden="true"></div>
+<div class="kk-doma-wrap kk-doma-final__inner">
+<div class="kk-doma-final__copy">
+<p class="kk-doma-eyebrow kk-doma-eyebrow--light">Следующий шаг</p>
+<h2 class="kk-doma-final__title">Обсудим ваш участок и будущий дом</h2>
+<p class="kk-doma-final__text">Инженер ответит на вопросы, оценит исходные данные и предложит технологию под задачи и бюджет — без обязательств.</p>
 </div>
-<p class="font-body-sm text-on-surface-variant leading-relaxed">
-              Специалист выезжает по Санкт-Петербургу и Ленинградской области, а также согласует график выездов по регионам РФ. Проводится нивелирование высот, фиксация подъездных путей для грузовой техники и оценка грунта.
-            </p>
-<span class="font-label-technical text-[11px] text-secondary">Выезд засчитывается в стоимость при подписании договора</span>
+<div class="kk-doma-final__actions">
+<div>
+<span class="kk-doma-final__label">Телефон инженера</span><br/>
+<a class="kk-doma-final__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
 </div>
-<div class="p-6 bg-surface border border-primary-container/8 flex flex-col gap-3">
-<div class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined">calculate</span>
-<span class="font-headline-sm text-sm text-primary uppercase tracking-wider">2. Разработка открытой сметы</span>
-</div>
-<p class="font-body-sm text-on-surface-variant leading-relaxed">
-              Вы получаете развёрнутый документ с разделением на материалы, логистику, механизацию и работу монтажников. Все расценки фиксируются и не подлежат одностороннему повышению в процессе работ.
-            </p>
-<span class="font-label-technical text-[11px] text-secondary">Срок подготовки: от 2 до 5 рабочих дней</span>
-</div>
-<div class="p-6 bg-surface border border-primary-container/8 flex flex-col gap-3">
-<div class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined">factory</span>
-<span class="font-headline-sm text-sm text-primary uppercase tracking-wider">3. Интеграция конструкций</span>
-</div>
-<p class="font-body-sm text-on-surface-variant leading-relaxed">
-              Поскольку мы сами производим энергосберегающие оконные блоки и алюминиевые порталы в Шушарах, вы экономите на наценках субподрядчиков и исключаете зазоры при установке в проемы.
-            </p>
-<span class="font-label-technical text-[11px] text-secondary">Гарантия на монтажные узлы и конструкции</span>
-</div>
-<div class="p-6 bg-surface border border-primary-container/8 flex flex-col gap-3">
-<div class="flex items-center gap-3 text-secondary">
-<span class="material-symbols-outlined">history_edu</span>
-<span class="font-headline-sm text-sm text-primary uppercase tracking-wider">4. Договорная чистота</span>
-</div>
-<p class="font-body-sm text-on-surface-variant leading-relaxed">
-              Официальный договор строительного подряда с графиком этапов и поэтапной оплатой. Технический надзор контролирует скрытые работы с предоставлением фото- и видеоотчётов в Telegram/WhatsApp.
-            </p>
-<span class="font-label-technical text-[11px] text-secondary">Юридическая гарантия на конструктив до 10 лет</span>
-</div>
+<span class="kk-doma-final__address">Пос. Шушары, ул. Ленина, 1А · Работаем по всей РФ</span>
+<div class="kk-doma-final__buttons">
+<a class="kk-doma-btn kk-doma-btn--olive" href="#calculator-form">Отправить эскиз<svg class="kk-doma-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
 </div>
 </div>
 </div>
 </section>
-<!-- Interactive JavaScript for micro-interactions -->
 
 </div></main>
 <div id="site-footer"></div>

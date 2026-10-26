@@ -1,0 +1,307 @@
+/* Главная ниже первого экрана. Герой (.kk-hero) не затрагивается. */
+
+body[data-page="home"] main > .flex > section:not(.kk-hero) h2 {
+  text-wrap: balance;
+  letter-spacing: -0.025em;
+}
+body[data-page="home"] main > .flex > section:not(.kk-hero) p {
+  text-wrap: pretty;
+}
+
+.kk-home-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #b9ccaf;
+}
+.kk-home-eyebrow::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: #b9ccaf;
+  flex-shrink: 0;
+}
+
+/* Направления */
+#directions .group {
+  padding: 0;
+  border: 1px solid #e8e8e3;
+  box-shadow: none;
+  background: #fff;
+  overflow: hidden;
+  min-width: 0;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease, box-shadow 0.45s ease;
+}
+#directions .group:hover {
+  transform: translateY(-4px);
+  border-color: #252a2b;
+  box-shadow: 0 18px 40px -16px rgba(37, 42, 43, 0.14);
+}
+#directions .group > .flex {
+  padding: 0 0 0;
+  gap: 0;
+  min-width: 0;
+}
+#directions .group .aspect-\[16\/9\] {
+  border-radius: 0;
+}
+#directions .group h3,
+#directions .group p,
+#directions .group .flex-wrap,
+#directions .group .flex-col.gap-2 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+#directions .group h3 { padding-top: 1.35rem; text-wrap: balance; }
+#directions .group .pt-8 {
+  padding: 1.35rem 1.5rem 1.5rem;
+  margin-top: auto;
+}
+#directions .group a {
+  height: 52px;
+  padding: 0 1.15rem;
+  background: #111617;
+  color: #f7f6f2;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+#directions .group a:hover { background: #52634b; color: #fff; }
+#directions .group .absolute.top-4 {
+  letter-spacing: 0.12em;
+}
+
+/* Предварительный расчёт */
+.kk-home-calc__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  background: #fff;
+  border: 1px solid #e8e8e3;
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .kk-home-calc__panel { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+}
+.kk-home-calc__intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  background: #111617;
+  color: #f7f6f2;
+  min-width: 0;
+}
+@media (min-width: 1024px) {
+  .kk-home-calc__intro { padding: 3rem 2.75rem; }
+}
+.kk-home-calc__intro h2 {
+  margin: 0;
+  max-width: 14ch;
+  font-family: Manrope, system-ui, sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.85rem, 3vw, 2.6rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  color: #f7f6f2;
+}
+.kk-home-calc__lead {
+  margin: 0;
+  max-width: 34rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(247, 246, 242, 0.78);
+}
+.kk-home-calc__price {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(247, 246, 242, 0.14);
+}
+.kk-home-calc__price-value {
+  font-family: Manrope, system-ui, sans-serif;
+  font-weight: 300;
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  letter-spacing: -0.03em;
+  line-height: 1;
+  color: #f7f6f2;
+}
+.kk-home-calc__price-note {
+  max-width: 16rem;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: rgba(247, 246, 242, 0.7);
+}
+.kk-home-calc__fine {
+  margin: 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.55;
+  letter-spacing: 0.02em;
+  color: rgba(247, 246, 242, 0.48);
+}
+.kk-home-calc__form { padding: 2rem 1.5rem; min-width: 0; }
+@media (min-width: 1024px) { .kk-home-calc__form { padding: 2.75rem; } }
+
+.kk-home-form,
+#consultation form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 0;
+}
+#drop-zone {
+  min-height: 148px;
+  padding: 1.75rem 1.25rem;
+  border: 1px dashed rgba(17, 22, 23, 0.28);
+  background: #faf9f5;
+}
+#drop-zone:hover,
+#drop-zone.bg-surface-container-high {
+  border-color: #52634b;
+  background: #f3f6f0;
+}
+.kk-home-form label,
+#consultation form label {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5a6061;
+}
+.kk-home-form input:not([type="checkbox"]),
+.kk-home-form select,
+.kk-home-form textarea,
+#consultation input:not([type="checkbox"]),
+#consultation select,
+#consultation textarea {
+  width: 100%;
+  min-width: 0;
+  height: 52px;
+  padding: 0 0.9rem;
+  border: 1px solid #e8e8e3;
+  background: #fff;
+  color: #111617;
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 15px;
+}
+.kk-home-form textarea,
+#consultation textarea {
+  height: auto;
+  min-height: 112px;
+  padding: 0.85rem 0.9rem;
+  resize: vertical;
+}
+.kk-home-form input:focus,
+.kk-home-form select:focus,
+.kk-home-form textarea:focus,
+#consultation input:focus,
+#consultation select:focus,
+#consultation textarea:focus {
+  outline: none;
+  border-color: #111617;
+  background: #fff;
+}
+.kk-home-form .kk-home-agree,
+#consultation form .flex.items-start,
+#consultation form .flex.items-start label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin: 0.25rem 0 0;
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #5a6061;
+}
+.kk-home-agree input,
+#consultation input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: #111617;
+}
+.kk-home-agree a,
+#consultation form a { color: #111617; text-underline-offset: 2px; }
+.kk-home-submit,
+#consultation form button[type="submit"],
+#directions ~ section a.h-12 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 56px;
+  padding: 0 1.25rem;
+  border: 0;
+  background: #66785f;
+  color: #fff;
+  font-family: Manrope, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.kk-home-submit:hover,
+#consultation form button[type="submit"]:hover { background: #52634b; }
+#directions ~ section a.h-12 {
+  width: auto;
+  min-width: 16rem;
+  background: #111617;
+}
+#directions ~ section a.h-12:hover { background: #52634b; color: #fff; }
+
+/* Карточки сценариев, шагов, преимуществ, портфолио */
+body[data-page="home"] .shadow-sm {
+  box-shadow: none;
+  border: 1px solid #e8e8e3;
+}
+body[data-page="home"] section:not(.kk-hero) .grid > div {
+  min-width: 0;
+}
+body[data-page="home"] #portfolio-items .portfolio-card {
+  overflow: hidden;
+  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s ease;
+}
+body[data-page="home"] #portfolio-items .portfolio-card:hover {
+  transform: translateY(-4px);
+  border-color: #252a2b;
+}
+.portfolio-tab {
+  height: 36px;
+  border: 1px solid transparent;
+  letter-spacing: 0.08em;
+}
+.faq-toggle { border-bottom: 1px solid #e8e8e3; }
+#faq-container { gap: 0; }
+#faq-container > div {
+  border: 1px solid #e8e8e3;
+  border-bottom: 0;
+  background: #fff;
+}
+#faq-container > div:last-child { border-bottom: 1px solid #e8e8e3; }
+#faq-container .faq-toggle { border-bottom: 0; }
+
+#consultation > div > .grid {
+  border: 1px solid #e8e8e3;
+  box-shadow: none;
+  background: #fff;
+}
+#consultation h2 { text-wrap: balance; }
+
+@media (max-width: 639px) {
+  #directions .group a,
+  .kk-home-submit,
+  #consultation form button[type="submit"] { white-space: normal; text-align: center; }
+}

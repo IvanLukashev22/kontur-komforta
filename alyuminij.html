@@ -7,139 +7,341 @@
 <meta name="description" content="Тёплый алюминий, витражи, фасадное остекление и входные группы. Проектирование и монтаж по всей РФ."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/css/site.css"/>
+<link rel="stylesheet" href="assets/css/pages/alyuminij.css"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-surface-bright" data-page="aluminum">
 <div id="site-header"></div>
-<main class="w-full bg-surface min-h-[calc(100vh-108px)]">
-<section class="relative w-full bg-primary-container text-surface-bright overflow-hidden">
-  <div class="absolute inset-0 opacity-10 pointer-events-none bg-[radial-gradient(#dfe3e4_1px,transparent_1px)] [background-size:24px_24px]"></div>
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl relative z-10">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end">
-      <div class="lg:col-span-8 flex flex-col gap-space-md">
-        <div class="inline-flex items-center gap-3">
-          <span class="w-8 h-[1px] bg-secondary-fixed"></span>
-          <span class="font-label-technical text-label-technical text-secondary-fixed tracking-widest uppercase">Фасадные и светопрозрачные системы</span>
-        </div>
-        <h1 class="font-display-hero text-display-hero text-surface-bright font-light tracking-tight max-w-3xl">Алюминиевые конструкции</h1>
-        <p class="font-body-lg text-body-lg text-surface-variant max-w-2xl font-light leading-relaxed">Проектируем и монтируем тёплый алюминий, витражи, входные группы и панорамное остекление — с расчётом ветровых нагрузок и термического контура.</p>
-        <div class="flex flex-wrap gap-4 pt-2">
-          <a class="inline-flex items-center justify-center h-12 px-8 bg-surface-bright text-primary font-headline-sm text-sm uppercase tracking-wider hover:bg-secondary-fixed hover:text-on-secondary-fixed transition-colors" href="#lead">Запросить расчёт</a>
-          <a class="inline-flex items-center justify-center h-12 px-8 border border-surface-variant/30 text-surface-bright font-headline-sm text-sm uppercase tracking-wider hover:border-secondary-fixed hover:text-secondary-fixed transition-colors" href="#systems">Смотреть системы</a>
-        </div>
-      </div>
-      <div class="lg:col-span-4 grid grid-cols-2 gap-3 sm:gap-4 pt-8 lg:pt-0">
-        <div class="border border-surface-bright/10 bg-surface-bright/5 p-4">
-          <span class="font-label-technical text-[10px] text-surface-variant/80 uppercase tracking-wider block mb-1">U-value</span>
-          <span class="font-headline-md text-surface-bright">от 0.9</span>
-        </div>
-        <div class="border border-surface-bright/10 bg-surface-bright/5 p-4">
-          <span class="font-label-technical text-[10px] text-surface-variant/80 uppercase tracking-wider block mb-1">Высота створки</span>
-          <span class="font-headline-md text-surface-bright">до 3 м</span>
-        </div>
-        <div class="border border-surface-bright/10 bg-surface-bright/5 p-4">
-          <span class="font-label-technical text-[10px] text-surface-variant/80 uppercase tracking-wider block mb-1">Гарантия</span>
-          <span class="font-headline-md text-surface-bright">до 10 лет</span>
-        </div>
-        <div class="border border-surface-bright/10 bg-surface-bright/5 p-4">
-          <span class="font-label-technical text-[10px] text-surface-variant/80 uppercase tracking-wider block mb-1">Монтаж</span>
-          <span class="font-headline-md text-surface-bright">РФ</span>
-        </div>
-      </div>
-    </div>
-  </div>
+<main class="w-full pt-0 bg-surface min-h-[calc(100vh-108px)]">
+<div class="flex flex-col w-full">
+
+<!-- 1. Hero -->
+<section class="kk-hero kk-alu-hero" aria-label="Алюминиевые конструкции">
+<div class="kk-alu-hero__media">
+<img class="kk-hero-bg" src="assets/img/alyuminij-hero.jpg" alt="Графитовый раздвижной портал в пол: каменная терраса и сосны на золотом свету" fetchpriority="high"/>
+</div>
+<div class="kk-alu-hero__veil" aria-hidden="true"></div>
+<div class="kk-alu-hero__body">
+<div class="kk-alu-wrap">
+<div class="kk-hero__copy kk-alu-hero__copy">
+<p class="kk-alu-eyebrow kk-alu-eyebrow--light">Фасадные и светопрозрачные системы</p>
+<h1 class="kk-alu-hero__title">Алюминиевые конструкции под нагрузку и климат</h1>
+<p class="kk-alu-hero__lead">Проектируем и монтируем тёплый алюминий, витражи, входные группы и панорамное остекление — с расчётом ветровых нагрузок и термического контура.</p>
+<div class="kk-alu-hero__actions">
+<a class="kk-alu-btn kk-alu-btn--olive" href="#lead">Запросить расчёт</a>
+<a class="kk-alu-btn kk-alu-btn--link" href="#systems">Смотреть системы<svg class="kk-alu-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</div>
+</div>
+<div class="kk-hero__rail kk-alu-rail" aria-label="Ключевые параметры">
+<div class="kk-alu-wrap kk-alu-rail__inner">
+<div class="kk-alu-fact"><span class="kk-alu-fact__label">U-value</span><span class="kk-alu-fact__value">от 0.9</span><span class="kk-alu-fact__note">Тёплый контур с терморазрывом</span></div>
+<div class="kk-alu-fact"><span class="kk-alu-fact__label">Высота створки</span><span class="kk-alu-fact__value">до 3 м</span><span class="kk-alu-fact__note">Крупный формат без потери жёсткости</span></div>
+<div class="kk-alu-fact"><span class="kk-alu-fact__label">Гарантия</span><span class="kk-alu-fact__value">до 10 лет</span><span class="kk-alu-fact__note">По условиям договора</span></div>
+<div class="kk-alu-fact"><span class="kk-alu-fact__label">Монтаж</span><span class="kk-alu-fact__value">вся РФ</span><span class="kk-alu-fact__note">База: СПб, Шушары</span></div>
+</div>
+</div>
 </section>
 
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl" id="systems">
-  <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-space-2xl border-b border-primary-container/10 pb-space-lg">
-    <div>
-      <span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Каталог систем</span>
-      <h2 class="font-headline-xl text-headline-xl text-primary font-light mt-2">Четыре архитектурных решения</h2>
-    </div>
-    <p class="font-body-md text-on-surface-variant max-w-md leading-relaxed">Каждая система подбирается под климатическую зону, ветровой район и эстетику фасада.</p>
-  </div>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-    <article class="flex flex-col bg-surface-container-low border border-primary-container/8 hover:border-primary-container/25 transition-all p-6 lg:p-8">
-      <span class="font-label-technical text-label-technical text-secondary mb-3">01 // Тёплый алюминий</span>
-      <h3 class="font-headline-md text-headline-md text-primary mb-3">Оконно-дверные системы</h3>
-      <p class="font-body-md text-on-surface-variant flex-grow leading-relaxed">Терморазрыв, многокамерные профили и фурнитура премиум-класса для жилых и общественных объектов.</p>
-      <div class="pt-space-md mt-space-md border-t border-primary-container/10 font-label-technical text-label-technical text-on-surface-variant flex flex-wrap justify-between gap-2"><span>Глубина 70–90 мм</span><span>R<sub>w</sub> до 45 дБ</span></div>
-    </article>
-    <article class="flex flex-col bg-surface-container-low border border-primary-container/8 hover:border-primary-container/25 transition-all p-6 lg:p-8">
-      <span class="font-label-technical text-label-technical text-secondary mb-3">02 // Витражи</span>
-      <h3 class="font-headline-md text-headline-md text-primary mb-3">Стоечно-ригельные фасады</h3>
-      <p class="font-body-md text-on-surface-variant flex-grow leading-relaxed">Крупноформатное остекление с узкими видимыми профилями и скрытым креплением стеклопакетов.</p>
-      <div class="pt-space-md mt-space-md border-t border-primary-container/10 font-label-technical text-label-technical text-on-surface-variant flex flex-wrap justify-between gap-2"><span>Модули до 3×6 м</span><span>Ветровой расчёт</span></div>
-    </article>
-    <article class="flex flex-col bg-surface-container-low border border-primary-container/8 hover:border-primary-container/25 transition-all p-6 lg:p-8">
-      <span class="font-label-technical text-label-technical text-secondary mb-3">03 // Входные группы</span>
-      <h3 class="font-headline-md text-headline-md text-primary mb-3">Двери и тамбуры</h3>
-      <p class="font-body-md text-on-surface-variant flex-grow leading-relaxed">Автоматические и маятниковые двери, тамбурные зоны с контролем теплопотерь и безопасной фурнитурой.</p>
-      <div class="pt-space-md mt-space-md border-t border-primary-container/10 font-label-technical text-label-technical text-on-surface-variant flex flex-wrap justify-between gap-2"><span>Антивандал</span><span>Доводчики / автомат</span></div>
-    </article>
-    <article class="flex flex-col bg-surface-container-low border border-primary-container/8 hover:border-primary-container/25 transition-all p-6 lg:p-8">
-      <span class="font-label-technical text-label-technical text-secondary mb-3">04 // Зимние сады</span>
-      <h3 class="font-headline-md text-headline-md text-primary mb-3">Панорамные объёмы</h3>
-      <p class="font-body-md text-on-surface-variant flex-grow leading-relaxed">Стеклянные галереи и оранжереи с дренажем, вентиляцией и совместимостью с нашими ПВХ-окнами.</p>
-      <div class="pt-space-md mt-space-md border-t border-primary-container/10 font-label-technical text-label-technical text-on-surface-variant flex flex-wrap justify-between gap-2"><span>Кровля + стены</span><span>Инженерия внутри</span></div>
-    </article>
-  </div>
+<!-- 2. Direction cards -->
+<section class="kk-alu-section kk-alu-section--chalk" id="systems">
+<div class="kk-alu-wrap">
+<div class="kk-alu-head">
+<div class="kk-alu-head__title">
+<p class="kk-alu-eyebrow">Четыре архитектурных решения</p>
+<h2 class="kk-alu-h2">Системы под климат, ветер и геометрию фасада</h2>
+</div>
+<p class="kk-alu-lead">Каждая система подбирается под климатическую зону, ветровой район и эстетику фасада. Четыре направления закрывают порталы, вход, зимний сад и витраж.</p>
+</div>
+<div class="kk-alu-card-grid" data-reveal="stagger">
+
+<article class="kk-alu-card kk-lift">
+<div class="kk-alu-card__media">
+<img src="assets/img/alyuminij-hero.jpg" alt="Раздвижной алюминиевый портал с тонкой графитовой рамой и выходом на каменную террасу" loading="lazy"/>
+<span class="kk-alu-tag">01 — Порталы</span>
+</div>
+<div class="kk-alu-card__body">
+<h3 class="kk-alu-card__title">Раздвижные порталы</h3>
+<p class="kk-alu-card__text">Тёплый алюминий с терморазрывом: оконно-дверные системы для жилых и общественных объектов. Многокамерные профили и фурнитура премиум-класса, створки высотой до 3&nbsp;м.</p>
+<div class="kk-alu-card__foot">
+<p class="kk-alu-spec"><strong>Параметры</strong>Глубина 70–90 мм · R<sub>w</sub> до 45 дБ</p>
+<a class="kk-alu-btn kk-alu-btn--dark kk-alu-card__cta" href="#lead"><span>Запросить расчёт</span><svg class="kk-alu-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</article>
+
+<article class="kk-alu-card kk-lift">
+<div class="kk-alu-card__media">
+<img src="assets/img/alyuminij-doors.jpg" alt="Входная группа из графитового алюминия: высокие стеклянные двери и каменный цоколь" loading="lazy"/>
+<span class="kk-alu-tag">02 — Вход</span>
+</div>
+<div class="kk-alu-card__body">
+<h3 class="kk-alu-card__title">Входные группы</h3>
+<p class="kk-alu-card__text">Двери и тамбуры: автоматические и маятниковые, с контролем теплопотерь и безопасной фурнитурой. Антивандальное исполнение для общественных проходов.</p>
+<div class="kk-alu-card__foot">
+<p class="kk-alu-spec"><strong>Комплектация</strong>Доводчики / автомат · Антивандал</p>
+<a class="kk-alu-btn kk-alu-btn--dark kk-alu-card__cta" href="#lead"><span>Запросить расчёт</span><svg class="kk-alu-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</article>
+
+<article class="kk-alu-card kk-lift">
+<div class="kk-alu-card__media">
+<img src="assets/img/alyuminij-garden.jpg" alt="Зимний сад со стеклянной кровлей, алюминиевым каркасом и тёплым вечерним светом" loading="lazy"/>
+<span class="kk-alu-tag">03 — Сад</span>
+</div>
+<div class="kk-alu-card__body">
+<h3 class="kk-alu-card__title">Зимние сады</h3>
+<p class="kk-alu-card__text">Панорамные объёмы: стеклянные галереи и оранжереи с дренажем, вентиляцией и совместимостью с нашими ПВХ-окнами. Кровля и стены — в одном контуре.</p>
+<div class="kk-alu-card__foot">
+<p class="kk-alu-spec"><strong>Состав</strong>Кровля + стены · Инженерия внутри</p>
+<a class="kk-alu-btn kk-alu-btn--dark kk-alu-card__cta" href="#lead"><span>Запросить расчёт</span><svg class="kk-alu-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</article>
+
+<article class="kk-alu-card kk-lift">
+<div class="kk-alu-card__media">
+<img class="kk-alu-card__img--facade" src="assets/img/alyuminij-facade.jpg" alt="Стоечно-ригельный витраж: крупноформатное фасадное остекление с узкими профилями" loading="lazy"/>
+<span class="kk-alu-tag">04 — Витраж</span>
+</div>
+<div class="kk-alu-card__body">
+<h3 class="kk-alu-card__title">Стоечно-ригельные фасады</h3>
+<p class="kk-alu-card__text">Витражи и фасадное остекление: крупноформатные модули с узкими видимыми профилями и скрытым креплением стеклопакетов. Ветровой расчёт входит в проектирование.</p>
+<div class="kk-alu-card__foot">
+<p class="kk-alu-spec"><strong>Формат</strong>Модули до 3×6 м · Ветровой расчёт</p>
+<a class="kk-alu-btn kk-alu-btn--dark kk-alu-card__cta" href="#lead"><span>Запросить расчёт</span><svg class="kk-alu-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</article>
+
+</div>
+
+<div class="kk-alu-why" data-reveal="stagger">
+<div class="kk-alu-why__item"><span class="kk-alu-why__label">01</span><h3 class="kk-alu-why__title">Жёсткость каркаса</h3><p class="kk-alu-why__text">Большие пролёты без деформации створок и ригелей.</p></div>
+<div class="kk-alu-why__item"><span class="kk-alu-why__label">02</span><h3 class="kk-alu-why__title">Тонкий профиль</h3><p class="kk-alu-why__text">Больше света при той же площади проёма.</p></div>
+<div class="kk-alu-why__item"><span class="kk-alu-why__label">03</span><h3 class="kk-alu-why__title">Долговечность</h3><p class="kk-alu-why__text">Анодирование и порошковая окраска под RAL.</p></div>
+<div class="kk-alu-why__item"><span class="kk-alu-why__label">04</span><h3 class="kk-alu-why__title">Единый контур</h3><p class="kk-alu-why__text">Сочетаем с нашим цехом ПВХ на одном объекте.</p></div>
+</div>
+</div>
 </section>
 
-<section class="w-full bg-surface-container-lowest py-space-3xl">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
-    <div class="lg:col-span-5 flex flex-col gap-4">
-      <span class="font-label-technical text-secondary uppercase tracking-widest text-label-technical">Почему алюминий</span>
-      <h2 class="font-headline-xl text-headline-xl text-primary font-light">Когда ПВХ уже недостаточно</h2>
-      <p class="font-body-md text-on-surface-variant">Алюминий открывает крупный формат, тонкие рамы и сложную геометрию фасада — без потери жёсткости и с контролируемым тепловым контуром.</p>
-    </div>
-    <ul class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <li class="p-5 lg:p-6 bg-surface border border-primary-container/8"><span class="font-headline-sm text-headline-sm text-primary block mb-2">Жёсткость каркаса</span><span class="font-body-sm text-on-surface-variant leading-relaxed">Большие пролёты без деформации створок и ригелей.</span></li>
-      <li class="p-5 lg:p-6 bg-surface border border-primary-container/8"><span class="font-headline-sm text-headline-sm text-primary block mb-2">Тонкий профиль</span><span class="font-body-sm text-on-surface-variant leading-relaxed">Больше света при той же площади проёма.</span></li>
-      <li class="p-5 lg:p-6 bg-surface border border-primary-container/8"><span class="font-headline-sm text-headline-sm text-primary block mb-2">Долговечность</span><span class="font-body-sm text-on-surface-variant leading-relaxed">Анодирование и порошковая окраска под RAL.</span></li>
-      <li class="p-5 lg:p-6 bg-surface border border-primary-container/8"><span class="font-headline-sm text-headline-sm text-primary block mb-2">Единый контур</span><span class="font-body-sm text-on-surface-variant leading-relaxed">Сочетаем с нашим цехом ПВХ на одном объекте.</span></li>
-    </ul>
-  </div>
+<!-- 3. Warm vs cold -->
+<section class="kk-alu-section kk-alu-compare" aria-label="Тёплый и холодный алюминий">
+<div class="kk-alu-wrap">
+<div class="kk-alu-compare__top">
+<p class="kk-alu-eyebrow kk-alu-eyebrow--light">Термический контур</p>
+<p class="kk-alu-compare__statement">Подбираем контур под назначение объёма: <span>тёплый профиль с терморазрывом</span> для отапливаемых помещений и холодный каркас там, где тепловой контур не требуется.</p>
+</div>
+<div class="kk-alu-compare__grid" data-reveal="stagger">
+<article class="kk-alu-pane kk-alu-pane--warm">
+<div class="kk-alu-pane__meta"><span>Система 01</span><span>Отапливаемый объём</span></div>
+<h3 class="kk-alu-pane__title">Тёплый алюминий</h3>
+<p class="kk-alu-pane__lead">Оконно-дверные системы с терморазрывом и многокамерным профилем — для жилых и общественных объектов, где нужен контролируемый тепловой контур.</p>
+<ul class="kk-alu-pane__list">
+<li>Терморазрыв и многокамерная геометрия</li>
+<li>Глубина профиля 70–90 мм</li>
+<li>U-value от 0.9, R<sub>w</sub> до 45 дБ</li>
+<li>Высота створки до 3 м</li>
+<li>Окна, двери, порталы, тёплые входные группы</li>
+</ul>
+</article>
+<article class="kk-alu-pane kk-alu-pane--cold">
+<div class="kk-alu-pane__meta"><span>Система 02</span><span>Неотапливаемый объём</span></div>
+<h3 class="kk-alu-pane__title">Холодный алюминий</h3>
+<p class="kk-alu-pane__lead">Каркас без терморазрыва — там, где не требуется сопротивление теплопередаче: навесы, холодные тамбуры, витрины и внутренние перегородки.</p>
+<ul class="kk-alu-pane__list">
+<li>Профиль без терморазрыва</li>
+<li>Жёсткость при тонком видимом сечении</li>
+<li>Там, где нет требования к U-value</li>
+<li>Сложная геометрия фасада и козырьков</li>
+<li>Та же отделка: анодирование и RAL</li>
+</ul>
+</article>
+</div>
+</div>
 </section>
 
-<section class="max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl" id="lead">
-  <div class="grid grid-cols-1 lg:grid-cols-12 border border-primary-container/10 bg-surface-container-low overflow-hidden">
-    <div class="lg:col-span-5 p-8 lg:p-12 bg-primary-container text-surface-bright flex flex-col justify-between gap-8">
-      <div>
-        <span class="font-label-technical text-secondary-fixed uppercase tracking-widest text-label-technical">Заявка</span>
-        <h2 class="font-headline-xl text-headline-xl font-light mt-2 text-surface-bright">Рассчитаем алюминиевую систему</h2>
-        <p class="font-body-md text-surface-variant mt-4 leading-relaxed">Пришлите чертежи или размеры проёмов — инженер вернётся с вариантами профиля и ориентировочной сметой.</p>
-      </div>
-      <div class="pt-6 border-t border-surface-variant/20">
-        <span class="font-label-technical text-[11px] text-surface-variant/80 uppercase tracking-wider block mb-1">Срок ответа</span>
-        <span class="font-body-sm text-surface-bright">В течение рабочего дня</span>
-      </div>
-    </div>
-    <form class="lg:col-span-7 p-8 lg:p-12 flex flex-col gap-5 bg-surface" id="alu-form">
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-on-surface-variant uppercase">Имя *</span><input required name="name" class="h-12 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors" placeholder="Как к вам обращаться"/></label>
-        <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-on-surface-variant uppercase">Телефон *</span><input required name="phone" type="tel" class="h-12 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors" placeholder="+7 (___) ___-__-__"/></label>
-      </div>
-      <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-on-surface-variant uppercase">Тип системы</span>
-        <select name="type" class="h-12 px-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface transition-colors cursor-pointer">
-          <option>Тёплый алюминий (окна/двери)</option>
-          <option>Витраж / фасад</option>
-          <option>Входная группа</option>
-          <option>Зимний сад / панорама</option>
-        </select>
-      </label>
-      <label class="flex flex-col gap-2"><span class="font-label-technical text-label-technical text-on-surface-variant uppercase">Комментарий</span><textarea name="msg" rows="4" class="p-3 bg-surface-container-low border-b-2 border-outline-variant focus:border-primary outline-none font-body-md text-on-surface resize-y transition-colors" placeholder="Город, размеры, сроки"></textarea></label>
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-2">
-        <p class="font-label-technical text-[11px] text-on-surface-variant max-w-xs leading-relaxed">Нажимая кнопку, вы соглашаетесь с <a class="underline hover:text-primary" href="privacy.html">политикой конфиденциальности</a>.</p>
-        <button type="submit" class="h-12 px-8 bg-primary text-surface-bright font-headline-sm text-sm uppercase tracking-wider hover:bg-secondary transition-colors shrink-0 self-start sm:self-auto">Отправить заявку</button>
-      </div>
-    </form>
-  </div>
+<!-- 4. Specs -->
+<section class="kk-alu-section kk-alu-section--band" id="specs">
+<div class="kk-alu-wrap">
+<div class="kk-alu-head">
+<div class="kk-alu-head__title">
+<p class="kk-alu-eyebrow">Технические ориентиры</p>
+<h2 class="kk-alu-h2">Параметры, от которых считаем систему</h2>
+</div>
+<p class="kk-alu-lead">Цифры ниже — рабочие пределы, которые мы закладываем в расчёт. Итоговый узел зависит от ветрового района, формулы стеклопакета и геометрии проёма.</p>
+</div>
+<div class="kk-alu-specs" role="table" aria-label="Технические параметры алюминиевых систем">
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">U-value</span>
+<span class="kk-alu-specs__val" role="cell">от 0.9</span>
+<span class="kk-alu-specs__note" role="cell">Тёплый контур с терморазрывом</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Высота створки</span>
+<span class="kk-alu-specs__val" role="cell">до 3 м</span>
+<span class="kk-alu-specs__note" role="cell">Крупный формат, жёсткий каркас</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Глубина профиля</span>
+<span class="kk-alu-specs__val" role="cell">70–90 мм</span>
+<span class="kk-alu-specs__note" role="cell">Тёплые оконно-дверные системы</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Звукоизоляция R<sub>w</sub></span>
+<span class="kk-alu-specs__val" role="cell">до 45 дБ</span>
+<span class="kk-alu-specs__note" role="cell">При соответствующей формуле пакета</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Модуль витража</span>
+<span class="kk-alu-specs__val" role="cell">до 3×6 м</span>
+<span class="kk-alu-specs__note" role="cell">Стоечно-ригельный фасад, ветровой расчёт</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Отделка</span>
+<span class="kk-alu-specs__val" role="cell">RAL / анод</span>
+<span class="kk-alu-specs__note" role="cell">Порошковая окраска и анодирование</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Монтаж</span>
+<span class="kk-alu-specs__val" role="cell">вся РФ</span>
+<span class="kk-alu-specs__note" role="cell">Проектирование и установка</span>
+</div>
+<div class="kk-alu-specs__row" role="row">
+<span class="kk-alu-specs__key" role="rowheader">Гарантия</span>
+<span class="kk-alu-specs__val" role="cell">до 10 лет</span>
+<span class="kk-alu-specs__note" role="cell">По условиям договора</span>
+</div>
+</div>
+</div>
 </section>
+
+<!-- 5. Steps -->
+<section class="kk-alu-section kk-alu-section--chalk" id="process">
+<div class="kk-alu-wrap kk-alu-process">
+<div class="kk-alu-process__intro">
+<p class="kk-alu-eyebrow">Порядок работы</p>
+<h2 class="kk-alu-h2">От размеров проёма до монтажа</h2>
+<p class="kk-alu-lead">Пришлите чертежи или размеры проёмов — инженер вернётся с вариантами профиля и ориентировочной сметой. Срок ответа: в течение рабочего дня.</p>
+<p class="kk-alu-address"><span>Базовый логистический узел</span>Санкт-Петербург, посёлок Шушары, ул.&nbsp;Ленина, д.&nbsp;1А</p>
+</div>
+<div class="kk-alu-steps" data-reveal="stagger">
+<div class="kk-alu-step">
+<div class="kk-alu-step__head"><span class="kk-alu-step__num">01</span><span class="material-symbols-outlined kk-alu-step__icon" aria-hidden="true">architecture</span></div>
+<h3 class="kk-alu-step__title">Исходные данные</h3>
+<p class="kk-alu-step__text">Чертежи, эскиз или размеры проёмов, город объекта и тип системы: портал, вход, зимний сад или витраж.</p>
+<span class="kk-alu-step__foot">Достаточно схемы от руки</span>
+</div>
+<div class="kk-alu-step">
+<div class="kk-alu-step__head"><span class="kk-alu-step__num">02</span><span class="material-symbols-outlined kk-alu-step__icon" aria-hidden="true">air</span></div>
+<h3 class="kk-alu-step__title">Расчёт контура</h3>
+<p class="kk-alu-step__text">Считаем ветровые нагрузки и термический контур. От этого зависит сечение профиля, формула стеклопакета и необходимость терморазрыва.</p>
+<span class="kk-alu-step__foot">Климат и ветровой район</span>
+</div>
+<div class="kk-alu-step">
+<div class="kk-alu-step__head"><span class="kk-alu-step__num">03</span><span class="material-symbols-outlined kk-alu-step__icon" aria-hidden="true">tune</span></div>
+<h3 class="kk-alu-step__title">Подбор системы</h3>
+<p class="kk-alu-step__text">Сравниваем тёплый и холодный контур, узлы примыкания к ПВХ и фасаду. Фиксируем глубину профиля, фурнитуру и отделку.</p>
+<span class="kk-alu-step__foot">Варианты профиля в смету</span>
+</div>
+<div class="kk-alu-step">
+<div class="kk-alu-step__head"><span class="kk-alu-step__num">04</span><span class="material-symbols-outlined kk-alu-step__icon" aria-hidden="true">handyman</span></div>
+<h3 class="kk-alu-step__title">Изготовление</h3>
+<p class="kk-alu-step__text">Собираем конструкции и, где нужно, стыкуем с окнами собственного ПВХ-цеха — один контур на объекте, без разрыва ответственности.</p>
+<span class="kk-alu-step__foot">Единый контур с ПВХ</span>
+</div>
+<div class="kk-alu-step">
+<div class="kk-alu-step__head"><span class="kk-alu-step__num">05</span><span class="material-symbols-outlined kk-alu-step__icon" aria-hidden="true">foundation</span></div>
+<h3 class="kk-alu-step__title">Монтаж и гарантия</h3>
+<p class="kk-alu-step__text">Устанавливаем по всей РФ. Гарантия — до 10 лет по условиям договора. Инженер сопровождает сдачу узлов и регулировку фурнитуры.</p>
+<span class="kk-alu-step__foot">Монтаж · вся территория РФ</span>
+</div>
+</div>
+</div>
+</section>
+
+<!-- 6. Request form -->
+<section class="kk-alu-section kk-alu-section--band kk-alu-section--rule" id="lead">
+<div class="kk-alu-wrap kk-alu-form-wrap">
+<div class="kk-alu-form-intro">
+<p class="kk-alu-eyebrow">Заявка инженеру</p>
+<h2 class="kk-alu-h2">Рассчитаем алюминиевую систему</h2>
+<p class="kk-alu-lead">Пришлите чертежи или размеры проёмов — инженер вернётся с вариантами профиля и ориентировочной сметой.</p>
+<ul class="kk-alu-sublist">
+<li><span class="kk-alu-sublist__num">01</span><span><span class="kk-alu-sublist__title">Разбор исходных данных</span><span class="kk-alu-sublist__text">Проёмы, ветровой район, тёплый или холодный контур.</span></span></li>
+<li><span class="kk-alu-sublist__num">02</span><span><span class="kk-alu-sublist__title">Варианты профиля</span><span class="kk-alu-sublist__text">Портал, вход, зимний сад или стоечно-ригельный фасад.</span></span></li>
+<li><span class="kk-alu-sublist__num">03</span><span><span class="kk-alu-sublist__title">Ориентировочная смета</span><span class="kk-alu-sublist__text">Ответ в течение рабочего дня, без публикации ценников.</span></span></li>
+</ul>
+<div class="kk-alu-contact"><span>Консультация инженера</span><span>СПб, Шушары, ул.&nbsp;Ленина, 1А · Монтаж по всей РФ</span></div>
+</div>
+<form class="kk-alu-form" id="alu-form">
+<div class="kk-alu-form__head"><p class="kk-alu-form__title">Заявка на расчёт</p><span class="kk-alu-form__hint">* обязательные поля</span></div>
+<div class="kk-alu-row">
+<div class="kk-alu-field">
+<label class="kk-alu-label" for="alu_name">Имя *</label>
+<input class="kk-alu-input" id="alu_name" name="name" placeholder="Как к вам обращаться" required type="text" autocomplete="name"/>
+</div>
+<div class="kk-alu-field">
+<label class="kk-alu-label" for="alu_phone">Телефон *</label>
+<input class="kk-alu-input" id="alu_phone" name="phone" placeholder="+7 (___) ___-__-__" required type="tel" autocomplete="tel"/>
+</div>
+</div>
+<div class="kk-alu-field">
+<label class="kk-alu-label" for="alu_type">Тип системы</label>
+<select class="kk-alu-input" id="alu_type" name="type">
+<option>Тёплый алюминий (окна/двери)</option>
+<option>Витраж / фасад</option>
+<option>Входная группа</option>
+<option>Зимний сад / панорама</option>
+</select>
+</div>
+<div class="kk-alu-field">
+<label class="kk-alu-label" for="alu_msg">Комментарий</label>
+<textarea class="kk-alu-input" id="alu_msg" name="msg" placeholder="Город, размеры проёмов, сроки" rows="4"></textarea>
+</div>
+<div class="kk-alu-form__submit">
+<label class="kk-alu-consent" for="alu_consent">
+<input class="kk-alu-check" id="alu_consent" name="consent" required type="checkbox"/>
+<span>Согласен на обработку персональных данных в соответствии с <a href="privacy.html">политикой конфиденциальности</a></span>
+</label>
+<button class="kk-alu-btn kk-alu-btn--dark" type="submit">Отправить заявку</button>
+</div>
+</form>
+</div>
+</section>
+
+<!-- 7. Closing CTA -->
+<section class="kk-alu-section kk-alu-final" aria-label="Связаться с инженером">
+<div class="kk-alu-final__media">
+<img src="assets/img/alyuminij-facade.jpg" alt="" loading="lazy"/>
+</div>
+<div class="kk-alu-final__veil" aria-hidden="true"></div>
+<div class="kk-alu-wrap kk-alu-final__inner">
+<div class="kk-alu-final__copy">
+<p class="kk-alu-eyebrow kk-alu-eyebrow--light">Следующий шаг</p>
+<h2 class="kk-alu-final__title">Обсудим проёмы и термический контур</h2>
+<p class="kk-alu-final__text">Инженер ответит на вопросы, оценит исходные данные и предложит систему под климат и геометрию фасада — без обязательств.</p>
+</div>
+<div class="kk-alu-final__actions">
+<div>
+<span class="kk-alu-final__label">Телефон инженера</span><br/>
+<a class="kk-alu-final__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
+</div>
+<span class="kk-alu-final__address">Пос. Шушары, ул. Ленина, 1А · Работаем по всей РФ</span>
+<div class="kk-alu-final__buttons">
+<a class="kk-alu-btn kk-alu-btn--olive" href="#lead">Запросить расчёт<svg class="kk-alu-arrow" viewBox="0 0 16 10" fill="none" aria-hidden="true"><path d="M0 5h14.5M10.5 1l4 4-4 4" stroke="currentColor" stroke-width="1.2"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+
+</div>
 </main>
 <div id="site-footer"></div>
 <script>

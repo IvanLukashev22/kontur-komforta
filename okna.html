@@ -8,864 +8,593 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="assets/css/site.css"/>
+<link rel="stylesheet" href="assets/css/pages/okna.css"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="assets/js/tailwind-config.js"></script>
 </head>
 <body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-surface-bright" data-page="windows">
 <div id="site-header"></div>
 <main class="w-full pt-0 bg-surface min-h-[calc(100vh-108px)]"><div class="flex flex-col w-full">
-<!-- Top Section: Architectural Hero Header -->
-<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 pt-space-xl pb-space-2xl">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-end border-b border-primary-container/10 pb-space-xl">
-<div class="lg:col-span-8 flex flex-col gap-space-sm">
-<div class="flex items-center gap-3">
-<span class="inline-flex items-center px-2.5 py-1 bg-surface-container-high text-secondary font-label-technical text-label-technical tracking-wider uppercase">
-            Цех ПВХ • Шушары
-          </span>
-<span class="font-label-technical text-label-technical text-outline">
-            ГОСТ 30674-99 / ISO 9001
-          </span>
+
+<!-- 01. Hero -->
+<section class="kk-hero kk-okna-hero" aria-label="Окна ПВХ собственного производства">
+<div class="kk-okna-hero__media">
+<img class="kk-hero-bg kk-okna-hero__img" src="assets/img/okna-hero.jpg" alt="Светлая гостиная с панорамными поворотно-откидными окнами ПВХ цвета антрацит и видом на сосновый лес" fetchpriority="high" decoding="async"/>
 </div>
-<h1 class="font-display-hero text-display-hero text-primary font-light tracking-tight max-w-3xl">
-          ПВХ-окна собственного производства
-        </h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl pt-2">
-          Изготавливаем окна под индивидуальные размеры, выполняем ремонт и сертифицированный монтаж. Подберём конфигурацию профиля и формулы остекления под климатические нагрузки вашего региона.
-        </p>
-</div>
-<!-- Quick Action Jump Links -->
-<div class="lg:col-span-4 flex flex-col gap-2 pt-space-md lg:pt-0">
-<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline mb-1">Быстрый переход</span>
-<div class="grid grid-cols-2 gap-2">
-<a class="flex items-center justify-between p-3 bg-surface-container hover:bg-surface-container-high transition-colors group" href="#interactive-calc">
-<span class="font-body-sm text-body-sm text-primary font-medium">Рассчитать стоимость</span>
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5 text-base">arrow_forward</span>
-</a>
-<a class="flex items-center justify-between p-3 bg-surface-container hover:bg-surface-container-high transition-colors group" href="#interactive-calc" onclick="window.setModeTab('manufacturing')">
-<span class="font-body-sm text-body-sm text-primary font-medium">Изготовление</span>
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5 text-base">precision_manufacturing</span>
-</a>
-<a class="flex items-center justify-between p-3 bg-surface-container hover:bg-surface-container-high transition-colors group" href="#services-regulation" onclick="window.setTab('repair')">
-<span class="font-body-sm text-body-sm text-primary font-medium">Нужен ремонт</span>
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5 text-base">build</span>
-</a>
-<a class="flex items-center justify-between p-3 bg-surface-container hover:bg-surface-container-high transition-colors group" href="#services-regulation" onclick="window.setTab('installation')">
-<span class="font-body-sm text-body-sm text-primary font-medium">Заказать монтаж</span>
-<span class="material-symbols-outlined text-outline group-hover:text-primary transition-transform group-hover:translate-x-0.5 text-base">home_repair_service</span>
-</a>
+<div class="kk-okna-hero__veil" aria-hidden="true"></div>
+<div class="kk-okna-hero__body">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+<div class="kk-hero__copy kk-okna-hero__copy">
+<p class="kk-okna-eyebrow kk-okna-eyebrow--light">Окна ПВХ · собственный цех в Шушарах</p>
+<h1 class="kk-okna-hero__title">Окна ПВХ собственного производства</h1>
+<p class="kk-okna-hero__lead">Изготавливаем окна по индивидуальным размерам, выполняем ремонт и&nbsp;сертифицированный монтаж. Профиль и&nbsp;формулу стеклопакета подбираем под климатические нагрузки вашего региона.</p>
+<div class="kk-okna-actions">
+<a class="kk-okna-btn kk-okna-btn--olive" href="#interactive-calc">Рассчитать конфигурацию<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+<a class="kk-hero__btn kk-hero__btn--ghost" href="#catalog">Типы конструкций<span class="kk-hero__arrow" aria-hidden="true"></span></a>
 </div>
 </div>
 </div>
-<!-- Architectural Production Metrics Bar -->
-<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter pt-space-lg">
-<div class="flex flex-col">
-<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Толщина стенок</span>
-<span class="font-headline-lg text-headline-lg text-primary font-light">3.0 мм</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Профиль высшего класса А</span>
 </div>
-<div class="flex flex-col">
-<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Герметичность контура</span>
-<span class="font-headline-lg text-headline-lg text-primary font-light">3 контура</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">EPDM эластомер устойчив к -50°C</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Шумоизоляция</span>
-<span class="font-headline-lg text-headline-lg text-primary font-light">до 42 дБ</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Асимметричные многокамерные пакеты</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-technical text-label-technical text-outline uppercase tracking-wider">Срок заводской гарантии</span>
-<span class="font-headline-lg text-headline-lg text-secondary font-light">10 лет</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">На профиль, армирование и швы</span>
+<div class="kk-hero__rail kk-okna-hero__rail" aria-label="Ключевые характеристики">
+<div class="kk-okna-rail">
+<div class="kk-okna-fact"><span class="kk-okna-fact__label">Толщина стенок</span><span class="kk-okna-fact__value">3.0 мм</span><span class="kk-okna-fact__note">Профиль класса А</span></div>
+<div class="kk-okna-fact"><span class="kk-okna-fact__label">Уплотнение</span><span class="kk-okna-fact__value">3 контура</span><span class="kk-okna-fact__note">EPDM, до −50 °C</span></div>
+<div class="kk-okna-fact"><span class="kk-okna-fact__label">Шумоизоляция</span><span class="kk-okna-fact__value">до 42 дБ</span><span class="kk-okna-fact__note">Асимметричные пакеты</span></div>
+<div class="kk-okna-fact"><span class="kk-okna-fact__label">Гарантия завода</span><span class="kk-okna-fact__value">10 лет</span><span class="kk-okna-fact__note">Профиль, армирование, швы</span></div>
 </div>
 </div>
 </section>
-<!-- Section 2: Construction Architectural Typologies & Dynamic Services -->
-<section class="w-full bg-surface-container-lowest py-space-3xl">
-<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-2xl">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-primary-container/10 pb-space-lg">
-<div>
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Каталог конструкций</span>
-<h2 class="font-headline-xl text-headline-xl text-primary font-light mt-1">Виды конструкций и кинематика открывания</h2>
+
+<!-- 02. Quick navigation -->
+<nav class="kk-okna-quick" aria-label="Быстрый переход по разделу">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="kk-okna-quick__grid">
+<a class="kk-okna-quick__item" href="#interactive-calc">
+<span class="kk-okna-quick__idx">01</span>
+<span class="kk-okna-quick__text"><span class="kk-okna-quick__label">Рассчитать стоимость</span><span class="kk-okna-quick__hint">Конфигуратор в 5 шагов</span></span>
+<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+</a>
+<a class="kk-okna-quick__item" href="#services-regulation" onclick="window.setTab('manufacturing')">
+<span class="kk-okna-quick__idx">02</span>
+<span class="kk-okna-quick__text"><span class="kk-okna-quick__label">Изготовление</span><span class="kk-okna-quick__hint">Регламент цеха</span></span>
+<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+</a>
+<a class="kk-okna-quick__item" href="#services-regulation" onclick="window.setTab('repair')">
+<span class="kk-okna-quick__idx">03</span>
+<span class="kk-okna-quick__text"><span class="kk-okna-quick__label">Нужен ремонт</span><span class="kk-okna-quick__hint">Сервис любых окон</span></span>
+<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+</a>
+<a class="kk-okna-quick__item" href="#services-regulation" onclick="window.setTab('installation')">
+<span class="kk-okna-quick__idx">04</span>
+<span class="kk-okna-quick__text"><span class="kk-okna-quick__label">Заказать монтаж</span><span class="kk-okna-quick__hint">По ГОСТ 30971-2012</span></span>
+<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg>
+</a>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
-          Каждое изделие проектируется с расчетным распределением статических ветровых нагрузок и термического сопротивления.
-        </p>
 </div>
-<!-- 5 Construction Cards Bento Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<!-- 1. Deaf window -->
-<div class="flex flex-col bg-surface p-space-lg relative border border-primary-container/5 hover:border-primary-container/30 transition-all duration-300">
-<div class="flex items-center justify-between mb-space-md">
-<span class="font-label-technical text-label-technical text-outline">ТИП 01 // СТАТИКА</span>
-<span class="inline-flex px-2 py-0.5 bg-surface-container font-label-technical text-[10px] text-primary">КПД +28% СВЕТА</span>
+</nav>
+
+<!-- 03. Construction catalog -->
+<section class="kk-okna-section" id="catalog">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<header class="kk-okna-head">
+<div class="kk-okna-head__main">
+<p class="kk-okna-eyebrow">Каталог конструкций</p>
+<h2 class="kk-okna-h2">Виды конструкций и&nbsp;кинематика открывания</h2>
 </div>
-<!-- Kinetic Visual Diagram -->
-<div class="w-full h-44 bg-surface-container-low flex items-center justify-center p-4 relative mb-space-md overflow-hidden">
-<svg class="w-28 h-36 stroke-primary fill-none" viewbox="0 0 100 130">
-<rect height="120" stroke="currentColor" stroke-width="3" width="90" x="5" y="5"></rect>
-<rect height="100" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5" width="70" x="15" y="15"></rect>
-<line stroke="#747879" stroke-width="1" x1="20" x2="30" y1="20" y2="30"></line>
-<line stroke="#747879" stroke-width="1" x1="25" x2="35" y1="20" y2="30"></line>
+<p class="kk-okna-lead kk-reveal">Каждое изделие проектируется с расчётом ветровых нагрузок и&nbsp;термического сопротивления — под конкретный проём, а&nbsp;не&nbsp;под типовой размер.</p>
+</header>
+
+<div class="kk-okna-types" data-reveal="stagger">
+<!-- Type 01 -->
+<article class="kk-okna-type kk-lift">
+<div class="kk-okna-type__top"><span class="kk-okna-idx">Тип 01 · Статика</span><span class="kk-okna-chip">+28% света</span></div>
+<div class="kk-okna-type__fig">
+<svg class="kk-okna-type__svg" viewBox="0 0 100 130" fill="none" aria-hidden="true">
+<rect x="5" y="5" width="90" height="120" stroke="currentColor" stroke-width="2.4"/>
+<rect x="15" y="15" width="70" height="100" stroke="currentColor" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="22" y1="22" x2="34" y2="34" stroke="#747879" stroke-width="1"/>
+<line x1="28" y1="22" x2="40" y2="34" stroke="#747879" stroke-width="1"/>
 </svg>
-<div class="absolute bottom-2 right-2 font-label-technical text-[10px] text-outline">ФИКСИРОВАННАЯ РАМА</div>
+<span class="kk-okna-type__cap">Фиксированная рама</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Глухие окна</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
-            Статичная рама без фурнитурных узлов. Максимальное естественное светопропускание и абсолютная герметичность. Идеально для фасадных эркеров, лестничных пролетов и комбинированных витражей.
-          </p>
-<div class="pt-space-md mt-space-md border-t border-primary-container/10 flex items-center justify-between font-label-technical text-label-technical text-on-surface-variant">
-<span>Камерность: 5-7</span>
-<span>Монтажная глубина: 70–82 мм</span>
+<div class="kk-okna-type__body">
+<h3 class="kk-okna-h3">Глухие окна</h3>
+<p class="kk-okna-text">Статичная рама без фурнитурных узлов. Максимальное светопропускание и&nbsp;абсолютная герметичность. Подходит для эркеров, лестничных пролётов и&nbsp;комбинированных витражей.</p>
 </div>
-</div>
-<!-- 2. Side-hung window -->
-<div class="flex flex-col bg-surface p-space-lg relative border border-primary-container/5 hover:border-primary-container/30 transition-all duration-300">
-<div class="flex items-center justify-between mb-space-md">
-<span class="font-label-technical text-label-technical text-outline">ТИП 02 // ПОВОРОТ</span>
-<span class="inline-flex px-2 py-0.5 bg-surface-container font-label-technical text-[10px] text-secondary">УГОЛ РАСКРЫТИЯ 180°</span>
-</div>
-<div class="w-full h-44 bg-surface-container-low flex items-center justify-center p-4 relative mb-space-md overflow-hidden">
-<svg class="w-28 h-36 stroke-primary fill-none" viewbox="0 0 100 130">
-<rect height="120" stroke="currentColor" stroke-width="3" width="90" x="5" y="5"></rect>
-<rect height="102" stroke="currentColor" stroke-width="1.5" width="72" x="14" y="14"></rect>
-<!-- Opening arrow/hinge lines -->
-<polyline points="14,14 86,65 14,116" stroke="#52634b" stroke-dasharray="4 2" stroke-width="1.5"></polyline>
-<circle cx="82" cy="65" fill="#111617" r="3"></circle>
+<dl class="kk-okna-specs">
+<div><dt>Камерность</dt><dd>5–7</dd></div>
+<div><dt>Монтажная глубина</dt><dd>70–82 мм</dd></div>
+</dl>
+</article>
+<!-- Type 02 -->
+<article class="kk-okna-type kk-lift">
+<div class="kk-okna-type__top"><span class="kk-okna-idx">Тип 02 · Поворот</span><span class="kk-okna-chip">Раскрытие 180°</span></div>
+<div class="kk-okna-type__fig">
+<svg class="kk-okna-type__svg" viewBox="0 0 100 130" fill="none" aria-hidden="true">
+<rect x="5" y="5" width="90" height="120" stroke="currentColor" stroke-width="2.4"/>
+<rect x="14" y="14" width="72" height="102" stroke="currentColor" stroke-width="1.2"/>
+<polyline points="14,14 86,65 14,116" stroke="#52634b" stroke-width="1.2" stroke-dasharray="4 2"/>
+<rect x="79" y="62" width="5" height="10" fill="#111617" stroke="none"/>
 </svg>
-<div class="absolute bottom-2 right-2 font-label-technical text-[10px] text-outline">ПОВОРОТ В ГОРИЗОНТАЛИ</div>
+<span class="kk-okna-type__cap">Поворот в горизонтали</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Поворотные окна</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
-            Классическое распахивание в горизонтальной плоскости. Обеспечивает беспрепятственный доступ к внешней стороне стеклопакета для удобного и безопасного ухода.
-          </p>
-<div class="pt-space-md mt-space-md border-t border-primary-container/10 flex items-center justify-between font-label-technical text-label-technical text-on-surface-variant">
-<span>Фурнитура: Siegenia / Roto</span>
-<span>Прижимных цапф: до 6</span>
+<div class="kk-okna-type__body">
+<h3 class="kk-okna-h3">Поворотные окна</h3>
+<p class="kk-okna-text">Классическое распахивание в&nbsp;горизонтальной плоскости. Свободный доступ к&nbsp;наружной стороне стеклопакета для удобного и&nbsp;безопасного ухода.</p>
 </div>
-</div>
-<!-- 3. Tilt-and-turn window -->
-<div class="flex flex-col bg-surface p-space-lg relative border border-primary-container/5 hover:border-primary-container/30 transition-all duration-300">
-<div class="flex items-center justify-between mb-space-md">
-<span class="font-label-technical text-label-technical text-outline">ТИП 03 // ДВУХРЕЖИМНЫЙ</span>
-<span class="inline-flex px-2 py-0.5 bg-secondary-container font-label-technical text-[10px] text-on-secondary-container">ХИТ ПРОЕКТОВ</span>
-</div>
-<div class="w-full h-44 bg-surface-container-low flex items-center justify-center p-4 relative mb-space-md overflow-hidden">
-<svg class="w-28 h-36 stroke-primary fill-none" viewbox="0 0 100 130">
-<rect height="120" stroke="currentColor" stroke-width="3" width="90" x="5" y="5"></rect>
-<rect height="102" stroke="currentColor" stroke-width="1.5" width="72" x="14" y="14"></rect>
-<polyline points="14,14 86,65 14,116" stroke="#52634b" stroke-dasharray="3 2" stroke-width="1.2"></polyline>
-<polyline points="14,116 50,14 86,116" stroke="#111617" stroke-dasharray="3 2" stroke-width="1.2"></polyline>
-<circle cx="82" cy="65" fill="#111617" r="3"></circle>
+<dl class="kk-okna-specs">
+<div><dt>Фурнитура</dt><dd>Siegenia / Roto</dd></div>
+<div><dt>Прижимные цапфы</dt><dd>до 6</dd></div>
+</dl>
+</article>
+<!-- Type 03 -->
+<article class="kk-okna-type kk-lift">
+<div class="kk-okna-type__top"><span class="kk-okna-idx">Тип 03 · Два режима</span><span class="kk-okna-chip kk-okna-chip--accent">Хит проектов</span></div>
+<div class="kk-okna-type__fig">
+<svg class="kk-okna-type__svg" viewBox="0 0 100 130" fill="none" aria-hidden="true">
+<rect x="5" y="5" width="90" height="120" stroke="currentColor" stroke-width="2.4"/>
+<rect x="14" y="14" width="72" height="102" stroke="currentColor" stroke-width="1.2"/>
+<polyline points="14,14 86,65 14,116" stroke="#52634b" stroke-width="1.1" stroke-dasharray="3 2"/>
+<polyline points="14,116 50,14 86,116" stroke="#111617" stroke-width="1.1" stroke-dasharray="3 2"/>
+<rect x="79" y="62" width="5" height="10" fill="#111617" stroke="none"/>
 </svg>
-<div class="absolute bottom-2 right-2 font-label-technical text-[10px] text-outline">ОТКИД + ПОВОРОТ</div>
+<span class="kk-okna-type__cap">Откид + поворот</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Поворотно-откидные окна</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
-            Максимально востребованный формат для жилых комнат. Сочетает распашное раскрытие со щелевым и ступенчатым микропроветриванием без сквозняков и выхолаживания.
-          </p>
-<div class="pt-space-md mt-space-md border-t border-primary-container/10 flex items-center justify-between font-label-technical text-label-technical text-on-surface-variant">
-<span>Микропроветривание: 4 мм</span>
-<span>Защита от захлопывания</span>
+<div class="kk-okna-type__body">
+<h3 class="kk-okna-h3">Поворотно-откидные окна</h3>
+<p class="kk-okna-text">Самый востребованный формат для жилых комнат. Распашное открывание плюс щелевое и&nbsp;ступенчатое микропроветривание — без сквозняков и&nbsp;выхолаживания.</p>
 </div>
-</div>
-<!-- 4. Sliding portal systems -->
-<div class="flex flex-col bg-surface p-space-lg relative border border-primary-container/5 hover:border-primary-container/30 transition-all duration-300 lg:col-span-2">
-<div class="flex items-center justify-between mb-space-md">
-<span class="font-label-technical text-label-technical text-outline">ТИП 04 // ПОРТАЛЬНЫЕ СИСТЕМЫ</span>
-<span class="inline-flex px-2 py-0.5 bg-surface-container font-label-technical text-[10px] text-primary">ПАНОРАМНЫЙ ВЫХОД</span>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md items-center">
-<div class="w-full h-44 bg-surface-container-low flex items-center justify-center p-4 relative overflow-hidden">
-<svg class="w-56 h-32 stroke-primary fill-none" viewbox="0 0 200 120">
-<rect height="110" stroke="currentColor" stroke-width="2.5" width="190" x="5" y="5"></rect>
-<line stroke="currentColor" stroke-width="2" x1="100" x2="100" y1="5" y2="115"></line>
-<rect height="96" stroke="#52634b" stroke-width="1.5" width="85" x="105" y="12"></rect>
-<line marker-end="url(#arrow)" stroke="#52634b" stroke-width="2" x1="105" x2="40" y1="60" y2="60"></line>
-<path d="M50 55 L40 60 L50 65" fill="none" stroke="#52634b" stroke-width="2"></path>
+<dl class="kk-okna-specs">
+<div><dt>Микропроветривание</dt><dd>4 мм</dd></div>
+<div><dt>Защита</dt><dd>от захлопывания</dd></div>
+</dl>
+</article>
+<!-- Type 04 (wide) -->
+<article class="kk-okna-type kk-okna-type--wide kk-lift">
+<div class="kk-okna-type__top"><span class="kk-okna-idx">Тип 04 · Портальные системы</span><span class="kk-okna-chip">Панорамный выход</span></div>
+<div class="kk-okna-type__split">
+<div class="kk-okna-type__fig">
+<svg class="kk-okna-type__svg kk-okna-type__svg--wide" viewBox="0 0 200 120" fill="none" aria-hidden="true">
+<rect x="5" y="5" width="190" height="110" stroke="currentColor" stroke-width="2.2"/>
+<line x1="100" y1="5" x2="100" y2="115" stroke="currentColor" stroke-width="1.6"/>
+<rect x="105" y="12" width="85" height="96" stroke="#52634b" stroke-width="1.2"/>
+<line x1="150" y1="60" x2="44" y2="60" stroke="#52634b" stroke-width="1.4"/>
+<path d="M54 54 L44 60 L54 66" stroke="#52634b" stroke-width="1.4"/>
 </svg>
-<div class="absolute bottom-2 right-2 font-label-technical text-[10px] text-outline">ПАРАЛЛЕЛЬНЫЙ СДВИГ ВДОЛЬ НАПРАВЛЯЮЩЕЙ</div>
+<span class="kk-okna-type__cap">Параллельный сдвиг вдоль направляющей</span>
 </div>
-<div class="flex flex-col justify-center">
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Параллельно-сдвижные системы (PSK / HST)</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-                Раздвижные панорамные порталы для загородных террас, веранд и утепленных балконов. Створка весом до 200 кг смещается мягко и бесшумно одной рукой по стальному рельсу, экономя полезную площадь помещения.
-              </p>
-<div class="pt-space-sm mt-space-sm border-t border-primary-container/10 flex items-center gap-4 font-label-technical text-label-technical text-on-surface-variant">
-<span>Ширина проема: до 4000 мм</span>
-<span>Теплый контур: 0.94 м²·°С/Вт</span>
+<div class="kk-okna-type__side">
+<div class="kk-okna-type__body">
+<h3 class="kk-okna-h3">Параллельно-сдвижные системы <span class="kk-okna-mono">PSK / HST</span></h3>
+<p class="kk-okna-text">Раздвижные панорамные порталы для террас, веранд и&nbsp;утеплённых балконов. Створка весом до 200&nbsp;кг смещается мягко и&nbsp;бесшумно одной рукой по стальному рельсу, сохраняя полезную площадь помещения.</p>
+</div>
+<dl class="kk-okna-specs">
+<div><dt>Ширина проёма</dt><dd>до 4000 мм</dd></div>
+<div><dt>Сопротивление теплопередаче</dt><dd>0.94 м²·°С/Вт</dd></div>
+</dl>
 </div>
 </div>
-</div>
-</div>
-<!-- 5. Entrance groups -->
-<div class="flex flex-col bg-surface p-space-lg relative border border-primary-container/5 hover:border-primary-container/30 transition-all duration-300">
-<div class="flex items-center justify-between mb-space-md">
-<span class="font-label-technical text-label-technical text-outline">ТИП 05 // ВХОДНАЯ ГРУППА</span>
-<span class="inline-flex px-2 py-0.5 bg-surface-container font-label-technical text-[10px] text-primary">КЛАСС ВЗЛОМОСТОЙКОСТИ RC2</span>
-</div>
-<div class="w-full h-44 bg-surface-container-low flex items-center justify-center p-4 relative mb-space-md overflow-hidden">
-<svg class="w-24 h-36 stroke-primary fill-none" viewbox="0 0 90 140">
-<rect height="130" stroke="currentColor" stroke-width="3" width="80" x="5" y="5"></rect>
-<rect height="116" stroke="currentColor" stroke-width="1.8" width="66" x="12" y="12"></rect>
-<line stroke="currentColor" stroke-width="1.5" x1="12" x2="78" y1="85" y2="85"></line>
-<rect fill="#111617" height="16" width="4" x="68" y="72"></rect>
-<line stroke="#52634b" stroke-width="4" x1="5" x2="85" y1="135" y2="135"></line>
+</article>
+<!-- Type 05 -->
+<article class="kk-okna-type kk-lift">
+<div class="kk-okna-type__top"><span class="kk-okna-idx">Тип 05 · Вход</span><span class="kk-okna-chip">RC2</span></div>
+<div class="kk-okna-type__fig">
+<svg class="kk-okna-type__svg" viewBox="0 0 90 140" fill="none" aria-hidden="true">
+<rect x="5" y="5" width="80" height="130" stroke="currentColor" stroke-width="2.4"/>
+<rect x="12" y="12" width="66" height="116" stroke="currentColor" stroke-width="1.2"/>
+<line x1="12" y1="85" x2="78" y2="85" stroke="currentColor" stroke-width="1.1"/>
+<rect x="68" y="72" width="4" height="16" fill="#111617" stroke="none"/>
+<line x1="5" y1="135" x2="85" y2="135" stroke="#52634b" stroke-width="3"/>
 </svg>
-<div class="absolute bottom-2 right-2 font-label-technical text-[10px] text-outline">УСИЛЕННЫЙ ТЕРМОПОРОГ</div>
+<span class="kk-okna-type__cap">Усиленный термопорог</span>
 </div>
-<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Входные двери и тамбуры</h3>
-<p class="font-body-md text-body-md text-on-surface-variant flex-grow">
-            Усиленный створочный профиль со замкнутым стальным армированием толщиной 2.0 мм, многозапорным ригельным замком и термоизолированным алюминиевым порогом 20 мм.
-          </p>
-<div class="pt-space-md mt-space-md border-t border-primary-container/10 flex items-center justify-between font-label-technical text-label-technical text-on-surface-variant">
-<span>Петли: Dr. Hahn (Германия)</span>
-<span>Ресурс: 250 000 циклов</span>
+<div class="kk-okna-type__body">
+<h3 class="kk-okna-h3">Входные двери и&nbsp;тамбуры</h3>
+<p class="kk-okna-text">Усиленный профиль с&nbsp;замкнутым стальным армированием 2.0&nbsp;мм, многозапорным ригельным замком и&nbsp;термоизолированным алюминиевым порогом 20&nbsp;мм. Класс взломостойкости RC2.</p>
+</div>
+<dl class="kk-okna-specs">
+<div><dt>Петли</dt><dd>Dr. Hahn, Германия</dd></div>
+<div><dt>Ресурс</dt><dd>250 000 циклов</dd></div>
+</dl>
+</article>
+</div>
+</div>
+</section>
+
+<!-- 04. Profile & glazing spec sheet -->
+<section class="kk-okna-section kk-okna-section--tint" id="profile">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="kk-okna-profile">
+<figure class="kk-okna-profile__figure kk-reveal kk-reveal--left">
+<div class="kk-okna-profile__media">
+<img src="assets/img/okna-detail.jpg" alt="Угол оконного профиля цвета антрацит крупным планом: тройное остекление и резиновые уплотнители" loading="lazy" decoding="async"/>
+<span class="kk-okna-profile__tag">Профиль класса А · 3 контура</span>
+</div>
+<figcaption class="kk-okna-profile__cap"><span>Узел створки в разрезе</span><span>ГОСТ 30674-99 · ISO 9001</span></figcaption>
+</figure>
+<div class="kk-okna-profile__content">
+<p class="kk-okna-eyebrow">Профиль и стеклопакет</p>
+<h2 class="kk-okna-h2">Инженерия окна в&nbsp;цифрах</h2>
+<p class="kk-okna-lead kk-reveal">Тепло, тишина и&nbsp;долговечность определяются деталями, которые не&nbsp;видны после монтажа. Вот базовая спецификация наших изделий.</p>
+<dl class="kk-okna-sheet">
+<div><dt>Наружные стенки профиля</dt><dd>3.0 мм · класс А</dd></div>
+<div><dt>Камерность профиля</dt><dd>5–7 камер</dd></div>
+<div><dt>Монтажная глубина</dt><dd>70–82 мм</dd></div>
+<div><dt>Контуры уплотнения</dt><dd>3 · EPDM до −50 °C</dd></div>
+<div><dt>Армирование</dt><dd>сталь 1.5–2.0 мм, замкнутое</dd></div>
+<div><dt>Заполнение стеклопакета</dt><dd>аргон 92% · i-стекло</dd></div>
+<div><dt>Шумоизоляция</dt><dd>до 42 дБ</dd></div>
+<div><dt>Фурнитура</dt><dd>Roto NX / Siegenia</dd></div>
+<div><dt>Гарантия завода</dt><dd>10 лет</dd></div>
+</dl>
 </div>
 </div>
 </div>
-<!-- Interactive Direction Switcher (Manufacturing, Repair, Installation) -->
-<div class="mt-space-2xl border-t border-primary-container/10 pt-space-2xl" id="services-regulation">
-<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md mb-space-lg">
-<div>
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Полный производственный цикл</span>
-<h2 class="font-headline-lg text-headline-lg text-primary font-light">Регламент и стандарты направлений</h2>
+</section>
+
+<!-- 05. Directions: manufacturing / repair / installation -->
+<section class="kk-okna-section" id="services-regulation">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<header class="kk-okna-head kk-okna-head--tabs">
+<div class="kk-okna-head__main">
+<p class="kk-okna-eyebrow">Полный производственный цикл</p>
+<h2 class="kk-okna-h2">Регламент и&nbsp;стандарты направлений</h2>
 </div>
-<!-- Tab Buttons -->
-<div class="flex flex-col sm:flex-row bg-surface-container p-1 gap-1 w-full lg:w-auto" role="tablist" aria-label="Направления услуг">
-<button type="button" role="tab" aria-selected="true" class="px-4 sm:px-5 py-2.5 font-label-technical text-label-technical uppercase tracking-wider transition-all duration-200 bg-primary-container text-surface-bright text-left sm:text-center" id="tab-btn-manufacturing" onclick="window.setTab('manufacturing')">
-              1. Изготовление
-            </button>
-<button type="button" role="tab" aria-selected="false" class="px-4 sm:px-5 py-2.5 font-label-technical text-label-technical uppercase tracking-wider transition-all duration-200 text-on-surface-variant hover:text-primary text-left sm:text-center" id="tab-btn-repair" onclick="window.setTab('repair')">
-              2. Ремонт и модернизация
-            </button>
-<button type="button" role="tab" aria-selected="false" class="px-4 sm:px-5 py-2.5 font-label-technical text-label-technical uppercase tracking-wider transition-all duration-200 text-on-surface-variant hover:text-primary text-left sm:text-center" id="tab-btn-installation" onclick="window.setTab('installation')">
-              3. Монтаж по ГОСТ
-            </button>
-</div>
+<p class="kk-okna-lead">Изготовление, сервис и&nbsp;монтаж выполняет одна команда — с&nbsp;едиными стандартами и&nbsp;общей ответственностью.</p>
+</header>
+<div class="kk-okna-tabs" role="tablist" aria-label="Направления услуг">
+<button type="button" role="tab" aria-selected="true" aria-controls="tab-content-manufacturing" tabindex="0" class="kk-okna-tab is-active" id="tab-btn-manufacturing" onclick="window.setTab('manufacturing')"><span class="kk-okna-tab__idx">01</span><span class="kk-okna-tab__label">Изготовление</span></button>
+<button type="button" role="tab" aria-selected="false" aria-controls="tab-content-repair" tabindex="-1" class="kk-okna-tab" id="tab-btn-repair" onclick="window.setTab('repair')"><span class="kk-okna-tab__idx">02</span><span class="kk-okna-tab__label">Ремонт и модернизация</span></button>
+<button type="button" role="tab" aria-selected="false" aria-controls="tab-content-installation" tabindex="-1" class="kk-okna-tab" id="tab-btn-installation" onclick="window.setTab('installation')"><span class="kk-okna-tab__idx">03</span><span class="kk-okna-tab__label">Монтаж по ГОСТ</span></button>
 </div>
 <!-- Tab 1: Manufacturing -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter bg-surface-container-low p-space-xl border-l-4 border-primary" id="tab-content-manufacturing">
-<div class="lg:col-span-4 flex flex-col gap-3">
-<span class="font-label-technical text-label-technical text-secondary">РЕГЛАМЕНТ ЦЕХА // ПОС. ШУШАРЫ</span>
-<h3 class="font-headline-md text-headline-md text-primary">Автоматизированная сборка с лазерной геометрией</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Каждый элемент нарезается на двухголовочных пилах с точностью до 0.2 мм. Сварка четырёх углов выполняется синхронно, исключая перекос диагоналей.
-            </p>
+<div class="kk-okna-panel" id="tab-content-manufacturing" role="tabpanel" aria-labelledby="tab-btn-manufacturing">
+<div class="kk-okna-panel__intro">
+<span class="kk-okna-idx kk-okna-idx--accent">Регламент цеха · пос. Шушары</span>
+<h3 class="kk-okna-panel__title">Автоматизированная сборка с&nbsp;лазерной геометрией</h3>
+<p class="kk-okna-text">Каждый элемент нарезается на двухголовочных пилах с&nbsp;точностью до&nbsp;0.2&nbsp;мм. Четыре угла свариваются синхронно — диагонали не&nbsp;перекашиваются.</p>
 </div>
-<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-space-md">
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-outline">ЭТАП 01</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Замкнутое армирование</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Оцинкованный стальной профиль толщиной от 1.5 до 2.0 мм предотвращает сезонные прогибы створки под весом тяжелого триплекса.</p>
-</div>
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-outline">ЭТАП 02</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Аргоновое заполнение</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Стеклопакеты заполняются инертным газом аргоном (92%), что снижает теплопотери конвекцией на 18-22% по сравнению с воздухом.</p>
-</div>
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-outline">ЭТАП 03</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Стенд вертикального остекления</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Имитация эксплуатационной нагрузки рамы перед отправкой заказчику: финишная юстировка прижима створок и плавности хода ручек.</p>
-</div>
-</div>
+<ol class="kk-okna-panel__steps">
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">Этап 01</span><h4 class="kk-okna-pstep__title">Замкнутое армирование</h4><p class="kk-okna-pstep__text">Оцинкованный стальной профиль 1.5–2.0&nbsp;мм предотвращает сезонные прогибы створки под весом тяжёлого триплекса.</p></li>
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">Этап 02</span><h4 class="kk-okna-pstep__title">Аргоновое заполнение</h4><p class="kk-okna-pstep__text">Стеклопакеты заполняются аргоном (92%) — теплопотери конвекцией ниже на&nbsp;18–22% по сравнению с&nbsp;воздухом.</p></li>
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">Этап 03</span><h4 class="kk-okna-pstep__title">Стенд вертикального остекления</h4><p class="kk-okna-pstep__text">Имитация эксплуатационной нагрузки перед отправкой: финишная юстировка прижима створок и&nbsp;хода ручек.</p></li>
+</ol>
 </div>
 <!-- Tab 2: Repair -->
-<div class="hidden grid grid-cols-1 lg:grid-cols-12 gap-gutter bg-surface-container-low p-space-xl border-l-4 border-secondary" id="tab-content-repair">
-<div class="lg:col-span-4 flex flex-col gap-3">
-<span class="font-label-technical text-label-technical text-secondary">СЕРВИСНЫЙ ДЕПАРТАМЕНТ</span>
-<h3 class="font-headline-md text-headline-md text-primary">Восстановление заводской герметичности окон</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Устраняем продувания, запотевание внутри стеклопакетов, провисание тяжелых створок и трещины профиля. Модернизируем глухие проемы в поворотно-откидные.
-            </p>
+<div class="kk-okna-panel" id="tab-content-repair" role="tabpanel" aria-labelledby="tab-btn-repair" hidden>
+<div class="kk-okna-panel__intro">
+<span class="kk-okna-idx kk-okna-idx--accent">Сервисный департамент</span>
+<h3 class="kk-okna-panel__title">Восстановление заводской герметичности окон</h3>
+<p class="kk-okna-text">Устраняем продувание, запотевание стеклопакетов, провисание тяжёлых створок и&nbsp;трещины профиля. Переоборудуем глухие проёмы в&nbsp;поворотно-откидные.</p>
 </div>
-<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-space-md">
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-secondary">01 // ТЕПЛОВИЗОР</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Диагностика продуваний</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Точный поиск точек сквозняка и мостиков холода по периметру примыкания створки и подоконника при помощи калиброванного тепловизора.</p>
-</div>
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-secondary">02 // EPDM-КОНТУР</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Замена уплотнителей</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Демонтаж изношенной резины и установка оригинального немецкого уплотнителя Semperit с увеличенным ходом упругой деформации.</p>
-</div>
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-secondary">03 // АПГРЕЙД</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Замена стеклопакетов</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Быстрая замена разбитых или однокамерных пакетов на энергосберегающие мультифункциональные триплекс-пакеты без демонтажа самой рамы.</p>
-</div>
-</div>
+<ol class="kk-okna-panel__steps">
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">01 · Тепловизор</span><h4 class="kk-okna-pstep__title">Диагностика продуваний</h4><p class="kk-okna-pstep__text">Точный поиск сквозняков и&nbsp;мостиков холода по периметру створки и&nbsp;подоконника калиброванным тепловизором.</p></li>
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">02 · EPDM-контур</span><h4 class="kk-okna-pstep__title">Замена уплотнителей</h4><p class="kk-okna-pstep__text">Демонтаж изношенной резины и&nbsp;установка оригинального уплотнителя Semperit с&nbsp;увеличенным ходом упругой деформации.</p></li>
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">03 · Апгрейд</span><h4 class="kk-okna-pstep__title">Замена стеклопакетов</h4><p class="kk-okna-pstep__text">Замена разбитых или однокамерных пакетов на энергосберегающие мультифункциональные — без демонтажа рамы.</p></li>
+</ol>
 </div>
 <!-- Tab 3: Installation -->
-<div class="hidden grid grid-cols-1 lg:grid-cols-12 gap-gutter bg-surface-container-low p-space-xl border-l-4 border-outline" id="tab-content-installation">
-<div class="lg:col-span-4 flex flex-col gap-3">
-<span class="font-label-technical text-label-technical text-secondary">МОНТАЖНАЯ СЛУЖБА</span>
-<h3 class="font-headline-md text-headline-md text-primary">Установка по трехслойному стандарту ГОСТ 30971-2012</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">
-              Монтажный шов защищается от уличной влаги, паропроницаем изнутри и стабилен к деформациям стенового проема на протяжении 20+ лет.
-            </p>
+<div class="kk-okna-panel" id="tab-content-installation" role="tabpanel" aria-labelledby="tab-btn-installation" hidden>
+<div class="kk-okna-panel__intro">
+<span class="kk-okna-idx kk-okna-idx--accent">Монтажная служба</span>
+<h3 class="kk-okna-panel__title">Трёхслойный монтаж по&nbsp;ГОСТ 30971-2012</h3>
+<p class="kk-okna-text">Монтажный шов защищён от уличной влаги, паропроницаем изнутри и&nbsp;стабилен к&nbsp;деформациям проёма на протяжении 20+ лет.</p>
 </div>
-<div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-space-md">
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-outline">СЛОЙ А (УЛИЦА)</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Лента ПСУЛ и гидроизоляция</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Предварительно сжатая уплотнительная лента выпускает пар из шва на улицу, но блокирует косой ливень и ультрафиолет.</p>
-</div>
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-outline">СЛОЙ Б (СЕРЕДИНА)</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Мелкопористая профпена</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Однородный утеплительный слой с низким вторичным расширением без полостей и каверн, гасящий акустические волны.</p>
-</div>
-<div class="p-space-md bg-surface border border-primary-container/5">
-<span class="font-label-technical text-[11px] text-outline">СЛОЙ В (ПОМЕЩЕНИЕ)</span>
-<h4 class="font-headline-sm text-[16px] text-primary my-1">Пароизоляционные ленты</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Фольгированные или бутиловые мембраны, исключающие попадание бытовой влаги из комнат в толщу полиуретанового шва.</p>
-</div>
-</div>
-</div>
+<ol class="kk-okna-panel__steps">
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">Слой А · улица</span><h4 class="kk-okna-pstep__title">Лента ПСУЛ и&nbsp;гидроизоляция</h4><p class="kk-okna-pstep__text">Предварительно сжатая лента выводит пар из шва наружу, но&nbsp;блокирует косой дождь и&nbsp;ультрафиолет.</p></li>
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">Слой Б · середина</span><h4 class="kk-okna-pstep__title">Мелкопористая профпена</h4><p class="kk-okna-pstep__text">Однородный утепляющий слой с&nbsp;низким вторичным расширением, без полостей и&nbsp;каверн, гасит акустические волны.</p></li>
+<li class="kk-okna-pstep"><span class="kk-okna-pstep__code">Слой В · помещение</span><h4 class="kk-okna-pstep__title">Пароизоляционные ленты</h4><p class="kk-okna-pstep__text">Фольгированные или бутиловые мембраны не&nbsp;пускают бытовую влагу из комнат в&nbsp;толщу полиуретанового шва.</p></li>
+</ol>
 </div>
 </div>
 </section>
-<!-- Section 3: Interactive Engineering Window Calculator (Steps 1-5) -->
-<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl" id="interactive-calc">
-<div class="flex flex-col gap-2 mb-space-xl">
-<div class="flex items-center gap-2">
-<span class="w-2.5 h-2.5 bg-secondary"></span>
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Инженерный модуль конфигурации</span>
+
+<!-- 06. Production advantages (dark band) -->
+<section class="kk-okna-section kk-okna-section--dark" id="advantages">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<header class="kk-okna-head kk-okna-head--dark">
+<div class="kk-okna-head__main">
+<p class="kk-okna-eyebrow kk-okna-eyebrow--light">Стандарты качества завода</p>
+<h2 class="kk-okna-h2">Преимущества собственного производства</h2>
 </div>
-<h2 class="font-headline-xl text-headline-xl text-primary font-light">Калькулятор параметров остекления</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
-        Задайте геометрические и технические параметры проемов. На производстве расчет выполняется индивидуально технологом без случайных наценок и фиктивных цифр.
-      </p>
-</div>
-<!-- Stepper Indicator -->
-<div class="grid grid-cols-5 gap-1 sm:gap-2 border-b border-primary-container/10 pb-space-md mb-space-xl font-label-technical text-[10px] sm:text-[11px]" role="list" aria-label="Шаги калькулятора">
-<div class="flex flex-col gap-1 border-b-2 border-primary pb-2 text-primary" id="indicator-step-1" role="listitem">
-<span class="uppercase tracking-wider">01</span>
-<span class="font-medium hidden sm:block">Конструкция</span>
-<span class="font-medium sm:hidden">Тип</span>
-</div>
-<div class="flex flex-col gap-1 border-b-2 border-transparent pb-2 text-outline" id="indicator-step-2" role="listitem">
-<span class="uppercase tracking-wider">02</span>
-<span class="font-medium hidden sm:block">Габариты</span>
-<span class="font-medium sm:hidden">Размер</span>
-</div>
-<div class="flex flex-col gap-1 border-b-2 border-transparent pb-2 text-outline" id="indicator-step-3" role="listitem">
-<span class="uppercase tracking-wider">03</span>
-<span class="font-medium">Опции</span>
-</div>
-<div class="flex flex-col gap-1 border-b-2 border-transparent pb-2 text-outline" id="indicator-step-4" role="listitem">
-<span class="uppercase tracking-wider">04</span>
-<span class="font-medium hidden sm:block">Локация</span>
-<span class="font-medium sm:hidden">Адрес</span>
-</div>
-<div class="flex flex-col gap-1 border-b-2 border-transparent pb-2 text-outline" id="indicator-step-5" role="listitem">
-<span class="uppercase tracking-wider">05</span>
-<span class="font-medium hidden sm:block">Спецификация</span>
-<span class="font-medium sm:hidden">Итог</span>
+<p class="kk-okna-lead kk-reveal">Полный цикл переработки профиля и&nbsp;сборки в&nbsp;посёлке Шушары. Без посредников, наценок перекупщиков и&nbsp;логистических задержек.</p>
+</header>
+<div class="kk-okna-adv" data-reveal="stagger">
+<div class="kk-okna-adv__item"><div class="kk-okna-adv__top"><span class="kk-okna-adv__idx">01</span><span class="kk-okna-adv__code">Допуск 0.2 мм</span></div><h3 class="kk-okna-adv__title">Лазерный контроль геометрии</h3><p class="kk-okna-adv__text">Синхронная четырёхголовочная сварка рам и&nbsp;створок на ЧПУ с&nbsp;непрерывным оптическим контролем углов и&nbsp;диагоналей.</p></div>
+<div class="kk-okna-adv__item"><div class="kk-okna-adv__top"><span class="kk-okna-adv__idx">02</span><span class="kk-okna-adv__code">Roto NX / Siegenia</span></div><h3 class="kk-okna-adv__title">Сертифицированная фурнитура</h3><p class="kk-okna-adv__text">Немецкие механизмы с&nbsp;титано-серебристым антикоррозийным покрытием. Грибовидные цапфы блокируют отжим створки снаружи.</p></div>
+<div class="kk-okna-adv__item"><div class="kk-okna-adv__top"><span class="kk-okna-adv__idx">03</span><span class="kk-okna-adv__code">Двойной барьер</span></div><h3 class="kk-okna-adv__title">Герметичные стеклопакеты</h3><p class="kk-okna-adv__text">Двухкомпонентная герметизация бутилом и&nbsp;полисульфидом. Аргон в&nbsp;межстекольном пространстве и&nbsp;i-стекло с&nbsp;напылением серебра.</p></div>
+<div class="kk-okna-adv__item"><div class="kk-okna-adv__top"><span class="kk-okna-adv__idx">04</span><span class="kk-okna-adv__code">Спецтранспорт</span></div><h3 class="kk-okna-adv__title">Бережная доставка на&nbsp;пирамидах</h3><p class="kk-okna-adv__text">Изделия фиксируются ремнями вертикально — без внутренних напряжений и&nbsp;микротрещин в&nbsp;стекле.</p></div>
+<div class="kk-okna-adv__item"><div class="kk-okna-adv__top"><span class="kk-okna-adv__idx">05</span><span class="kk-okna-adv__code">ГОСТ 30971-2012</span></div><h3 class="kk-okna-adv__title">Штатный монтаж по&nbsp;ГОСТ</h3><p class="kk-okna-adv__text">Монтажники со&nbsp;стажем от&nbsp;7&nbsp;лет. Только оригинальные анкерные пластины, пароизоляционные ленты и&nbsp;профессиональная пена.</p></div>
+<div class="kk-okna-adv__item"><div class="kk-okna-adv__top"><span class="kk-okna-adv__idx">06</span><span class="kk-okna-adv__code">Прямой договор</span></div><h3 class="kk-okna-adv__title">Ответственность изготовителя</h3><p class="kk-okna-adv__text">Фиксированная цена в&nbsp;договоре, без скрытых доплат. Единая гарантия завода на&nbsp;конструкцию и&nbsp;монтажный шов.</p></div>
 </div>
 </div>
-<!-- Calculator Interactive Body -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
-<!-- Left Panel: Steps Container -->
-<div class="lg:col-span-8 bg-surface-container-low p-6 lg:p-10 border border-primary-container/10 relative">
-<!-- STEP 1: Construction Selection -->
-<div class="flex flex-col gap-space-lg" id="step-panel-1">
-<div class="flex items-center justify-between border-b border-primary-container/10 pb-3">
-<span class="font-label-technical text-label-technical text-outline uppercase">ШАГ 1 ИЗ 5 // ВЫБОР БАЗОВОГО ТИПА</span>
-<span class="font-label-technical text-[11px] text-secondary">Обязательное поле</span>
+</section>
+
+<!-- 07. Configurator (5 steps) -->
+<section class="kk-okna-section kk-okna-section--tint" id="interactive-calc">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<header class="kk-okna-head">
+<div class="kk-okna-head__main">
+<p class="kk-okna-eyebrow">Инженерный модуль конфигурации</p>
+<h2 class="kk-okna-h2">Калькулятор параметров остекления</h2>
 </div>
-<h3 class="font-headline-md text-headline-md text-primary font-normal">Выберите кинематику открывания</h3>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3" id="calc-type-selector">
-<button class="type-btn text-left p-4 bg-surface border-2 border-primary flex flex-col gap-2 transition-all" onclick="window.calcSelectType('Глухое окно', this)" type="button">
-<span class="material-symbols-outlined text-primary text-2xl">crop_portrait</span>
-<span class="font-headline-sm text-[15px] text-primary">Глухое окно</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">Цельный витраж без створок, максимальный свет</span>
+<p class="kk-okna-lead">Задайте габариты и&nbsp;технические параметры проёмов. Стоимость рассчитывает технолог индивидуально — без случайных наценок и&nbsp;условных цифр.</p>
+</header>
+
+<ol class="kk-okna-stepper" aria-label="Шаги калькулятора">
+<li class="kk-okna-step is-active" id="indicator-step-1" aria-current="step"><span class="kk-okna-step__num">01</span><span class="kk-okna-step__label"><span class="kk-okna-long">Конструкция</span><span class="kk-okna-short">Тип</span></span></li>
+<li class="kk-okna-step" id="indicator-step-2"><span class="kk-okna-step__num">02</span><span class="kk-okna-step__label"><span class="kk-okna-long">Габариты</span><span class="kk-okna-short">Размер</span></span></li>
+<li class="kk-okna-step" id="indicator-step-3"><span class="kk-okna-step__num">03</span><span class="kk-okna-step__label">Опции</span></li>
+<li class="kk-okna-step" id="indicator-step-4"><span class="kk-okna-step__num">04</span><span class="kk-okna-step__label"><span class="kk-okna-long">Локация</span><span class="kk-okna-short">Адрес</span></span></li>
+<li class="kk-okna-step" id="indicator-step-5"><span class="kk-okna-step__num">05</span><span class="kk-okna-step__label"><span class="kk-okna-long">Спецификация</span><span class="kk-okna-short">Итог</span></span></li>
+</ol>
+
+<div class="kk-okna-calc">
+<!-- Left: steps -->
+<div class="kk-okna-calc__panel" id="calc-panel">
+
+<!-- STEP 1 -->
+<div class="kk-okna-calc__step" id="step-panel-1">
+<div class="kk-okna-calc__meta"><span>Шаг 1 из 5 · Базовый тип</span><span class="kk-okna-calc__meta-note">Обязательно</span></div>
+<h3 class="kk-okna-calc__title">Выберите кинематику открывания</h3>
+<div class="kk-okna-tiles kk-okna-tiles--types" id="calc-type-selector">
+<button class="type-btn kk-okna-tile is-selected" data-type="Глухое окно" aria-pressed="true" onclick="window.calcSelectType('Глухое окно', this)" type="button">
+<span class="kk-okna-tile__check" aria-hidden="true"></span>
+<svg class="kk-okna-tile__ico" viewBox="0 0 30 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="38" stroke="currentColor" stroke-width="1.4"/><rect x="5" y="5" width="20" height="30" stroke="currentColor" stroke-width=".8" stroke-dasharray="2 2"/></svg>
+<span class="kk-okna-tile__title">Глухое окно</span>
+<span class="kk-okna-tile__text">Цельное остекление без створок, максимум света</span>
 </button>
-<button class="type-btn text-left p-4 bg-surface border border-outline-variant/60 hover:border-primary flex flex-col gap-2 transition-all" onclick="window.calcSelectType('Поворотное окно', this)" type="button">
-<span class="material-symbols-outlined text-outline text-2xl">meeting_room</span>
-<span class="font-headline-sm text-[15px] text-primary">Поворотное окно</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">Распахивание створок в горизонтали</span>
+<button class="type-btn kk-okna-tile" data-type="Поворотное окно" aria-pressed="false" onclick="window.calcSelectType('Поворотное окно', this)" type="button">
+<span class="kk-okna-tile__check" aria-hidden="true"></span>
+<svg class="kk-okna-tile__ico" viewBox="0 0 30 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="38" stroke="currentColor" stroke-width="1.4"/><polyline points="4,4 26,20 4,36" stroke="#52634b" stroke-width="1" stroke-dasharray="2 1.5"/></svg>
+<span class="kk-okna-tile__title">Поворотное окно</span>
+<span class="kk-okna-tile__text">Распахивание створки в горизонтали</span>
 </button>
-<button class="type-btn text-left p-4 bg-surface border border-outline-variant/60 hover:border-primary flex flex-col gap-2 transition-all" onclick="window.calcSelectType('Поворотно-откидное окно', this)" type="button">
-<span class="material-symbols-outlined text-outline text-2xl">window</span>
-<span class="font-headline-sm text-[15px] text-primary">Поворотно-откидное</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">2 режима: распашной и щелевой наклон</span>
+<button class="type-btn kk-okna-tile" data-type="Поворотно-откидное окно" aria-pressed="false" onclick="window.calcSelectType('Поворотно-откидное окно', this)" type="button">
+<span class="kk-okna-tile__check" aria-hidden="true"></span>
+<svg class="kk-okna-tile__ico" viewBox="0 0 30 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="38" stroke="currentColor" stroke-width="1.4"/><polyline points="4,4 26,20 4,36" stroke="#52634b" stroke-width="1" stroke-dasharray="2 1.5"/><polyline points="4,36 15,4 26,36" stroke="currentColor" stroke-width=".9" stroke-dasharray="2 1.5"/></svg>
+<span class="kk-okna-tile__title">Поворотно-откидное</span>
+<span class="kk-okna-tile__text">Два режима: распашной и щелевой наклон</span>
 </button>
-<button class="type-btn text-left p-4 bg-surface border border-outline-variant/60 hover:border-primary flex flex-col gap-2 transition-all" onclick="window.calcSelectType('Параллельно-сдвижное (Портал)', this)" type="button">
-<span class="material-symbols-outlined text-outline text-2xl">view_column</span>
-<span class="font-headline-sm text-[15px] text-primary">Параллельно-сдвижное</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">Портал PSK со смещением вдоль направляющей</span>
+<button class="type-btn kk-okna-tile" data-type="Параллельно-сдвижное (Портал)" aria-pressed="false" onclick="window.calcSelectType('Параллельно-сдвижное (Портал)', this)" type="button">
+<span class="kk-okna-tile__check" aria-hidden="true"></span>
+<svg class="kk-okna-tile__ico kk-okna-tile__ico--wide" viewBox="0 0 50 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="48" height="38" stroke="currentColor" stroke-width="1.4"/><line x1="25" y1="1" x2="25" y2="39" stroke="currentColor" stroke-width="1"/><line x1="40" y1="20" x2="12" y2="20" stroke="#52634b" stroke-width="1.1"/><path d="M16 17 L12 20 L16 23" stroke="#52634b" stroke-width="1.1"/></svg>
+<span class="kk-okna-tile__title">Параллельно-сдвижное</span>
+<span class="kk-okna-tile__text">Портал PSK со смещением вдоль направляющей</span>
 </button>
-<button class="type-btn text-left p-4 bg-surface border border-outline-variant/60 hover:border-primary flex flex-col gap-2 transition-all sm:col-span-2 md:col-span-2" onclick="window.calcSelectType('Входная группа ПВХ', this)" type="button">
-<span class="material-symbols-outlined text-outline text-2xl">door_front</span>
-<span class="font-headline-sm text-[15px] text-primary">Входная группа / Дверь</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">Усиленная коробка, алюминиевый порог, ригельный замок</span>
-</button>
-</div>
-<div class="flex justify-end pt-space-md">
-<button class="px-7 py-3 bg-primary-container text-surface-bright font-label-technical text-label-technical uppercase tracking-wider hover:bg-secondary transition-colors inline-flex items-center gap-2" onclick="window.calcGoToStep(2)">
-              Перейти к размерам <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- STEP 2: Dimensions & Quantity -->
-<div class="hidden flex flex-col gap-space-lg" id="step-panel-2">
-<div class="flex items-center justify-between border-b border-primary-container/10 pb-3">
-<span class="font-label-technical text-label-technical text-outline uppercase">ШАГ 2 ИЗ 5 // ГАБАРИТНЫЕ РАЗМЕРЫ</span>
-<span class="font-label-technical text-[11px] text-on-surface-variant">Диапазон: 400 - 3500 мм</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary font-normal">Укажите ширину, высоту и количество</h3>
-<div class="flex flex-col gap-space-lg">
-<!-- Width slider & input -->
-<div class="flex flex-col gap-2 bg-surface p-4 border border-outline-variant/60">
-<div class="flex items-center justify-between">
-<label class="font-label-technical text-label-technical text-primary uppercase" for="calc-width-num">Ширина конструкции (W):</label>
-<div class="flex items-center gap-1">
-<input class="w-24 text-right font-label-technical text-headline-sm font-semibold border-b border-primary focus:outline-none bg-transparent" id="calc-width-num" max="4000" min="400" oninput="window.calcSyncWidth(this.value)" step="10" type="number" value="1300"/>
-<span class="font-label-technical text-label-technical text-outline">мм</span>
-</div>
-</div>
-<input class="w-full accent-primary cursor-pointer mt-2" id="calc-width-range" max="4000" min="400" oninput="window.calcSyncWidth(this.value)" step="10" type="range" value="1300"/>
-<div class="flex justify-between font-label-technical text-[10px] text-outline">
-<span>400 мм (мин)</span>
-<span>1300 мм (стандарт)</span>
-<span>4000 мм (макс)</span>
-</div>
-</div>
-<!-- Height slider & input -->
-<div class="flex flex-col gap-2 bg-surface p-4 border border-outline-variant/60">
-<div class="flex items-center justify-between">
-<label class="font-label-technical text-label-technical text-primary uppercase" for="calc-height-num">Высота конструкции (H):</label>
-<div class="flex items-center gap-1">
-<input class="w-24 text-right font-label-technical text-headline-sm font-semibold border-b border-primary focus:outline-none bg-transparent" id="calc-height-num" max="3000" min="400" oninput="window.calcSyncHeight(this.value)" step="10" type="number" value="1400"/>
-<span class="font-label-technical text-label-technical text-outline">мм</span>
-</div>
-</div>
-<input class="w-full accent-primary cursor-pointer mt-2" id="calc-height-range" max="3000" min="400" oninput="window.calcSyncHeight(this.value)" step="10" type="range" value="1400"/>
-<div class="flex justify-between font-label-technical text-[10px] text-outline">
-<span>400 мм (мин)</span>
-<span>1400 мм (стандарт)</span>
-<span>3000 мм (макс)</span>
-</div>
-</div>
-<!-- Quantity counter -->
-<div class="flex items-center justify-between bg-surface p-4 border border-outline-variant/60">
-<div>
-<span class="font-label-technical text-label-technical text-primary uppercase block">Количество одинаковых изделий</span>
-<span class="font-body-sm text-[12px] text-on-surface-variant">Для оптовых заказов действует производственная скидка</span>
-</div>
-<div class="flex items-center gap-2">
-<button class="w-9 h-9 bg-surface-container hover:bg-surface-container-high flex items-center justify-center font-label-technical text-lg font-medium text-primary" onclick="window.calcAdjustQty(-1)" type="button">-</button>
-<span class="w-12 text-center font-label-technical text-headline-sm font-semibold" id="calc-qty-display">1</span>
-<button class="w-9 h-9 bg-surface-container hover:bg-surface-container-high flex items-center justify-center font-label-technical text-lg font-medium text-primary" onclick="window.calcAdjustQty(1)" type="button">+</button>
-<span class="font-label-technical text-label-technical text-outline">шт.</span>
-</div>
-</div>
-</div>
-<div class="flex justify-between pt-space-md border-t border-primary-container/10">
-<button class="px-5 py-3 border border-primary font-label-technical text-label-technical uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors" onclick="window.calcGoToStep(1)">
-              Назад
-            </button>
-<button class="px-7 py-3 bg-primary-container text-surface-bright font-label-technical text-label-technical uppercase tracking-wider hover:bg-secondary transition-colors inline-flex items-center gap-2" onclick="window.calcGoToStep(3)">
-              Перейти к параметрам <span class="material-symbols-outlined text-sm">arrow_forward</span>
+<button class="type-btn kk-okna-tile kk-okna-tile--wide" data-type="Входная группа ПВХ" aria-pressed="false" onclick="window.calcSelectType('Входная группа ПВХ', this)" type="button">
+<span class="kk-okna-tile__check" aria-hidden="true"></span>
+<svg class="kk-okna-tile__ico" viewBox="0 0 30 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="38" stroke="currentColor" stroke-width="1.4"/><line x1="4" y1="25" x2="26" y2="25" stroke="currentColor" stroke-width=".9"/><rect x="21" y="20" width="2" height="7" fill="currentColor" stroke="none"/><line x1="1" y1="39" x2="29" y2="39" stroke="#52634b" stroke-width="2"/></svg>
+<span class="kk-okna-tile__title">Входная группа / дверь</span>
+<span class="kk-okna-tile__text">Усиленная коробка, алюминиевый порог, ригельный замок</span>
 </button>
 </div>
-</div>
-<!-- STEP 3: Configuration, Color, Services & Options -->
-<div class="hidden flex flex-col gap-space-lg" id="step-panel-3">
-<div class="flex items-center justify-between border-b border-primary-container/10 pb-3">
-<span class="font-label-technical text-label-technical text-outline uppercase">ШАГ 3 ИЗ 5 // КОНФИГУРАЦИЯ И СЕРВИС</span>
-<span class="font-label-technical text-[11px] text-secondary">Индивидуальные параметры</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary font-normal">Створки, цвет профиля и сопутствующие услуги</h3>
-<div class="flex flex-col gap-space-md">
-<!-- Sash count -->
-<div class="flex flex-col gap-2">
-<span class="font-label-technical text-label-technical text-outline uppercase">Количество створок (деление рамы):</span>
-<div class="grid grid-cols-3 gap-2" id="calc-sash-selector">
-<button class="sash-btn py-3 px-2 text-center bg-surface border-2 border-primary font-body-sm font-medium" onclick="window.calcSelectSashes('Одностворчатая', this)" type="button">Одностворчатая</button>
-<button class="sash-btn py-3 px-2 text-center bg-surface border border-outline-variant/60 hover:border-primary font-body-sm font-medium" onclick="window.calcSelectSashes('Двухстворчатая', this)" type="button">Двухстворчатая</button>
-<button class="sash-btn py-3 px-2 text-center bg-surface border border-outline-variant/60 hover:border-primary font-body-sm font-medium" onclick="window.calcSelectSashes('Трёхстворчатая', this)" type="button">Трёхстворчатая</button>
+<div class="kk-okna-calc__nav kk-okna-calc__nav--end">
+<button type="button" class="kk-okna-btn kk-okna-btn--dark" onclick="window.calcGoToStep(2)">К размерам<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
 </div>
 </div>
-<!-- Profile Color -->
-<div class="flex flex-col gap-2 pt-2">
-<span class="font-label-technical text-label-technical text-outline uppercase">Цвет и фактура профиля:</span>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-2" id="calc-color-selector">
-<button class="color-btn p-3 bg-surface border-2 border-primary flex items-center gap-3 text-left" onclick="window.calcSelectColor('Классический белый (в массе)', this)" type="button">
-<div class="w-6 h-6 border border-outline-variant bg-[#FFFFFF] shrink-0"></div>
-<div>
-<div class="font-body-sm font-medium text-primary">Классический белый</div>
-<div class="font-label-technical text-[11px] text-outline">Глянцевый гладкий ПВХ</div>
+
+<!-- STEP 2 -->
+<div class="kk-okna-calc__step" id="step-panel-2" hidden>
+<div class="kk-okna-calc__meta"><span>Шаг 2 из 5 · Габариты</span><span class="kk-okna-calc__meta-note kk-okna-calc__meta-note--muted">400–4000 мм</span></div>
+<h3 class="kk-okna-calc__title">Укажите ширину, высоту и&nbsp;количество</h3>
+<div class="kk-okna-dims">
+<div class="kk-okna-dim">
+<div class="kk-okna-dim__head">
+<label class="kk-okna-label" for="calc-width-num">Ширина конструкции · W</label>
+<div class="kk-okna-dim__value"><input class="kk-okna-dim__input" id="calc-width-num" max="4000" min="400" oninput="window.calcSyncWidth(this.value)" step="10" type="number" value="1300" inputmode="numeric"/><span>мм</span></div>
 </div>
-</button>
-<button class="color-btn p-3 bg-surface border border-outline-variant/60 hover:border-primary flex items-center gap-3 text-left" onclick="window.calcSelectColor('Ламинация по каталогу RAL / древесная', this)" type="button">
-<div class="w-6 h-6 border border-outline-variant bg-[#252A2B] shrink-0"></div>
-<div>
-<div class="font-body-sm font-medium text-primary">Цветная ламинация / RAL</div>
-<div class="font-label-technical text-[11px] text-outline">Антрацит, графит, дуб, орех и 50+ цветов</div>
+<input class="kk-okna-range" id="calc-width-range" max="4000" min="400" oninput="window.calcSyncWidth(this.value)" step="10" type="range" value="1300" aria-label="Ширина конструкции, мм"/>
+<div class="kk-okna-dim__scale"><span>400 мин</span><span>1300 станд.</span><span>4000 макс</span></div>
 </div>
-</button>
+<div class="kk-okna-dim">
+<div class="kk-okna-dim__head">
+<label class="kk-okna-label" for="calc-height-num">Высота конструкции · H</label>
+<div class="kk-okna-dim__value"><input class="kk-okna-dim__input" id="calc-height-num" max="3000" min="400" oninput="window.calcSyncHeight(this.value)" step="10" type="number" value="1400" inputmode="numeric"/><span>мм</span></div>
+</div>
+<input class="kk-okna-range" id="calc-height-range" max="3000" min="400" oninput="window.calcSyncHeight(this.value)" step="10" type="range" value="1400" aria-label="Высота конструкции, мм"/>
+<div class="kk-okna-dim__scale"><span>400 мин</span><span>1400 станд.</span><span>3000 макс</span></div>
+</div>
+<div class="kk-okna-qty">
+<div class="kk-okna-qty__text">
+<span class="kk-okna-label">Количество одинаковых изделий</span>
+<span class="kk-okna-qty__hint">Для оптовых заказов действует производственная скидка</span>
+</div>
+<div class="kk-okna-qty__ctrl">
+<button class="kk-okna-qty__btn" onclick="window.calcAdjustQty(-1)" type="button" aria-label="Уменьшить количество">−</button>
+<span class="kk-okna-qty__val" id="calc-qty-display" aria-live="polite">1</span>
+<button class="kk-okna-qty__btn" onclick="window.calcAdjustQty(1)" type="button" aria-label="Увеличить количество">+</button>
+<span class="kk-okna-qty__unit">шт.</span>
 </div>
 </div>
-<!-- Services Checkboxes -->
-<div class="flex flex-col gap-2 pt-2">
-<span class="font-label-technical text-label-technical text-outline uppercase">Сервисные работы:</span>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-<label class="flex items-start gap-3 p-3 bg-surface border border-outline-variant/60 cursor-pointer hover:border-primary transition-colors">
-<input checked="" class="mt-1 w-4 h-4 accent-primary rounded-none" id="calc-opt-install" onchange="window.calcUpdateSummary()" type="checkbox"/>
-<div class="flex flex-col">
-<span class="font-body-sm font-medium text-primary">Монтаж по ГОСТ</span>
-<span class="font-label-technical text-[11px] text-on-surface-variant">Трехслойный шов, паро-/гидроизоляция</span>
 </div>
+<div class="kk-okna-calc__nav">
+<button type="button" class="kk-okna-btn kk-okna-btn--outline" onclick="window.calcGoToStep(1)">Назад</button>
+<button type="button" class="kk-okna-btn kk-okna-btn--dark" onclick="window.calcGoToStep(3)">К параметрам<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+</div>
+</div>
+
+<!-- STEP 3 -->
+<div class="kk-okna-calc__step" id="step-panel-3" hidden>
+<div class="kk-okna-calc__meta"><span>Шаг 3 из 5 · Конфигурация</span><span class="kk-okna-calc__meta-note">Индивидуально</span></div>
+<h3 class="kk-okna-calc__title">Створки, цвет профиля и&nbsp;сопутствующие услуги</h3>
+<div class="kk-okna-group">
+<span class="kk-okna-label">Количество створок</span>
+<div class="kk-okna-tiles kk-okna-tiles--sash" id="calc-sash-selector">
+<button class="sash-btn kk-okna-tile kk-okna-tile--row is-selected" aria-pressed="true" onclick="window.calcSelectSashes('Одностворчатая', this)" type="button"><svg class="kk-okna-tile__ico" viewBox="0 0 30 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="28" height="38" stroke="currentColor" stroke-width="1.4"/></svg><span class="kk-okna-tile__title">Одностворчатая</span></button>
+<button class="sash-btn kk-okna-tile kk-okna-tile--row" aria-pressed="false" onclick="window.calcSelectSashes('Двухстворчатая', this)" type="button"><svg class="kk-okna-tile__ico kk-okna-tile__ico--wide" viewBox="0 0 50 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="48" height="38" stroke="currentColor" stroke-width="1.4"/><line x1="25" y1="1" x2="25" y2="39" stroke="currentColor" stroke-width="1"/></svg><span class="kk-okna-tile__title">Двухстворчатая</span></button>
+<button class="sash-btn kk-okna-tile kk-okna-tile--row" aria-pressed="false" onclick="window.calcSelectSashes('Трёхстворчатая', this)" type="button"><svg class="kk-okna-tile__ico kk-okna-tile__ico--wide" viewBox="0 0 50 40" fill="none" aria-hidden="true"><rect x="1" y="1" width="48" height="38" stroke="currentColor" stroke-width="1.4"/><line x1="17" y1="1" x2="17" y2="39" stroke="currentColor" stroke-width="1"/><line x1="33" y1="1" x2="33" y2="39" stroke="currentColor" stroke-width="1"/></svg><span class="kk-okna-tile__title">Трёхстворчатая</span></button>
+</div>
+</div>
+<div class="kk-okna-group">
+<span class="kk-okna-label">Цвет и фактура профиля</span>
+<div class="kk-okna-tiles kk-okna-tiles--two" id="calc-color-selector">
+<button class="color-btn kk-okna-tile kk-okna-tile--row is-selected" aria-pressed="true" onclick="window.calcSelectColor('Классический белый (в массе)', this)" type="button"><span class="kk-okna-swatch" style="background:#ffffff"></span><span class="kk-okna-tile__stack"><span class="kk-okna-tile__title">Классический белый</span><span class="kk-okna-tile__mono">Гладкий ПВХ, белый в массе</span></span></button>
+<button class="color-btn kk-okna-tile kk-okna-tile--row" aria-pressed="false" onclick="window.calcSelectColor('Ламинация по каталогу RAL / древесная', this)" type="button"><span class="kk-okna-swatch" style="background:#383e42"></span><span class="kk-okna-tile__stack"><span class="kk-okna-tile__title">Цветная ламинация / RAL</span><span class="kk-okna-tile__mono">Антрацит, графит, дуб, орех и 50+ цветов</span></span></button>
+</div>
+</div>
+<div class="kk-okna-group">
+<span class="kk-okna-label">Сервисные работы</span>
+<div class="kk-okna-tiles kk-okna-tiles--two">
+<label class="kk-okna-opt"><input checked class="kk-okna-check" id="calc-opt-install" onchange="window.calcUpdateSummary()" type="checkbox"/><span class="kk-okna-tile__stack"><span class="kk-okna-tile__title">Монтаж по ГОСТ</span><span class="kk-okna-tile__mono">Трёхслойный шов, паро- и гидроизоляция</span></span></label>
+<label class="kk-okna-opt"><input class="kk-okna-check" id="calc-opt-demount" onchange="window.calcUpdateSummary()" type="checkbox"/><span class="kk-okna-tile__stack"><span class="kk-okna-tile__title">Демонтаж старых рам</span><span class="kk-okna-tile__mono">Аккуратный съём с сохранением четвертей</span></span></label>
+</div>
+</div>
+<div class="kk-okna-group">
+<span class="kk-okna-label">Дополнительные опции</span>
+<div class="kk-okna-tiles kk-okna-tiles--three">
+<label class="kk-okna-opt"><input class="kk-okna-check" id="calc-opt-mesh" onchange="window.calcUpdateSummary()" type="checkbox"/><span class="kk-okna-tile__title">Москитная сетка</span></label>
+<label class="kk-okna-opt"><input class="kk-okna-check" id="calc-opt-lock" onchange="window.calcUpdateSummary()" type="checkbox"/><span class="kk-okna-tile__title">Детский замок</span></label>
+<label class="kk-okna-opt"><input checked class="kk-okna-check" id="calc-opt-energy" onchange="window.calcUpdateSummary()" type="checkbox"/><span class="kk-okna-tile__title">Энергосберегающий пакет</span></label>
+</div>
+</div>
+<div class="kk-okna-calc__nav">
+<button type="button" class="kk-okna-btn kk-okna-btn--outline" onclick="window.calcGoToStep(2)">Назад</button>
+<button type="button" class="kk-okna-btn kk-okna-btn--dark" onclick="window.calcGoToStep(4)">Указать регион<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+</div>
+</div>
+
+<!-- STEP 4 -->
+<div class="kk-okna-calc__step" id="step-panel-4" hidden>
+<div class="kk-okna-calc__meta"><span>Шаг 4 из 5 · География</span><span class="kk-okna-calc__meta-note">СПб, ЛО и регионы РФ</span></div>
+<h3 class="kk-okna-calc__title">Укажите населённый пункт объекта</h3>
+<div class="kk-okna-fields">
+<div class="kk-okna-field">
+<label class="kk-okna-label" for="calc-city">Город или населённый пункт *</label>
+<input class="kk-okna-input" id="calc-city" oninput="window.calcUpdateSummary()" placeholder="Санкт-Петербург, Всеволожск, Выборг…" type="text" value="Санкт-Петербург" autocomplete="address-level2"/>
+</div>
+<div class="kk-okna-field">
+<label class="kk-okna-label" for="calc-address">Адрес объекта или район — необязательно</label>
+<input class="kk-okna-input" id="calc-address" oninput="window.calcUpdateSummary()" placeholder="Улица и дом, коттеджный посёлок или ЖК" type="text" autocomplete="street-address"/>
+</div>
+<div class="kk-okna-note">
+<span class="kk-okna-note__title">Транспортировка на спецпирамидах</span>
+<p>Изделия перевозятся вертикально на оборудованном транспорте. По СПб и&nbsp;Ленобласти — собственный автопарк; в&nbsp;другие регионы РФ — транспортными компаниями в&nbsp;жёсткой обрешётке.</p>
+</div>
+</div>
+<div class="kk-okna-calc__nav">
+<button type="button" class="kk-okna-btn kk-okna-btn--outline" onclick="window.calcGoToStep(3)">Назад</button>
+<button type="button" class="kk-okna-btn kk-okna-btn--dark" onclick="window.calcGoToStep(5)">К спецификации<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+</div>
+</div>
+
+<!-- STEP 5 -->
+<div class="kk-okna-calc__step" id="step-panel-5" hidden>
+<div class="kk-okna-calc__meta"><span>Шаг 5 из 5 · Сводка и расчёт</span><span class="kk-okna-calc__meta-note">Параметры зафиксированы</span></div>
+<h3 class="kk-okna-calc__title">Куда отправить спецификацию</h3>
+<div class="kk-okna-note">
+<span class="kk-okna-note__title">Честный производственный регламент</span>
+<p>Мы не&nbsp;показываем приблизительные «цены-завлекалки». Стоимость рассчитывает технолог по&nbsp;точной раскладке профиля, типу армирования, точкам прижима фурнитуры и&nbsp;формуле стеклопакета.</p>
+</div>
+<form class="kk-okna-form" id="calc-submit-form" onsubmit="window.calcHandleSubmit(event)">
+<div class="kk-okna-fields kk-okna-fields--two">
+<div class="kk-okna-field">
+<label class="kk-okna-label" for="lead-name">Ваше имя *</label>
+<input class="kk-okna-input" id="lead-name" name="name" placeholder="Константин" required type="text" autocomplete="name"/>
+</div>
+<div class="kk-okna-field">
+<label class="kk-okna-label" for="lead-phone">Телефон *</label>
+<input class="kk-okna-input" id="lead-phone" name="phone" placeholder="+7 (___) ___-__-__" required type="tel" autocomplete="tel"/>
+</div>
+</div>
+<div class="kk-okna-field">
+<label class="kk-okna-label" for="lead-comment">Комментарий или вопрос технологу</label>
+<textarea class="kk-okna-input kk-okna-textarea" id="lead-comment" name="comment" placeholder="Особые пожелания, удобный мессенджер, время звонка…" rows="3"></textarea>
+</div>
+<label class="kk-okna-consent">
+<input class="kk-okna-check" id="lead-agreement" name="agreement" required type="checkbox"/>
+<span>Согласен на обработку персональных данных для подготовки сметы в&nbsp;соответствии с&nbsp;<a href="privacy.html">политикой конфиденциальности</a>.</span>
 </label>
-<label class="flex items-start gap-3 p-3 bg-surface border border-outline-variant/60 cursor-pointer hover:border-primary transition-colors">
-<input class="mt-1 w-4 h-4 accent-primary rounded-none" id="calc-opt-demount" onchange="window.calcUpdateSummary()" type="checkbox"/>
-<div class="flex flex-col">
-<span class="font-body-sm font-medium text-primary">Демонтаж старых рам</span>
-<span class="font-label-technical text-[11px] text-on-surface-variant">Аккуратный съем, сохранение четвертей</span>
-</div>
-</label>
-</div>
-</div>
-<!-- Additional Options -->
-<div class="flex flex-col gap-2 pt-2">
-<span class="font-label-technical text-label-technical text-outline uppercase">Дополнительные опции:</span>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
-<label class="flex items-center gap-2 p-2.5 bg-surface border border-outline-variant/60 cursor-pointer">
-<input class="w-4 h-4 accent-primary rounded-none" id="calc-opt-mesh" onchange="window.calcUpdateSummary()" type="checkbox"/>
-<span class="font-body-sm text-[13px] text-primary">Москитная сетка</span>
-</label>
-<label class="flex items-center gap-2 p-2.5 bg-surface border border-outline-variant/60 cursor-pointer">
-<input class="w-4 h-4 accent-primary rounded-none" id="calc-opt-lock" onchange="window.calcUpdateSummary()" type="checkbox"/>
-<span class="font-body-sm text-[13px] text-primary">Детский замок безопасности</span>
-</label>
-<label class="flex items-center gap-2 p-2.5 bg-surface border border-outline-variant/60 cursor-pointer">
-<input checked="" class="w-4 h-4 accent-primary rounded-none" id="calc-opt-energy" onchange="window.calcUpdateSummary()" type="checkbox"/>
-<span class="font-body-sm text-[13px] text-primary">Энергосберегающий стеклопакет</span>
-</label>
-</div>
-</div>
-</div>
-<div class="flex justify-between pt-space-md border-t border-primary-container/10">
-<button class="px-5 py-3 border border-primary font-label-technical text-label-technical uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors" onclick="window.calcGoToStep(2)">
-              Назад
-            </button>
-<button class="px-7 py-3 bg-primary-container text-surface-bright font-label-technical text-label-technical uppercase tracking-wider hover:bg-secondary transition-colors inline-flex items-center gap-2" onclick="window.calcGoToStep(4)">
-              Указать регион <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- STEP 4: Region & Delivery -->
-<div class="hidden flex flex-col gap-space-lg" id="step-panel-4">
-<div class="flex items-center justify-between border-b border-primary-container/10 pb-3">
-<span class="font-label-technical text-label-technical text-outline uppercase">ШАГ 4 ИЗ 5 // ГЕОГРАФИЯ ДОСТАВКИ И МОНТАЖА</span>
-<span class="font-label-technical text-[11px] text-secondary">СПб, ЛО и регионы РФ</span>
-</div>
-<h3 class="font-headline-md text-headline-md text-primary font-normal">Укажите населенный пункт объекта</h3>
-<div class="flex flex-col gap-space-md">
-<div class="flex flex-col gap-1">
-<label class="font-label-technical text-label-technical text-primary uppercase" for="calc-city">Город или населенный пункт *</label>
-<input class="p-3 bg-surface border border-outline-variant focus:border-primary focus:outline-none font-body-md text-primary" id="calc-city" oninput="window.calcUpdateSummary()" placeholder="Например: Санкт-Петербург, Всеволожск, Выборг, Москва..." type="text" value="Санкт-Петербург"/>
-</div>
-<div class="flex flex-col gap-1">
-<label class="font-label-technical text-label-technical text-outline uppercase" for="calc-address">Адрес объекта или район (необязательно)</label>
-<input class="p-3 bg-surface border border-outline-variant focus:border-primary focus:outline-none font-body-md text-primary" id="calc-address" oninput="window.calcUpdateSummary()" placeholder="Улица, номер дома, коттеджный посёлок или ЖК" type="text"/>
-</div>
-<div class="p-4 bg-surface-container flex items-start gap-3">
-<span class="material-symbols-outlined text-secondary text-xl mt-0.5">local_shipping</span>
-<div class="flex flex-col font-label-technical text-body-sm text-on-surface-variant">
-<span class="font-medium text-primary">Транспортировка на спецпирамидах:</span>
-<span>Доставка осуществляется оборудованным автотранспортом с вертикальной фиксацией. Доставка по СПб и Ленобласти — собственный автопарк; в другие регионы РФ — транспортными компаниями с жесткой обрешеткой.</span>
-</div>
-</div>
-</div>
-<div class="flex justify-between pt-space-md border-t border-primary-container/10">
-<button class="px-5 py-3 border border-primary font-label-technical text-label-technical uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors" onclick="window.calcGoToStep(3)">
-              Назад
-            </button>
-<button class="px-7 py-3 bg-primary-container text-surface-bright font-label-technical text-label-technical uppercase tracking-wider hover:bg-secondary transition-colors inline-flex items-center gap-2" onclick="window.calcGoToStep(5)">
-              Перейти к сводке спецификации <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-</div>
-</div>
-<!-- STEP 5: Final Summary & Lead Request -->
-<div class="hidden flex flex-col gap-space-lg" id="step-panel-5">
-<div class="flex items-center justify-between border-b border-primary-container/10 pb-3">
-<span class="font-label-technical text-label-technical text-outline uppercase">ШАГ 5 ИЗ 5 // СВОДКА И ИНДИВИДУАЛЬНЫЙ РАСЧЕТ</span>
-<span class="inline-flex px-2 py-0.5 bg-secondary-container font-label-technical text-[10px] text-on-secondary-container">ПАРАМЕТРЫ ЗАФИКСИРОВАНЫ</span>
-</div>
-<div class="p-4 bg-surface-container border-l-4 border-secondary flex flex-col gap-1">
-<span class="font-label-technical text-label-technical text-secondary uppercase font-semibold">Честный производственный регламент</span>
-<p class="font-body-sm text-body-sm text-primary">
-              Мы намеренно не выводим приблизительные и вымышленные «цены-завлекаловки». Стоимость рассчитывается технологом по точной раскладке профиля, типу армирования, фурнитурным точкам прижима и формуле стеклопакета.
-            </p>
-</div>
-<!-- Contact Inputs Connected Directly with Calc Parameters -->
-<form class="flex flex-col gap-space-md" id="calc-submit-form" onsubmit="window.calcHandleSubmit(event)">
-<h4 class="font-headline-sm text-headline-sm text-primary font-medium">Контактные данные для передачи спецификации</h4>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
-<div class="flex flex-col gap-1">
-<label class="font-label-technical text-label-technical text-primary uppercase" for="lead-name">Ваше имя *</label>
-<input class="p-3 bg-surface border border-outline-variant focus:border-primary focus:outline-none font-body-md text-primary" id="lead-name" placeholder="Константин" required="" type="text"/>
-</div>
-<div class="flex flex-col gap-1">
-<label class="font-label-technical text-label-technical text-primary uppercase" for="lead-phone">Телефон для связи и расчета *</label>
-<input class="p-3 bg-surface border border-outline-variant focus:border-primary focus:outline-none font-body-md text-primary" id="lead-phone" placeholder="+7 (___) ___-__-__" required="" type="tel"/>
-</div>
-</div>
-<div class="flex flex-col gap-1">
-<label class="font-label-technical text-label-technical text-outline uppercase" for="lead-comment">Комментарий к объекту или вопросы технологу</label>
-<textarea class="p-3 bg-surface border border-outline-variant focus:border-primary focus:outline-none font-body-md text-primary resize-none" id="lead-comment" placeholder="Особые пожелания, удобный мессенджер (Telegram/WhatsApp), время звонка..." rows="3"></textarea>
-</div>
-<label class="flex items-start gap-3 pt-2 cursor-pointer">
-<input class="mt-0.5 w-4 h-4 accent-primary rounded-none" id="lead-agreement" required="" type="checkbox"/>
-<span class="font-label-technical text-[11px] text-on-surface-variant leading-relaxed">
-                Согласен на обработку персональных данных для формирования сметы в соответствии с
-                <a class="text-primary underline hover:text-secondary" href="privacy.html">политикой конфиденциальности</a>.
-              </span>
-</label>
-<div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 pt-space-md border-t border-primary-container/10">
-<button class="w-full sm:w-auto px-5 py-3 border border-primary font-label-technical text-label-technical uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors" onclick="window.calcGoToStep(4)" type="button">
-                Назад к адресу
-              </button>
-<button class="w-full sm:w-auto px-8 py-3.5 bg-primary-container text-surface-bright font-label-technical text-label-technical uppercase tracking-wider hover:bg-secondary transition-colors inline-flex items-center justify-center gap-2" type="submit">
-<span class="material-symbols-outlined text-sm">send</span> Запросить индивидуальный расчёт
-              </button>
+<div class="kk-okna-calc__nav">
+<button type="button" class="kk-okna-btn kk-okna-btn--outline" onclick="window.calcGoToStep(4)">Назад</button>
+<button type="submit" class="kk-okna-btn kk-okna-btn--dark">Запросить расчёт<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
 </div>
 </form>
-<!-- Success Alert Placeholder -->
-<div class="hidden p-6 bg-secondary-container text-on-secondary-container border border-secondary flex flex-col gap-2" id="calc-success-banner">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-2xl">task_alt</span>
-<span class="font-headline-sm text-headline-sm">Спецификация передана в цех</span>
-</div>
-<p class="font-body-md text-body-md">
-              Технолог «Контур Комфорта» проверит раскладку профиля по вашим размерам и свяжется с точной сметой — без скрытых платежей.
-            </p>
-<div class="pt-2">
-<a href="contacts.html" class="font-label-technical text-label-technical text-secondary uppercase tracking-wider hover:text-primary transition-colors">Контакты →</a>
+<div class="kk-okna-success" id="calc-success-banner" role="status" hidden>
+<span class="kk-okna-eyebrow">Заявка принята</span>
+<h4 class="kk-okna-success__title">Спецификация передана в&nbsp;цех</h4>
+<p>Технолог «Контур Комфорта» проверит раскладку профиля по вашим размерам и&nbsp;свяжется с&nbsp;точной сметой — без скрытых платежей.</p>
+<a class="kk-okna-link" href="contacts.html">Контакты<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
 </div>
 </div>
 </div>
+
+<!-- Right: live specification -->
+<aside class="kk-okna-spec" aria-label="Сводная спецификация">
+<div class="kk-okna-spec__head"><span>Сводная спецификация</span><span class="kk-okna-spec__live"><i aria-hidden="true"></i>Live</span></div>
+<div class="kk-okna-spec__draw" aria-hidden="true">
+<div class="kk-okna-wire" id="live-wireframe">
+<span class="kk-okna-wire__dim kk-okna-wire__dim--w" id="wireframe-dim-w">1300 мм</span>
+<span class="kk-okna-wire__dim kk-okna-wire__dim--h" id="wireframe-dim-h">1400 мм</span>
+<div class="kk-okna-wire__sashes" id="wireframe-divider-container"><div class="kk-okna-wire__sash"><span>#1</span></div></div>
 </div>
-<!-- Right Panel: Live Architectural Specification Card -->
-<div class="lg:col-span-4 bg-surface p-6 lg:p-8 border border-primary-container/10 flex flex-col gap-space-md sticky top-28">
-<div class="flex items-center justify-between border-b border-primary-container/10 pb-3">
-<span class="font-label-technical text-label-technical text-primary font-semibold uppercase">Сводная спецификация</span>
-<span class="font-label-technical text-[10px] text-outline">AUTO-SYNC</span>
+<span class="kk-okna-spec__scale">Схема в масштабе W:H</span>
 </div>
-<!-- 2D Window Silhouette Drawing -->
-<div class="w-full h-40 bg-surface-container-low border border-primary-container/5 flex flex-col items-center justify-center p-3 relative">
-<div class="w-28 h-32 border-2 border-primary relative flex items-center justify-center transition-all duration-300" id="live-wireframe">
-<span class="absolute -top-5 left-1/2 -translate-x-1/2 font-label-technical text-[10px] text-outline" id="wireframe-dim-w">1300 мм</span>
-<span class="absolute -right-12 top-1/2 -translate-y-1/2 font-label-technical text-[10px] text-outline" id="wireframe-dim-h">1400 мм</span>
-<div class="w-full h-full flex divide-x divide-primary" id="wireframe-divider-container">
-<div class="flex-1 flex items-center justify-center">
-<span class="font-label-technical text-[9px] text-outline">#1</span>
-</div>
-</div>
-</div>
-<span class="absolute bottom-1 left-2 font-label-technical text-[9px] text-outline">МАСШТАБ СХЕМАТИЧЕСКИЙ</span>
-</div>
-<!-- Specification Data Rows -->
-<div class="flex flex-col divide-y divide-primary-container/10 font-label-technical text-[12px]">
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Тип системы:</span>
-<span class="text-primary font-medium text-right" id="summary-type">Глухое окно</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Габариты (Ш × В):</span>
-<span class="text-primary font-medium text-right" id="summary-dims">1300 × 1400 мм</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Количество:</span>
-<span class="text-primary font-medium text-right" id="summary-qty">1 шт.</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Створки:</span>
-<span class="text-primary font-medium text-right" id="summary-sashes">Одностворчатая</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Цвет рамы:</span>
-<span class="text-primary font-medium text-right" id="summary-color">Классический белый</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Монтаж ГОСТ:</span>
-<span class="text-secondary font-medium text-right" id="summary-install">Да</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Демонтаж старого:</span>
-<span class="text-outline font-medium text-right" id="summary-demount">Нет</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Доп. опции:</span>
-<span class="text-primary font-medium text-right" id="summary-options">Энергопакет</span>
-</div>
-<div class="py-2.5 flex justify-between items-center">
-<span class="text-outline">Локация:</span>
-<span class="text-primary font-medium text-right" id="summary-location">Санкт-Петербург</span>
+<dl class="kk-okna-spec__rows">
+<div><dt>Тип системы</dt><dd id="summary-type">Глухое окно</dd></div>
+<div><dt>Габариты, Ш × В</dt><dd id="summary-dims">1300 × 1400 мм</dd></div>
+<div><dt>Количество</dt><dd id="summary-qty">1 шт.</dd></div>
+<div><dt>Створки</dt><dd id="summary-sashes">Одностворчатая</dd></div>
+<div><dt>Цвет рамы</dt><dd id="summary-color">Белый, в массе</dd></div>
+<div><dt>Монтаж ГОСТ</dt><dd id="summary-install">Включён</dd></div>
+<div><dt>Демонтаж старых</dt><dd id="summary-demount" class="is-off">Нет</dd></div>
+<div><dt>Доп. опции</dt><dd id="summary-options">Энергопакет</dd></div>
+<div><dt>Локация</dt><dd id="summary-location">Санкт-Петербург</dd></div>
+</dl>
+<button type="button" class="kk-okna-btn kk-okna-btn--olive kk-okna-spec__cta" onclick="window.calcGoToStep(5)">Отправить технологу<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></button>
+<p class="kk-okna-spec__foot">Параметры передаются в&nbsp;заводскую спецификацию без изменений.</p>
+</aside>
 </div>
 </div>
-<div class="p-3 bg-surface-container font-label-technical text-[11px] text-on-surface-variant flex items-center gap-2">
-<span class="material-symbols-outlined text-outline text-base">verified</span>
-<span>Параметры готовы для экспорта в заводскую спецификацию.</span>
+</section>
+
+<!-- 08. Repair & modernization -->
+<section class="kk-okna-section" id="repair">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<header class="kk-okna-head">
+<div class="kk-okna-head__main">
+<p class="kk-okna-eyebrow">Профессиональный сервис</p>
+<h2 class="kk-okna-h2">Ремонт и&nbsp;модернизация оконных систем</h2>
+</div>
+<p class="kk-okna-lead kk-reveal">Даже качественные окна требуют своевременного сервиса. Восстанавливаем геометрию и&nbsp;теплотехнику окон любых производителей.</p>
+</header>
+<div class="kk-okna-repair" data-reveal="stagger">
+<article class="kk-okna-rcard kk-lift"><span class="kk-okna-idx">01</span><h3 class="kk-okna-h3">Регулировка и&nbsp;балансировка</h3><p class="kk-okna-text">Устраняем провисание и&nbsp;трение створок о&nbsp;раму. Настраиваем равномерный зимний и&nbsp;летний прижим по периметру.</p><div class="kk-okna-rcard__meta"><span>Срок</span><span>30–60 минут</span></div></article>
+<article class="kk-okna-rcard kk-lift"><span class="kk-okna-idx">02</span><h3 class="kk-okna-h3">Замена уплотнителей</h3><p class="kk-okna-text">Меняем задубевшие и&nbsp;растрескавшиеся резинки на высокоэластичный EPDM-уплотнитель немецкого производства.</p><div class="kk-okna-rcard__meta"><span>Результат</span><span>Герметичность 100%</span></div></article>
+<article class="kk-okna-rcard kk-lift"><span class="kk-okna-idx">03</span><h3 class="kk-okna-h3">Замена стеклопакетов</h3><p class="kk-okna-text">Срочно меняем треснувшие стёкла или ставим энергосберегающие, солнцезащитные и&nbsp;шумоизоляционные пакеты.</p><div class="kk-okna-rcard__meta"><span>Формат</span><span>Без демонтажа рам</span></div></article>
+<article class="kk-okna-rcard kk-lift"><span class="kk-okna-idx">04</span><h3 class="kk-okna-h3">Апгрейд фурнитуры</h3><p class="kk-okna-text">Врезаем поворотно-откидной механизм в&nbsp;глухие створки, ставим микропроветривание, детские замки и&nbsp;скрытые петли.</p><div class="kk-okna-rcard__meta"><span>Узлы</span><span>Оригинальные Roto</span></div></article>
+</div>
+<div class="kk-okna-urgent kk-reveal">
+<div class="kk-okna-urgent__text">
+<p class="kk-okna-eyebrow">Срочный выезд мастера по СПб и ЛО</p>
+<h3 class="kk-okna-urgent__title">Дует из окна или заклинило створку?</h3>
+<p class="kk-okna-text">Сервисный инженер приедет с&nbsp;комплектом запчастей и&nbsp;тепловизором для точной диагностики.</p>
+</div>
+<div class="kk-okna-actions kk-okna-urgent__actions">
+<a class="kk-okna-btn kk-okna-btn--dark" href="#interactive-calc" onclick="window.setModeTab('repair')">Вызвать мастера</a>
+<a class="kk-okna-btn kk-okna-btn--outline" href="contacts.html">Контакты</a>
 </div>
 </div>
 </div>
 </section>
-<!-- Section 4: Manufacturing Advantages & Tectonic Architecture -->
-<section class="w-full bg-primary text-surface-bright py-space-3xl">
-<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-space-2xl">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-surface-bright/10 pb-space-lg">
-<div>
-<span class="font-label-technical text-label-technical text-secondary-fixed uppercase tracking-widest">Стандарты качества завода</span>
-<h2 class="font-headline-xl text-headline-xl text-surface-bright font-light mt-1">Преимущества собственного производства</h2>
+
+<!-- 09. Final CTA -->
+<section class="kk-okna-final" aria-label="Связаться с нами">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="kk-okna-final__grid">
+<div class="kk-okna-final__copy">
+<p class="kk-okna-eyebrow kk-okna-eyebrow--light">Замер и расчёт</p>
+<h2 class="kk-okna-final__title">Рассчитаем окна под&nbsp;ваш проём</h2>
+<p class="kk-okna-final__lead">Технолог подберёт профиль, формулу стеклопакета и&nbsp;фурнитуру, а&nbsp;затем зафиксирует цену в&nbsp;договоре.</p>
 </div>
-<p class="font-body-md text-body-md text-on-primary-container max-w-md">
-          Полный цикл переработки профиля и сборки в посёлке Шушары. Никаких посредников, наценок перекупщиков и задержек логистики.
-        </p>
+<div class="kk-okna-final__side">
+<span class="kk-okna-final__label">Телефон цеха</span>
+<a class="kk-okna-final__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
+<div class="kk-okna-actions">
+<a class="kk-okna-btn kk-okna-btn--olive" href="#interactive-calc">Рассчитать конфигурацию<svg class="kk-okna-arrow" viewBox="0 0 16 10" aria-hidden="true"><path d="M0 5h14M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></a>
+<a class="kk-hero__btn kk-hero__btn--ghost" href="contacts.html">Все контакты<span class="kk-hero__arrow" aria-hidden="true"></span></a>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
-<div class="p-space-lg bg-primary-container flex flex-col gap-space-sm">
-<div class="flex items-center justify-between text-secondary-fixed">
-<span class="material-symbols-outlined text-3xl">straighten</span>
-<span class="font-label-technical text-label-technical">СТАНДАРТ 0.2 ММ</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-surface-bright">Лазерный контроль геометрии</h3>
-<p class="font-body-md text-body-md text-on-primary-container">
-            Синхронная 4-головочная сварка рам и створок на ЧПУ-оборудовании с непрерывным оптическим контролем прямых углов и диагональных отклонений.
-          </p>
-</div>
-<div class="p-space-lg bg-primary-container flex flex-col gap-space-sm">
-<div class="flex items-center justify-between text-secondary-fixed">
-<span class="material-symbols-outlined text-3xl">lock</span>
-<span class="font-label-technical text-label-technical">Roto NX / Siegenia</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-surface-bright">Сертифицированная фурнитура</h3>
-<p class="font-body-md text-body-md text-on-primary-container">
-            Устанавливаем немецкие механизмы с титано-серебристым антикоррозийным покрытием. Грибовидные цапфы блокируют отжим створки снаружи.
-          </p>
-</div>
-<div class="p-space-lg bg-primary-container flex flex-col gap-space-sm">
-<div class="flex items-center justify-between text-secondary-fixed">
-<span class="material-symbols-outlined text-3xl">solar_power</span>
-<span class="font-label-technical text-label-technical">ДВОЙНОЙ БАРЬЕР</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-surface-bright">Герметичные стеклопакеты</h3>
-<p class="font-body-md text-body-md text-on-primary-container">
-            Двухкомпонентная герметизация бутилом и полисульфидом. Заполнение межстекольного пространства газом аргоном с напылением ионов серебра (i-стекло).
-          </p>
-</div>
-<div class="p-space-lg bg-primary-container flex flex-col gap-space-sm">
-<div class="flex items-center justify-between text-secondary-fixed">
-<span class="material-symbols-outlined text-3xl">rv_hookup</span>
-<span class="font-label-technical text-label-technical">СПЕЦТРАНСПОРТ</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-surface-bright">Бережная доставка на пирамидах</h3>
-<p class="font-body-md text-body-md text-on-primary-container">
-            Изделия фиксируются эластичными ремнями в вертикальном положении. Исключено появление внутренних механических напряжений и микротрещин в стекле.
-          </p>
-</div>
-<div class="p-space-lg bg-primary-container flex flex-col gap-space-sm">
-<div class="flex items-center justify-between text-secondary-fixed">
-<span class="material-symbols-outlined text-3xl">verified_user</span>
-<span class="font-label-technical text-label-technical">ГОСТ 30971-2012</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-surface-bright">Штатный монтаж по ГОСТ</h3>
-<p class="font-body-md text-body-md text-on-primary-container">
-            Монтажники компании имеют стаж от 7 лет. Используем только оригинальные анкерные пластины, пароизоляционные ленты и профессиональную пену.
-          </p>
-</div>
-<div class="p-space-lg bg-primary-container flex flex-col gap-space-sm">
-<div class="flex items-center justify-between text-secondary-fixed">
-<span class="material-symbols-outlined text-3xl">handshake</span>
-<span class="font-label-technical text-label-technical">ПРЯМОЙ ДОГОВОР</span>
-</div>
-<h3 class="font-headline-sm text-headline-sm text-surface-bright">Ответственность изготовителя</h3>
-<p class="font-body-md text-body-md text-on-primary-container">
-            Фиксированная цена в договоре, отсутствие скрытых доплат. Единая гарантия завода распространяется и на конструкцию, и на качество монтажного шва.
-          </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Section 5: Repair & Modernization Detailed Services -->
-<section class="w-full max-w-7xl mx-auto px-6 lg:px-12 py-space-3xl">
-<div class="flex flex-col gap-space-xl">
-<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md border-b border-primary-container/10 pb-space-lg">
-<div>
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-widest">Профессиональный сервис</span>
-<h2 class="font-headline-xl text-headline-xl text-primary font-light mt-1">Ремонт и модернизация оконных систем</h2>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
-          Даже качественные окна требуют своевременного сервиса. Восстанавливаем геометрию и теплотехнические свойства окон любых брендов.
-        </p>
-</div>
-<!-- Repair Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
-<div class="bg-surface-container-low p-6 flex flex-col gap-space-sm border border-primary-container/5 hover:border-primary-container/20 transition-all">
-<span class="material-symbols-outlined text-secondary text-3xl">tune</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Регулировка и балансировка</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Устранение провисания и трения створок о раму. Настройка равномерного зимнего/летнего прижима фурнитуры по периметру.
-          </p>
-<div class="mt-auto pt-4 border-t border-primary-container/10 font-label-technical text-label-technical text-outline">
-            Срок: 30–60 минут
-          </div>
-</div>
-<div class="bg-surface-container-low p-6 flex flex-col gap-space-sm border border-primary-container/5 hover:border-primary-container/20 transition-all">
-<span class="material-symbols-outlined text-secondary text-3xl">fiber_manual_record</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Замена уплотнителей</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Замена задубевших или растрескавшихся резинок на высокоэластичный EPDM-уплотнитель немецкого производства.
-          </p>
-<div class="mt-auto pt-4 border-t border-primary-container/10 font-label-technical text-label-technical text-outline">
-            Герметичность 100%
-          </div>
-</div>
-<div class="bg-surface-container-low p-6 flex flex-col gap-space-sm border border-primary-container/5 hover:border-primary-container/20 transition-all">
-<span class="material-symbols-outlined text-secondary text-3xl">grid_view</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Замена стеклопакетов</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Срочная замена треснувших стекол или апгрейд на энергосберегающие, солнцезащитные или шумоизоляционные триплекс-пакеты.
-          </p>
-<div class="mt-auto pt-4 border-t border-primary-container/10 font-label-technical text-label-technical text-outline">
-            Без пыли и демонтажа рам
-          </div>
-</div>
-<div class="bg-surface-container-low p-6 flex flex-col gap-space-sm border border-primary-container/5 hover:border-primary-container/20 transition-all">
-<span class="material-symbols-outlined text-secondary text-3xl">build_circle</span>
-<h3 class="font-headline-sm text-headline-sm text-primary">Апгрейд фурнитуры</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Врезка поворотно-откидного механизма в глухие створки, установка микропроветривания, детских замков и скрытых петель.
-          </p>
-<div class="mt-auto pt-4 border-t border-primary-container/10 font-label-technical text-label-technical text-outline">
-            Оригинальные узлы Roto
-          </div>
-</div>
-</div>
-<!-- Quick Repair CTA Banner -->
-<div class="bg-surface-container p-8 flex flex-col md:flex-row items-center justify-between gap-6">
-<div class="flex flex-col gap-1">
-<span class="font-label-technical text-label-technical text-secondary uppercase tracking-wider">Срочный выезд мастера по СПб и ЛО</span>
-<h4 class="font-headline-md text-headline-md text-primary font-medium">Дует из окна или заклинило створку?</h4>
-<p class="font-body-sm text-body-sm text-on-surface-variant">
-            Сервисный инженер приедет с комплектом запчастей и тепловизором для точной диагностики.
-          </p>
-</div>
-<div class="flex items-center gap-4 w-full md:w-auto">
-<a class="w-full md:w-auto px-6 py-3.5 bg-primary text-surface font-label-technical text-label-technical uppercase tracking-wider hover:bg-secondary transition-colors text-center" href="#interactive-calc" onclick="window.setModeTab('repair')">
-            Вызвать мастера на диагностику
-          </a>
-<a class="w-full md:w-auto px-6 py-3.5 border border-primary text-primary font-label-technical text-label-technical uppercase tracking-wider hover:bg-primary hover:text-surface-bright transition-colors text-center" href="contacts.html">
-            Написать в контакты
-          </a>
 </div>
 </div>
 </div>
@@ -874,237 +603,249 @@
 </main>
 <div id="site-footer"></div>
 <script>
-  // Global State for Calculator
-  window.calcState = {
-    step: 1,
-    type: 'Глухое окно',
-    width: 1300,
-    height: 1400,
-    quantity: 1,
-    sashes: 'Одностворчатая',
-    color: 'Классический белый (в массе)',
-    install: true,
-    demount: false,
-    mesh: false,
-    lock: false,
-    energy: true,
-    city: 'Санкт-Петербург',
-    address: ''
-  };
+  (function () {
+    var COLOR_SHORT = {
+      'Классический белый (в массе)': 'Белый, в массе',
+      'Ламинация по каталогу RAL / древесная': 'Ламинация RAL'
+    };
 
-  // Switch between steps
-  window.calcGoToStep = function(targetStep) {
-    window.calcState.step = targetStep;
+    window.calcState = {
+      step: 1,
+      type: 'Глухое окно',
+      width: 1300,
+      height: 1400,
+      quantity: 1,
+      sashes: 'Одностворчатая',
+      color: 'Классический белый (в массе)',
+      install: true,
+      demount: false,
+      mesh: false,
+      lock: false,
+      energy: true,
+      city: 'Санкт-Петербург',
+      address: ''
+    };
 
-    // Toggle panels
-    for (let i = 1; i <= 5; i++) {
-      const panel = document.getElementById('step-panel-' + i);
-      const indicator = document.getElementById('indicator-step-' + i);
-      if (panel) {
-        if (i === targetStep) {
-          panel.classList.remove('hidden');
-        } else {
-          panel.classList.add('hidden');
+    function byId(id) { return document.getElementById(id); }
+
+    function markSelected(selector, active) {
+      document.querySelectorAll(selector).forEach(function (btn) {
+        var on = btn === active;
+        btn.classList.toggle('is-selected', on);
+        btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      });
+    }
+
+    function reducedMotion() {
+      return window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    }
+
+    // Step navigation
+    window.calcGoToStep = function (targetStep, opts) {
+      window.calcState.step = targetStep;
+      for (var i = 1; i <= 5; i++) {
+        var panel = byId('step-panel-' + i);
+        var indicator = byId('indicator-step-' + i);
+        if (panel) panel.hidden = i !== targetStep;
+        if (indicator) {
+          indicator.classList.toggle('is-active', i === targetStep);
+          indicator.classList.toggle('is-done', i < targetStep);
+          if (i === targetStep) indicator.setAttribute('aria-current', 'step');
+          else indicator.removeAttribute('aria-current');
         }
       }
-      if (indicator) {
-        if (i === targetStep) {
-          indicator.className = 'flex flex-col gap-1 border-b-2 border-primary pb-2 text-primary';
-        } else if (i < targetStep) {
-          indicator.className = 'flex flex-col gap-1 border-b-2 border-secondary pb-2 text-secondary';
-        } else {
-          indicator.className = 'flex flex-col gap-1 border-b-2 border-transparent pb-2 text-outline';
+      window.calcUpdateSummary();
+      if (!(opts && opts.noScroll)) {
+        var host = byId('calc-panel');
+        if (host && host.getBoundingClientRect().top < 0) {
+          host.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'start' });
         }
       }
-    }
-    window.calcUpdateSummary();
-  };
+    };
 
-  // Step 1: Type Selection
-  window.calcSelectType = function(typeName, btnElement) {
-    window.calcState.type = typeName;
-    const buttons = document.querySelectorAll('#calc-type-selector .type-btn');
-    buttons.forEach(btn => {
-      btn.classList.remove('border-2', 'border-primary');
-      btn.classList.add('border', 'border-outline-variant/60');
-    });
-    btnElement.classList.add('border-2', 'border-primary');
-    btnElement.classList.remove('border-outline-variant/60');
-    window.calcUpdateSummary();
-  };
+    // Step 1
+    window.calcSelectType = function (typeName, btnElement) {
+      window.calcState.type = typeName;
+      markSelected('#calc-type-selector .type-btn', btnElement);
+      window.calcUpdateSummary();
+    };
 
-  // Step 2: Dimensions Sync
-  window.calcSyncWidth = function(val) {
-    const num = parseInt(val) || 400;
-    window.calcState.width = num;
-    document.getElementById('calc-width-num').value = num;
-    document.getElementById('calc-width-range').value = num;
-    document.getElementById('wireframe-dim-w').innerText = num + ' мм';
-    window.calcUpdateSummary();
-  };
+    // Step 2
+    window.calcSyncWidth = function (val) {
+      var num = parseInt(val, 10) || 400;
+      window.calcState.width = num;
+      var numEl = byId('calc-width-num');
+      if (numEl && document.activeElement !== numEl) numEl.value = num;
+      byId('calc-width-range').value = num;
+      window.calcUpdateSummary();
+    };
 
-  window.calcSyncHeight = function(val) {
-    const num = parseInt(val) || 400;
-    window.calcState.height = num;
-    document.getElementById('calc-height-num').value = num;
-    document.getElementById('calc-height-range').value = num;
-    document.getElementById('wireframe-dim-h').innerText = num + ' мм';
-    window.calcUpdateSummary();
-  };
+    window.calcSyncHeight = function (val) {
+      var num = parseInt(val, 10) || 400;
+      window.calcState.height = num;
+      var numEl = byId('calc-height-num');
+      if (numEl && document.activeElement !== numEl) numEl.value = num;
+      byId('calc-height-range').value = num;
+      window.calcUpdateSummary();
+    };
 
-  window.calcAdjustQty = function(delta) {
-    let q = window.calcState.quantity + delta;
-    if (q < 1) q = 1;
-    if (q > 99) q = 99;
-    window.calcState.quantity = q;
-    document.getElementById('calc-qty-display').innerText = q;
-    window.calcUpdateSummary();
-  };
+    window.calcAdjustQty = function (delta) {
+      var q = window.calcState.quantity + delta;
+      if (q < 1) q = 1;
+      if (q > 99) q = 99;
+      window.calcState.quantity = q;
+      byId('calc-qty-display').textContent = q;
+      window.calcUpdateSummary();
+    };
 
-  // Step 3: Sashes & Color
-  window.calcSelectSashes = function(sashesText, btnElement) {
-    window.calcState.sashes = sashesText;
-    const buttons = document.querySelectorAll('#calc-sash-selector .sash-btn');
-    buttons.forEach(btn => {
-      btn.classList.remove('border-2', 'border-primary');
-      btn.classList.add('border', 'border-outline-variant/60');
-    });
-    btnElement.classList.add('border-2', 'border-primary');
-    btnElement.classList.remove('border-outline-variant/60');
-
-    // Update wireframe visual
-    const wireframeContainer = document.getElementById('wireframe-divider-container');
-    if (wireframeContainer) {
-      if (sashesText === 'Одностворчатая') {
-        wireframeContainer.innerHTML = '<div class="flex-1 flex items-center justify-center"><span class="font-label-technical text-[9px] text-outline">#1</span></div>';
-      } else if (sashesText === 'Двухстворчатая') {
-        wireframeContainer.innerHTML = '<div class="flex-1 flex items-center justify-center"><span class="font-label-technical text-[9px] text-outline">#1</span></div><div class="flex-1 flex items-center justify-center"><span class="font-label-technical text-[9px] text-outline">#2</span></div>';
-      } else if (sashesText === 'Трёхстворчатая') {
-        wireframeContainer.innerHTML = '<div class="flex-1 flex items-center justify-center"><span class="font-label-technical text-[9px] text-outline">#1</span></div><div class="flex-1 flex items-center justify-center"><span class="font-label-technical text-[9px] text-outline">#2</span></div><div class="flex-1 flex items-center justify-center"><span class="font-label-technical text-[9px] text-outline">#3</span></div>';
+    // Step 3
+    window.calcSelectSashes = function (sashesText, btnElement) {
+      window.calcState.sashes = sashesText;
+      markSelected('#calc-sash-selector .sash-btn', btnElement);
+      var count = sashesText === 'Трёхстворчатая' ? 3 : sashesText === 'Двухстворчатая' ? 2 : 1;
+      var wire = byId('wireframe-divider-container');
+      if (wire) {
+        var html = '';
+        for (var i = 1; i <= count; i++) html += '<div class="kk-okna-wire__sash"><span>#' + i + '</span></div>';
+        wire.innerHTML = html;
       }
-    }
-    window.calcUpdateSummary();
-  };
+      window.calcUpdateSummary();
+    };
 
-  window.calcSelectColor = function(colorName, btnElement) {
-    window.calcState.color = colorName;
-    const buttons = document.querySelectorAll('#calc-color-selector .color-btn');
-    buttons.forEach(btn => {
-      btn.classList.remove('border-2', 'border-primary');
-      btn.classList.add('border', 'border-outline-variant/60');
-    });
-    btnElement.classList.add('border-2', 'border-primary');
-    btnElement.classList.remove('border-outline-variant/60');
-    window.calcUpdateSummary();
-  };
+    window.calcSelectColor = function (colorName, btnElement) {
+      window.calcState.color = colorName;
+      markSelected('#calc-color-selector .color-btn', btnElement);
+      window.calcUpdateSummary();
+    };
 
-  // Sync state and update live summary panel
-  window.calcUpdateSummary = function() {
-    // Read checkbox state
-    const elInstall = document.getElementById('calc-opt-install');
-    const elDemount = document.getElementById('calc-opt-demount');
-    const elMesh = document.getElementById('calc-opt-mesh');
-    const elLock = document.getElementById('calc-opt-lock');
-    const elEnergy = document.getElementById('calc-opt-energy');
-    const elCity = document.getElementById('calc-city');
-    const elAddress = document.getElementById('calc-address');
-
-    if (elInstall) window.calcState.install = elInstall.checked;
-    if (elDemount) window.calcState.demount = elDemount.checked;
-    if (elMesh) window.calcState.mesh = elMesh.checked;
-    if (elLock) window.calcState.lock = elLock.checked;
-    if (elEnergy) window.calcState.energy = elEnergy.checked;
-    if (elCity) window.calcState.city = elCity.value || 'Санкт-Петербург';
-    if (elAddress) window.calcState.address = elAddress.value;
-
-    // Populate Right Summary Card
-    const sumType = document.getElementById('summary-type');
-    const sumDims = document.getElementById('summary-dims');
-    const sumQty = document.getElementById('summary-qty');
-    const sumSashes = document.getElementById('summary-sashes');
-    const sumColor = document.getElementById('summary-color');
-    const sumInstall = document.getElementById('summary-install');
-    const sumDemount = document.getElementById('summary-demount');
-    const sumOptions = document.getElementById('summary-options');
-    const sumLocation = document.getElementById('summary-location');
-
-    if (sumType) sumType.innerText = window.calcState.type;
-    if (sumDims) sumDims.innerText = window.calcState.width + ' × ' + window.calcState.height + ' мм';
-    if (sumQty) sumQty.innerText = window.calcState.quantity + ' шт.';
-    if (sumSashes) sumSashes.innerText = window.calcState.sashes;
-    if (sumColor) sumColor.innerText = window.calcState.color.split(' ')[0] + '...';
-    if (sumInstall) {
-      sumInstall.innerText = window.calcState.install ? 'Включен (ГОСТ)' : 'Не требуется';
-      sumInstall.className = window.calcState.install ? 'text-secondary font-medium text-right' : 'text-outline font-medium text-right';
-    }
-    if (sumDemount) {
-      sumDemount.innerText = window.calcState.demount ? 'Да' : 'Нет';
-      sumDemount.className = window.calcState.demount ? 'text-secondary font-medium text-right' : 'text-outline font-medium text-right';
+    function setText(id, text) {
+      var el = byId(id);
+      if (el) el.textContent = text;
+      return el;
     }
 
-    if (sumOptions) {
-      let opts = [];
-      if (window.calcState.energy) opts.push('Энергопакет');
-      if (window.calcState.mesh) opts.push('Сетка');
-      if (window.calcState.lock) opts.push('Замок');
-      sumOptions.innerText = opts.length > 0 ? opts.join(', ') : 'Базовые';
+    function drawWireframe(s) {
+      var frame = byId('live-wireframe');
+      if (!frame) return;
+      var w = Math.min(Math.max(s.width, 400), 4000);
+      var h = Math.min(Math.max(s.height, 400), 3000);
+      var maxW = 150, maxH = 132;
+      var ratio = w / h;
+      var fw, fh;
+      if (ratio >= maxW / maxH) { fw = maxW; fh = maxW / ratio; }
+      else { fh = maxH; fw = maxH * ratio; }
+      frame.style.width = Math.round(Math.max(fw, 28)) + 'px';
+      frame.style.height = Math.round(Math.max(fh, 28)) + 'px';
+      frame.classList.toggle('is-laminated', s.color.indexOf('Ламинация') === 0);
+      setText('wireframe-dim-w', s.width + ' мм');
+      setText('wireframe-dim-h', s.height + ' мм');
     }
 
-    if (sumLocation) {
-      sumLocation.innerText = window.calcState.city;
-    }
-  };
+    // Live summary
+    window.calcUpdateSummary = function () {
+      var s = window.calcState;
+      var elInstall = byId('calc-opt-install');
+      var elDemount = byId('calc-opt-demount');
+      var elMesh = byId('calc-opt-mesh');
+      var elLock = byId('calc-opt-lock');
+      var elEnergy = byId('calc-opt-energy');
+      var elCity = byId('calc-city');
+      var elAddress = byId('calc-address');
 
-  // Submit Handler
-  window.calcHandleSubmit = function(e) {
-    e.preventDefault();
-    const banner = document.getElementById('calc-success-banner');
-    const form = document.getElementById('calc-submit-form');
-    if (banner) banner.classList.remove('hidden');
-    if (form) form.classList.add('opacity-50', 'pointer-events-none');
-    window.kkToast && kkToast(
-      'Спецификация отправлена',
-      'Технолог проверит параметры и свяжется с вами с точной сметой в рабочее время.'
-    );
-  };
+      if (elInstall) s.install = elInstall.checked;
+      if (elDemount) s.demount = elDemount.checked;
+      if (elMesh) s.mesh = elMesh.checked;
+      if (elLock) s.lock = elLock.checked;
+      if (elEnergy) s.energy = elEnergy.checked;
+      if (elCity) s.city = elCity.value.trim() || 'Санкт-Петербург';
+      if (elAddress) s.address = elAddress.value;
 
-  // Direction Switcher Tabs
-  window.setTab = function(tabName) {
-    const tabs = ['manufacturing', 'repair', 'installation'];
-    tabs.forEach(t => {
-      const btn = document.getElementById('tab-btn-' + t);
-      const content = document.getElementById('tab-content-' + t);
-      if (t === tabName) {
-        if (content) content.classList.remove('hidden');
+      setText('summary-type', s.type);
+      setText('summary-dims', s.width + ' × ' + s.height + ' мм');
+      setText('summary-qty', s.quantity + ' шт.');
+      setText('summary-sashes', s.sashes);
+      setText('summary-color', COLOR_SHORT[s.color] || s.color);
+
+      var inst = setText('summary-install', s.install ? 'Включён' : 'Не требуется');
+      if (inst) inst.classList.toggle('is-off', !s.install);
+      var dem = setText('summary-demount', s.demount ? 'Да' : 'Нет');
+      if (dem) dem.classList.toggle('is-off', !s.demount);
+
+      var opts = [];
+      if (s.energy) opts.push('Энергопакет');
+      if (s.mesh) opts.push('Сетка');
+      if (s.lock) opts.push('Замок');
+      setText('summary-options', opts.length ? opts.join(', ') : 'Базовые');
+      setText('summary-location', s.city);
+
+      drawWireframe(s);
+    };
+
+    // Lead form
+    window.calcHandleSubmit = function (e) {
+      e.preventDefault();
+      var banner = byId('calc-success-banner');
+      var form = byId('calc-submit-form');
+      if (form) {
+        form.classList.add('is-sent');
+        form.setAttribute('aria-disabled', 'true');
+      }
+      if (banner) {
+        banner.hidden = false;
+        banner.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'nearest' });
+      }
+      window.kkToast && window.kkToast(
+        'Спецификация отправлена',
+        'Технолог проверит параметры и свяжется с вами с точной сметой в рабочее время.'
+      );
+    };
+
+    // Direction tabs
+    var TABS = ['manufacturing', 'repair', 'installation'];
+    window.setTab = function (tabName) {
+      TABS.forEach(function (t) {
+        var btn = byId('tab-btn-' + t);
+        var content = byId('tab-content-' + t);
+        var on = t === tabName;
+        if (content) content.hidden = !on;
         if (btn) {
-          btn.classList.add('bg-primary-container', 'text-surface-bright');
-          btn.classList.remove('text-on-surface-variant');
-          btn.setAttribute('aria-selected', 'true');
+          btn.classList.toggle('is-active', on);
+          btn.setAttribute('aria-selected', on ? 'true' : 'false');
+          btn.setAttribute('tabindex', on ? '0' : '-1');
         }
+      });
+    };
+
+    var tablist = document.querySelector('.kk-okna-tabs');
+    if (tablist) {
+      tablist.addEventListener('keydown', function (e) {
+        if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft' && e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+        var current = TABS.indexOf((document.activeElement.id || '').replace('tab-btn-', ''));
+        if (current < 0) return;
+        e.preventDefault();
+        var step = (e.key === 'ArrowRight' || e.key === 'ArrowDown') ? 1 : -1;
+        var next = TABS[(current + step + TABS.length) % TABS.length];
+        window.setTab(next);
+        byId('tab-btn-' + next).focus();
+      });
+    }
+
+    window.setModeTab = function (mode) {
+      if (mode === 'repair') {
+        window.calcState.type = 'Поворотно-откидное окно';
+        var tile = document.querySelector('#calc-type-selector .type-btn[data-type="Поворотно-откидное окно"]');
+        if (tile) markSelected('#calc-type-selector .type-btn', tile);
+        window.setTab('repair');
+      } else if (mode === 'installation') {
+        window.setTab('installation');
       } else {
-        if (content) content.classList.add('hidden');
-        if (btn) {
-          btn.classList.remove('bg-primary-container', 'text-surface-bright');
-          btn.classList.add('text-on-surface-variant');
-          btn.setAttribute('aria-selected', 'false');
-        }
+        window.setTab('manufacturing');
       }
-    });
-  };
+      window.calcGoToStep(1, { noScroll: true });
+    };
 
-  window.setModeTab = function(mode) {
-    if (mode === 'repair') {
-      window.calcState.type = 'Поворотно-откидное окно';
-      window.setTab('repair');
-      window.calcGoToStep(1);
-    } else if (mode === 'installation') {
-      window.setTab('installation');
-      window.calcGoToStep(1);
-    } else {
-      window.setTab('manufacturing');
-      window.calcGoToStep(1);
-    }
-  };
+    window.calcUpdateSummary();
+  })();
 </script>
 <script src="assets/js/site.js"></script>
 </body>
