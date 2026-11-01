@@ -648,6 +648,27 @@ a:hover > .kk-alu-arrow { transform: translateX(4px); }
   height: 6px;
   background: var(--al-olive-light);
 }
+.kk-alu-cut {
+  margin: 1.25rem 0 1.5rem;
+  padding: 0.85rem 0.75rem 0.65rem;
+  border: 1px solid rgba(247, 246, 242, 0.12);
+  background: rgba(17, 22, 23, 0.45);
+}
+.kk-alu-cut__svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 11rem;
+}
+.kk-alu-cut__cap {
+  margin: 0.35rem 0 0;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(247, 246, 242, 0.5);
+  text-align: center;
+}
 
 /* —— Specs table —— */
 .kk-alu-specs {

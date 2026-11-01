@@ -8,14 +8,13 @@
     windows: "okna.html",
     aluminum: "alyuminij.html",
     process: "process.html",
-    calculator: "calculator.html",
     contacts: "contacts.html",
     privacy: "privacy.html",
   };
 
   var CONTACT = {
-    phoneDisplay: "+7 (812) 000-00-00",
-    phoneTel: "+78120000000",
+    phoneDisplay: "+7 (911) 006-19-19",
+    phoneTel: "+79110061919",
     email: "info@konturkomforta.ru",
     addressShort: "Пос. Шушары, ул. Ленина, 1А",
     addressFull: "Посёлок Шушары, улица Ленина, дом 1А",
@@ -85,7 +84,7 @@
       megaCard(
         "03",
         "Окна ПВХ",
-        "Собственное производство, монтаж и ремонт",
+        "Прямо с завода-изготовителя, монтаж и ремонт",
         ROUTES.windows,
         "windows"
       ) +
@@ -98,8 +97,8 @@
       ) +
       "</div>" +
       '<a class="kk-mega__footer" href="' +
-      ROUTES.calculator +
-      '"><span>Нужен быстрый расчёт окон</span><span>Калькулятор →</span></a>' +
+      ROUTES.windows +
+      '#lead"><span>Нужен расчёт окон</span><span>Оставить заявку →</span></a>' +
       "</div>" +
       "</div>" +
       '<a class="kk-nav__link' +
@@ -108,11 +107,6 @@
       ROUTES.process +
       '">Как работаем</a>' +
       '<a class="kk-nav__link' +
-      isActive("calculator") +
-      '" href="' +
-      ROUTES.calculator +
-      '">Калькулятор</a>' +
-      '<a class="kk-nav__link' +
       isActive("contacts") +
       '" href="' +
       ROUTES.contacts +
@@ -120,8 +114,8 @@
       "</nav>" +
       '<div class="kk-actions">' +
       '<a class="kk-cta" href="' +
-      ROUTES.calculator +
-      '">Рассчитать</a>' +
+      ROUTES.contacts +
+      '">Связаться</a>' +
       '<button type="button" class="kk-burger" id="kk-burger" aria-label="Открыть меню" aria-expanded="false">' +
       '<span class="kk-burger__lines" aria-hidden="true"><span></span><span></span><span></span></span>' +
       "</button>" +
@@ -201,11 +195,6 @@
       ROUTES.process +
       '">Как мы работаем</a>' +
       '<a class="kk-drawer__link' +
-      isActive("calculator") +
-      '" href="' +
-      ROUTES.calculator +
-      '">Калькулятор окон</a>' +
-      '<a class="kk-drawer__link' +
       isActive("contacts") +
       '" href="' +
       ROUTES.contacts +
@@ -213,8 +202,8 @@
       "</div>" +
       '<div class="kk-drawer__foot">' +
       '<a class="kk-cta" href="' +
-      ROUTES.calculator +
-      '" style="width:100%">Рассчитать стоимость</a>' +
+      ROUTES.contacts +
+      '" style="width:100%">Оставить заявку</a>' +
       '<div class="kk-drawer__meta">' +
       CONTACT.addressShort +
       "<br>" +
@@ -242,9 +231,9 @@
       LOGO_SVG +
       '<span class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary font-semibold">Контур Комфорта</span>' +
       "</a>" +
-      '<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Строим пространство для комфортной жизни. Дома, бани и окна — от производства до монтажа.</p>' +
+      '<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Строим пространство для комфортной жизни. Дома, бани и окна — от завода-изготовителя до монтажа.</p>' +
       '<div class="flex flex-col gap-1 pt-2 font-label-technical text-label-technical text-on-surface-variant">' +
-      '<span class="text-secondary font-medium">Производство &amp; Офис</span>' +
+      '<span class="text-secondary font-medium">Офис</span>' +
       "<span>" +
       CONTACT.addressFull +
       "</span>" +
@@ -266,9 +255,6 @@
       '<li><a class="hover:text-primary transition-colors" href="' +
       ROUTES.aluminum +
       '">Алюминиевые фасадные системы</a></li>' +
-      '<li><a class="hover:text-primary transition-colors" href="' +
-      ROUTES.calculator +
-      '">Онлайн-калькулятор параметров</a></li>' +
       "</ul>" +
       "</div>" +
       '<div class="lg:col-span-2 flex flex-col gap-space-sm">' +
@@ -903,7 +889,7 @@
       "okna-pvkh": ROUTES.windows,
       "alyuminievye-konstruktsii": ROUTES.aluminum,
       "kak-my-rabotaem": ROUTES.process,
-      "kalkulyator-okon": ROUTES.calculator,
+      "kalkulyator-okon": ROUTES.windows,
       kontakty: ROUTES.contacts,
       "politika-konfidentsialnosti": ROUTES.privacy,
     };
@@ -934,11 +920,15 @@
   }
 
   window.kkToast = function (title, message) {
-    var t = title && String(title).trim() ? String(title).trim() : "Заявка принята";
+    var t = title && String(title).trim() ? String(title).trim() : "Заявка готова";
     var m =
       message && String(message).trim()
         ? String(message).trim()
-        : "Мы получили ваши данные и свяжемся с вами в ближайшее рабочее время.";
+        : "Откроется письмо на " +
+          CONTACT.email +
+          ". Отправьте его — или позвоните " +
+          CONTACT.phoneDisplay +
+          ".";
 
     var existing = document.querySelector(".kk-toast");
     if (existing) existing.remove();
@@ -962,7 +952,83 @@
       setTimeout(function () {
         if (el.parentNode) el.remove();
       }, 400);
-    }, 4200);
+    }, 5200);
+  };
+
+  /** Collect form fields into a mailto draft so leads actually reach the inbox. */
+  window.kkSubmitLead = function (form, opts) {
+    opts = opts || {};
+    if (!form) return false;
+
+    var lines = [];
+    var files = [];
+    var fd = new FormData(form);
+    fd.forEach(function (value, key) {
+      if (key === "privacy_agreement" || key === "privacy" || key === "consent") {
+        return;
+      }
+      if (typeof File !== "undefined" && value instanceof File) {
+        if (value.name) files.push(value.name);
+        return;
+      }
+      var text = String(value == null ? "" : value).trim();
+      if (!text) return;
+      if (text === "on") return;
+      lines.push(key + ": " + text);
+    });
+
+    if (files.length) {
+      lines.push(
+        "Файлы (приложите вручную к письму): " + files.join(", ")
+      );
+    }
+
+    var subject =
+      opts.subject ||
+      "Заявка с сайта «Контур Комфорта» — " + (document.title || PAGE);
+    var body =
+      (opts.intro || "Новая заявка с сайта kontur-komforta:") +
+      "\n\n" +
+      (lines.length ? lines.join("\n") : "(поля пустые)") +
+      "\n\nСтраница: " +
+      (location.href || "") +
+      "\nТелефон компании: " +
+      CONTACT.phoneDisplay;
+
+    var url =
+      "mailto:" +
+      CONTACT.email +
+      "?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+
+    try {
+      window.location.href = url;
+    } catch (err) {
+      /* ignore */
+    }
+
+    window.kkToast(
+      opts.title || "Отправьте письмо",
+      opts.message ||
+        "Сформировали письмо на " +
+          CONTACT.email +
+          ". Нажмите «Отправить» в почте" +
+          (files.length ? " и приложите файлы" : "") +
+          " — или позвоните " +
+          CONTACT.phoneDisplay +
+          "."
+    );
+
+    if (opts.reset !== false) {
+      try {
+        form.reset();
+      } catch (err2) {
+        /* ignore */
+      }
+    }
+    return true;
   };
 
   bootMotion();

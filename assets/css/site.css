@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--kk-header-h) + 1rem);
   margin: 0;
   padding: 0;
 }

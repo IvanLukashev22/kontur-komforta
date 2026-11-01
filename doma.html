@@ -41,7 +41,7 @@
 <div class="kk-doma-wrap kk-doma-rail__inner">
 <div class="kk-doma-fact"><span class="kk-doma-fact__label">Точность сметы</span><span class="kk-doma-fact__value">100%</span><span class="kk-doma-fact__note">Фиксация в договоре</span></div>
 <div class="kk-doma-fact"><span class="kk-doma-fact__label">Технологии</span><span class="kk-doma-fact__value">3 решения</span><span class="kk-doma-fact__note">Каркас, брус, газобетон</span></div>
-<div class="kk-doma-fact"><span class="kk-doma-fact__label">Оконные системы</span><span class="kk-doma-fact__value">Собственные</span><span class="kk-doma-fact__note">ПВХ и тёплый алюминий</span></div>
+<div class="kk-doma-fact"><span class="kk-doma-fact__label">Оконные системы</span><span class="kk-doma-fact__value">С завода</span><span class="kk-doma-fact__note">ПВХ и тёплый алюминий</span></div>
 <div class="kk-doma-fact"><span class="kk-doma-fact__label">География работ</span><span class="kk-doma-fact__value">Вся РФ</span><span class="kk-doma-fact__note">База: СПб, Шушары</span></div>
 </div>
 </div>
@@ -145,7 +145,7 @@
 <div class="kk-doma-wrap">
 <div class="kk-doma-standard__top">
 <p class="kk-doma-eyebrow kk-doma-eyebrow--light">Архитектурный стандарт</p>
-<p class="kk-doma-standard__statement">Разрабатываем проект с нулевого цикла: архитектура, конструктивные узлы, отопление и <span>собственное панорамное остекление</span>.</p>
+<p class="kk-doma-standard__statement">Разрабатываем проект с нулевого цикла: архитектура, конструктивные узлы, отопление и <span>панорамное остекление с завода-изготовителя</span>.</p>
 </div>
 <div class="kk-doma-stats" data-reveal="stagger">
 <div class="kk-doma-stat"><span class="kk-doma-stat__unit">мм утепления</span><span class="kk-doma-stat__num">200–300</span><p class="kk-doma-stat__text">Перекрёстное утепление стен каркасного дома</p></div>
@@ -189,7 +189,7 @@
 <ul class="kk-doma-checks">
 <li>Все элементы комплектации «Базовая»</li>
 <li>Теплоизоляция перекрытий и стен по климату региона</li>
-<li>Энергосберегающие ПВХ-окна собственного цеха</li>
+<li>Энергосберегающие ПВХ-окна напрямую с завода</li>
 <li>Внешняя архитектурная отделка фасада и софитов</li>
 <li>Утеплённые входные двери с терморазрывом</li>
 </ul>
@@ -243,7 +243,7 @@
 <div class="kk-doma-step">
 <div class="kk-doma-step__head"><span class="kk-doma-step__num">03</span><span class="material-symbols-outlined kk-doma-step__icon" aria-hidden="true">factory</span></div>
 <h3 class="kk-doma-step__title">Интеграция конструкций</h3>
-<p class="kk-doma-step__text">Мы сами производим энергосберегающие оконные блоки и алюминиевые порталы в Шушарах — без наценок субподрядчиков и без зазоров при установке в проёмы.</p>
+<p class="kk-doma-step__text">Энергосберегающие оконные блоки и алюминиевые порталы поставляем напрямую с завода-изготовителя — без наценок посредников и с точной посадкой в проёмы нашей бригадой.</p>
 <span class="kk-doma-step__foot">Гарантия на монтажные узлы и конструкции</span>
 </div>
 <div class="kk-doma-step">
@@ -270,7 +270,7 @@
 </ul>
 <div class="kk-doma-contact"><span>Консультация ведущего инженера</span><span>СПб, Шушары, ул.&nbsp;Ленина, 1А · Доставка и бригады по РФ</span></div>
 </div>
-<form class="kk-doma-form" id="houseOrderForm" onsubmit="event.preventDefault(); if (window.kkToast) { window.kkToast('Эскиз принят', 'Инженер свяжется с вами в течение рабочего дня.'); this.reset(); var f = document.getElementById('file_name_display'); if (f) { f.textContent = ''; f.classList.add('hidden'); } } else { alert('Спасибо! Ваш эскиз принят в работу. Инженер свяжется с вами в течение рабочего дня.'); }">
+<form class="kk-doma-form" id="houseOrderForm" onsubmit="event.preventDefault(); if (window.kkSubmitLead) { window.kkSubmitLead(this, { subject: 'Заявка: эскиз дома', intro: 'Заявка на расчёт дома со страницы «Строительство домов»:' }); var f = document.getElementById('file_name_display'); if (f) { f.textContent = ''; f.classList.add('hidden'); } }">
 <div class="kk-doma-form__head"><p class="kk-doma-form__title">Заявка на расчёт</p><span class="kk-doma-form__hint">* обязательные поля</span></div>
 <div class="kk-doma-row">
 <div class="kk-doma-field">
@@ -325,7 +325,7 @@
 <!-- 7. Final CTA -->
 <section class="kk-doma-section kk-doma-final" aria-label="Связаться с инженером">
 <div class="kk-doma-final__media">
-<img src="assets/img/doma-glulam.jpg" alt="" loading="lazy"/>
+<img src="assets/img/doma-glulam.jpg" alt="Дом из клееного бруса в вечернем свете" loading="lazy"/>
 </div>
 <div class="kk-doma-final__veil" aria-hidden="true"></div>
 <div class="kk-doma-wrap kk-doma-final__inner">
@@ -337,7 +337,7 @@
 <div class="kk-doma-final__actions">
 <div>
 <span class="kk-doma-final__label">Телефон инженера</span><br/>
-<a class="kk-doma-final__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
+<a class="kk-doma-final__phone" href="tel:+79110061919">+7 (911) 006-19-19</a>
 </div>
 <span class="kk-doma-final__address">Пос. Шушары, ул. Ленина, 1А · Работаем по всей РФ</span>
 <div class="kk-doma-final__buttons">

@@ -22,9 +22,11 @@ python -m http.server 8765
 | `okna.html` | Окна ПВХ |
 | `alyuminij.html` | Алюминиевые конструкции |
 | `process.html` | Как мы работаем |
-| `calculator.html` | Калькулятор окон |
 | `contacts.html` | Контакты |
 | `privacy.html` | Политика конфиденциальности |
+| `calculator.html` | Редирект на заявку окон (`okna.html#lead`) |
+
+Публикация: GitHub Pages — https://ivanlukashev22.github.io/kontur-komforta/
 
 Общая шапка, подвал и мобильное меню — в `assets/js/site.js` и `assets/css/site.css`.
 

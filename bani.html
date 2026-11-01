@@ -275,7 +275,7 @@
 <li class="kk-bani-point">
 <div class="kk-bani-point__head"><span class="kk-bani-point__num">02</span></div>
 <h3 class="kk-bani-point__title">Точный расчёт от пос. Шушары</h3>
-<p class="kk-bani-point__text">Для отдельного замера или инженерного обследования участка расчёт километража ведётся от нашего производства в посёлке Шушары по фиксированному тарифу <strong>20 ₽/км</strong>.</p>
+<p class="kk-bani-point__text">Для отдельного замера или инженерного обследования участка расчёт километража ведётся от офиса в посёлке Шушары по фиксированному тарифу <strong>20 ₽/км</strong>.</p>
 </li>
 <li class="kk-bani-point">
 <div class="kk-bani-point__head"><span class="kk-bani-point__num">03</span></div>
@@ -283,7 +283,7 @@
 <p class="kk-bani-point__text">Присылайте рисунок от руки, скриншот или набросок плана — инженеры сделают первичную раскладку и ориентировочную калькуляцию бесплатно.</p>
 </li>
 </ul>
-<p class="kk-bani-address"><span>Производственно-складской комплекс</span>Санкт-Петербург, пос. Шушары, ул.&nbsp;Ленина, д.&nbsp;1А</p>
+<p class="kk-bani-address"><span>Офис и логистика</span>Санкт-Петербург, пос. Шушары, ул.&nbsp;Ленина, д.&nbsp;1А</p>
 </div>
 
 <div id="calc-form">
@@ -371,7 +371,7 @@
 <!-- 6. Final CTA -->
 <section class="kk-bani-section kk-bani-final" aria-label="Связаться с инженером">
 <div class="kk-bani-final__media">
-<img src="assets/img/bani-spa.jpg" alt="" loading="lazy"/>
+<img src="assets/img/bani-spa.jpg" alt="Спа-павильон с купелью и стеклянной стеной" loading="lazy"/>
 </div>
 <div class="kk-bani-final__veil" aria-hidden="true"></div>
 <div class="kk-bani-wrap kk-bani-final__inner">
@@ -383,7 +383,7 @@
 <div class="kk-bani-final__actions">
 <div>
 <span class="kk-bani-final__label">Телефон инженера</span><br/>
-<a class="kk-bani-final__phone" href="tel:+78120000000">+7 (812) 000-00-00</a>
+<a class="kk-bani-final__phone" href="tel:+79110061919">+7 (911) 006-19-19</a>
 </div>
 <span class="kk-bani-final__address">Пос. Шушары, ул. Ленина, 1А · Работаем по всей РФ</span>
 <div class="kk-bani-final__buttons">
@@ -420,23 +420,20 @@
 
   function handleFormSubmit(event) {
     event.preventDefault();
-    const btn = event.target.querySelector('button[type="submit"]');
-    const successMsg = document.getElementById('formSuccessMessage');
-
-    if (btn) {
-      btn.disabled = true;
-      btn.classList.add('opacity-70');
-      btn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span> Отправка данных...';
+    var form = event.target;
+    if (window.kkSubmitLead) {
+      window.kkSubmitLead(form, {
+        subject: 'Заявка: баня / банный комплекс',
+        intro: 'Заявка на расчёт бани со страницы «Бани»:'
+      });
     }
-
-    setTimeout(() => {
-      if (btn) {
-        btn.classList.add('hidden');
-      }
-      if (successMsg) {
-        successMsg.classList.remove('hidden');
-      }
-    }, 900);
+    var display = document.getElementById('fileNameDisplay');
+    if (display) display.textContent = '';
+    var successMsg = document.getElementById('formSuccessMessage');
+    if (successMsg) {
+      successMsg.textContent = 'Откройте письмо в почте и отправьте его — или позвоните +7 (911) 006-19-19.';
+      successMsg.classList.remove('hidden');
+    }
   }
 </script>
 <script src="assets/js/site.js"></script>

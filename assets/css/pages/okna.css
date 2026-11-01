@@ -1406,6 +1406,42 @@ a:hover > .kk-okna-arrow { transform: translateX(4px); }
   line-height: 1.6;
   resize: vertical;
 }
+.kk-okna-lead-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.75rem;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .kk-okna-lead-grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 2.5rem;
+  }
+}
+.kk-okna-lead-points {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.kk-okna-lead-points li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ok-ink);
+}
+.kk-okna-lead-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background: var(--ok-olive-bright);
+}
 .kk-okna-note {
   display: flex;
   flex-direction: column;
